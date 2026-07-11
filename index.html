@@ -66,10 +66,16 @@ body{
 .seg button.on{background:var(--tinta);color:var(--sol)}
 .seg.dim{opacity:.35;pointer-events:none}
 .env-head{margin-top:24px;font-size:1.26rem;font-weight:800;letter-spacing:-.02em;color:var(--tinta)}
-.env{position:relative;margin-top:14px}
-.diss{border:1.5px dashed var(--linha);border-radius:12px;padding:8px 14px;margin-bottom:12px}
-.diss span{font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:700;letter-spacing:.1em;color:var(--grafite-claro)}
-.env-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1.55fr;gap:12px;transition:filter .5s,opacity .5s}
+.env{margin-top:14px}
+.ebar-wrap{margin:6px 0 22px;padding-top:8px}
+.ebar{position:relative;height:46px;background:#fff;border:1px solid var(--linha-suave);border-radius:99px;box-shadow:inset 0 2px 6px rgba(23,21,15,.05);transition:filter .5s,opacity .5s}
+.ebar-fill{position:absolute;left:0;top:0;bottom:0;width:var(--fill,78%);max-width:var(--stop,92%);background:linear-gradient(90deg,rgba(255,230,26,.32),rgba(255,230,26,.85));border-radius:99px;transition:width 1s cubic-bezier(.4,0,.2,1),max-width 1s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;padding-left:18px;overflow:hidden}
+.ebar-fill span{font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:700;letter-spacing:.12em;color:var(--tinta);white-space:nowrap}
+.ebar-stop{position:absolute;top:-7px;bottom:-7px;left:var(--stop,92%);width:4px;background:var(--tinta);border-radius:4px;transition:left 1s cubic-bezier(.4,0,.2,1)}
+.ebar-stop span{position:absolute;bottom:-24px;right:0;font-family:'IBM Plex Mono',monospace;font-size:.58rem;font-weight:700;letter-spacing:.1em;color:var(--tinta);white-space:nowrap}
+.ebar.hit .ebar-stop{animation:hitp 1.5s ease-in-out infinite}
+@keyframes hitp{0%,100%{box-shadow:0 0 0 0 rgba(23,21,15,.3)}50%{box-shadow:0 0 0 8px rgba(23,21,15,0)}}
+.env-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1.55fr;gap:12px;margin-top:14px;transition:filter .5s,opacity .5s}
 .ebox{position:relative;overflow:hidden;background:#fff;border:1px solid var(--linha-suave);border-radius:18px;padding:16px 16px 20px;min-height:152px;display:flex;flex-direction:column;gap:4px;box-shadow:0 12px 32px rgba(23,21,15,.06);animation:floaty 7s ease-in-out infinite alternate}
 .ebox:nth-child(2){animation-delay:-1.8s}
 .ebox:nth-child(3){animation-delay:-3.6s}
@@ -85,22 +91,12 @@ body{
 .efill i{position:absolute;left:0;right:0;bottom:0;height:var(--lv,50%);background:linear-gradient(180deg,rgba(255,230,26,.24),rgba(255,230,26,.5));transition:height .9s cubic-bezier(.4,0,.2,1)}
 .efill i::before{content:"";position:absolute;left:-20%;right:-20%;top:-6px;height:12px;border-radius:50%;background:rgba(242,194,0,.45);filter:blur(3px);animation:lap 5s ease-in-out infinite alternate}
 @keyframes lap{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
-.track{display:flex;align-items:center;margin-top:10px;overflow-x:auto;scrollbar-width:none;padding:8px 2px;transition:filter .5s,opacity .5s}
-.tnode{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:.64rem;font-weight:700;letter-spacing:.06em;padding:8px 13px;border-radius:99px;border:1.5px solid var(--linha);color:var(--grafite);background:#fff;white-space:nowrap;transition:all .45s cubic-bezier(.34,1.56,.64,1)}
-.tnode.done{background:var(--tinta);color:#fff;border-color:var(--tinta)}
-.tnode.lock{border-style:dashed;opacity:.75}
-.tnode.lock.open{background:var(--sol);border:1.5px solid var(--sol);color:var(--tinta);opacity:1}
-.tnode.leva{opacity:.4}
-.tnode.leva.open{opacity:1;border-color:var(--tinta);color:var(--tinta)}
-.tlink{flex:0 0 24px;height:1.5px;background:var(--linha)}
-.env[data-m=down] .env-grid,.env[data-m=down] .track{filter:grayscale(1);opacity:.32}
-.env-badge{position:absolute;left:50%;top:110px;translate:-50%;background:var(--sol);color:var(--tinta);font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:.82rem;letter-spacing:.1em;padding:12px 22px;border-radius:99px;box-shadow:0 16px 44px rgba(23,21,15,.28);opacity:0;scale:.85;transition:opacity .4s,scale .45s cubic-bezier(.34,1.56,.64,1);pointer-events:none;z-index:5}
-.env[data-m=down] .env-badge{opacity:1;scale:1}
+.env[data-m=down] .env-grid,.env[data-m=down] .ebar{filter:grayscale(1);opacity:.4}
 .gcap{margin-top:12px;font-size:.85rem;color:var(--grafite)}
 .sim-note{margin-top:16px;font-size:.8rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:14px}
-@media(prefers-reduced-motion:reduce){.ebox{animation:none}.efill i::before{animation:none}}
+@media(prefers-reduced-motion:reduce){.ebox{animation:none}.efill i::before{animation:none}.ebar.hit .ebar-stop{animation:none}}
 @media(max-width:860px){.env-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.sim{padding:22px 18px}.env-grid{grid-template-columns:1fr}.env-head{font-size:1.08rem}}
+@media(max-width:560px){.sim{padding:22px 18px}.env-grid{grid-template-columns:1fr}.env-head{font-size:1.08rem}.ebar-fill span{display:none}}
 
 /* ---------- LADDER ESCADA ---------- */
 .lsteps{display:flex;gap:12px;align-items:stretch}
@@ -1003,8 +999,8 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
-      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano.</strong> Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. Margem bruta, e não receita — numa fintech, receita pode crescer com o custo junto; margem só cresce se o crescimento for saudável. As duas métricas convivem: receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua que libera ou pausa contratação. Hoje a régua é margem bruta; na maturidade, migra para EBITDA.</p>
-      <p style="max-width:72ch;margin-top:10px">O envelope do ano vive <strong>acima do dissídio</strong> — que é lei, camada zero — e se divide em quatro: <strong>mérito, promoções, fora de ciclo e novas vagas</strong>. Marcos do próprio plano destravan as levas; o runway limita quanto do envelope se exerce. Mexa nos dois controles e veja o sistema raciocinar:</p>
+      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong> — sobe, contrata; cai, pausa até recuperar. E o sistema tem um motor e uma trava: <strong>margem subindo abre o envelope; o runway segura quanto dele se exerce</strong>. Hoje a régua é margem bruta; na maturidade, podemos migrar para um mix de EBITDA e receita.</p>
+      <p style="max-width:72ch;margin-top:10px">O envelope do ano se divide em quatro caixinhas — <strong>mérito, promoções, fora de ciclo e novas vagas</strong>. Mexa nos dois controles e veja o sistema raciocinar:</p>
       <div class="env-ctl">
         <div class="seg-group"><span class="seg-lab">Margem bruta / pessoa</span>
           <div class="seg" id="segM">
@@ -1022,27 +1018,22 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       </div>
       <p class="env-head" id="envHead"></p>
       <div class="env" id="env" data-m="up" data-r="ok">
-        <div class="diss"><span>DISSÍDIO · CAMADA ZERO — LEI, SEMPRE PAGO, FORA DO ENVELOPE</span></div>
+        <div class="ebar-wrap">
+          <span class="ek" style="display:block;margin-bottom:10px">O ENVELOPE DO ANO</span>
+          <div class="ebar" id="ebar">
+            <div class="ebar-fill" id="ebFill"><span>MARGEM ABRE →</span></div>
+            <div class="ebar-stop"><span>⟵ RUNWAY SEGURA</span></div>
+          </div>
+        </div>
         <div class="env-grid">
           <div class="ebox" id="bxMer" style="--lv:78%"><span class="ek">MÉRITO</span><span class="ev">3,5–4%<i>*</i></span><span class="ed" id="dMer">matriz nota × banda — nunca peanut butter</span><div class="efill"><i></i></div></div>
           <div class="ebox" id="bxPro" style="--lv:60%"><span class="ek">PROMOÇÕES</span><span class="ev">1–1,5%<i>*</i></span><span class="ed">só com espaço de escopo</span><div class="efill"><i></i></div></div>
           <div class="ebox" id="bxFor" style="--lv:45%"><span class="ek">FORA DE CICLO</span><span class="ev">~0,5%<i>*</i></span><span class="ed">retenção e correções de mercado</span><div class="efill"><i></i></div></div>
           <div class="ebox rio" id="bxVag" style="--lv:92%"><span class="ek">NOVAS VAGAS</span><span class="ev" id="vVag">o residual</span><span class="ed">teto, não meta — Regra Tobi vaga a vaga; o que não passa volta ao time ou ao negócio</span><div class="efill"><i></i></div></div>
         </div>
-        <span class="ek" style="display:block;margin-top:18px">ESTEIRA DE MARCOS · O PLANO COMPRA AS LEVAS; O MARCO DESTRAVA</span>
-        <div class="track">
-          <span class="tnode done">Time atual</span><span class="tlink"></span>
-          <span class="tnode lock" id="tk1">M1 · margem</span><span class="tlink"></span>
-          <span class="tnode leva" id="lv1">Leva 1</span><span class="tlink"></span>
-          <span class="tnode lock" id="tk2">M2 · aposta validada</span><span class="tlink"></span>
-          <span class="tnode leva" id="lv2">Leva 2</span><span class="tlink"></span>
-          <span class="tnode lock" id="tk3">Série B</span><span class="tlink"></span>
-          <span class="tnode leva" id="lv3">Plano de escala</span>
-        </div>
-        <div class="env-badge">O HUMANO DECIDE</div>
       </div>
       <p class="gcap" id="envCap"></p>
-      <p class="sim-note"><i style="font-style:normal;color:var(--ambar)">*</i> Percentuais da folha/ano, acima do dissídio: <strong>sugestão de mercado</strong> (Mercer, WorldatWork e Pave, ciclos 2025–26) — os finais nascem dos dados do Jota. <strong>Assim que eu entrar, sento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar. Equity refresh corre em paralelo, fora do envelope de caixa. Tipos de marco: margem do plano, aposta validada, rodada.</p>
+      <p class="sim-note"><i style="font-style:normal;color:var(--ambar)">*</i> Percentuais da folha/ano: <strong>sugestão de mercado</strong> (Mercer, WorldatWork e Pave, ciclos 2025–26) — os finais nascem dos dados do Jota. <strong>Assim que eu entrar, sento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar. Equity refresh corre em paralelo, fora do envelope de caixa. E se migrarmos para CLT, o dissídio entra como camada zero — lei, fora do envelope; hoje, com o time PJ, ele não se aplica.</p>
     </div>
   </div>
 </section>
@@ -1489,29 +1480,32 @@ function envRender(){
   var head = document.getElementById('envHead'), cap = document.getElementById('envCap');
   var tight = envR === 'tight';
   if(envM === 'down'){
-    head.textContent = 'Congela — sem cortes automáticos.';
-    cap.innerHTML = 'Dissídio segue (é lei) e o mérito vai ao piso, concentrado nos melhores. Vagas param. <strong>Layoff é decisão de governança, nunca fórmula.</strong>';
+    head.textContent = 'Congela — até a régua recuperar.';
+    cap.innerHTML = 'Contratação pausa até a margem por pessoa voltar a subir; mérito vai ao piso, concentrado nos melhores. E enxugar o time nunca é reflexo de um trimestre — <strong>é decisão de governança, caso a caso</strong>.';
   } else if(envM === 'flat'){
     head.textContent = 'Vagas seguram. O time atual segue protegido.';
-    cap.innerHTML = 'Mérito e promoções primeiro; as levas esperam o marco. <strong>Apostas validadas ainda podem destravar</strong>' + (tight ? ' — e com runway no limite, só backfills críticos.' : '.');
+    cap.innerHTML = 'Mérito e promoções primeiro; novas vagas esperam a margem voltar a abrir espaço' + (tight ? ' — e com runway no limite, só backfills críticos.' : '.');
   } else if(tight){
-    head.textContent = 'O pulo do gato: a margem abriu — o runway segurou.';
-    cap.innerHTML = 'Envelope aberto, exercício limitado pelo caixa: levas além do runway <strong>sobem de alçada do C-level</strong>. É aqui que empresas morrem de ano bom — o Jota não.';
+    head.textContent = 'A margem abriu — o runway segurou.';
+    cap.innerHTML = 'O envelope existe, mas o exercício para na trava: além dela, <strong>só por decisão explícita do C-level</strong>. É aqui que empresas morrem de ano bom — o Jota não.';
   } else {
     head.textContent = 'Acelera. O envelope inteiro está aberto.';
-    cap.innerHTML = 'Marcos batidos destravan as levas — e cada vaga ainda passa pela <strong>Regra Tobi</strong>. O que ela não liberar cascateia para o time ou volta ao negócio.';
+    cap.innerHTML = 'E cada vaga ainda passa pela <strong>Regra Tobi</strong> — o que ela não liberar cascateia para o time ou volta ao negócio.';
   }
+  var bar = document.getElementById('ebar');
+  var stops = { ok: '92%', tight: '52%' };
+  var fills = { up: '78%', flat: '34%', down: '6%' };
+  bar.style.setProperty('--stop', stops[envR]);
+  bar.style.setProperty('--fill', fills[envM]);
+  bar.classList.toggle('hit', envM === 'up' && tight);
   function lv(id, pct){ document.getElementById(id).style.setProperty('--lv', pct); }
-  var down = envM === 'down', flat = envM === 'flat', up = envM === 'up';
+  var down = envM === 'down', flat = envM === 'flat';
   lv('bxMer', down ? '28%' : flat ? '55%' : '78%');
   lv('bxPro', down ? '0%' : flat ? '35%' : '60%');
   lv('bxFor', down ? '18%' : '45%');
   lv('bxVag', down ? '0%' : flat ? '12%' : tight ? '46%' : '92%');
   document.getElementById('dMer').textContent = down ? 'piso — concentrado nos melhores' : 'matriz nota × banda — nunca peanut butter';
-  document.getElementById('vVag').textContent = down ? 'congeladas' : flat ? 'esperam o marco' : tight ? 'capadas pelo caixa' : 'o residual';
-  var st = { tk1: up, lv1: up, tk2: up && !tight, lv2: up && !tight, tk3: false, lv3: false };
-  var ids = ['tk1','lv1','tk2','lv2','tk3','lv3'];
-  for(var j = 0; j < ids.length; j++){ document.getElementById(ids[j]).classList.toggle('open', !!st[ids[j]]); }
+  document.getElementById('vVag').textContent = down ? 'pausadas' : flat ? 'esperam' : tight ? 'param na trava' : 'o residual';
 }
 envRender();
 // ---------- Carta de oferta ----------
