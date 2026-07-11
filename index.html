@@ -700,7 +700,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             <ul>
               <li><strong>Adaptado à vaga:</strong> engenharia faz teste prático, People faz case de People, comercial faz role play de venda — sempre com material realista do nosso mundo. E aplicado <strong>só quando necessário</strong>: para seniores com obra pública verificável, a análise do trabalho real pode substituir a etapa.</li>
               <li><strong>Formato conforme o contexto:</strong> case interview ao vivo ou take-home com até 7 dias de prazo — o que gerar melhor sinal para aquela vaga. Avaliamos execução de verdade: como prioriza, decide com informação incompleta e <strong>defende e revisa</strong> a resposta quando desafiada.</li>
-              <li><strong>IA liberada — e avaliada:</strong> o candidato traz suas ferramentas; queremos ver quem dirige a IA, não quem decora (o formato que Shopify e Meta já adotaram nas entrevistas). No roteiro, a pergunta de evidência: "me mostre um fluxo que você redesenhou com IA — o que quebrou e como consertou".</li>
+              <li><strong>IA liberada — e avaliada:</strong> o candidato traz suas ferramentas; queremos ver quem dirige a IA, não quem decora. No roteiro, a pergunta de evidência: "me mostre um fluxo que você redesenhou com IA — o que quebrou e como consertou".</li>
             </ul>
           </div>
           <div class="sp-guard">
@@ -968,27 +968,29 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
-      <p style="max-width:72ch">O envelope de mérito, promoções e novas vagas é definido a cada ciclo pelo C-level, a partir do crescimento real do negócio — <strong>margem bruta hoje, EBITDA na maturidade</strong> — e dos parâmetros do momento: runway, receita por pessoa, capacidade de onboarding. <strong>O time atual é pago primeiro; vagas novas absorvem o que sobra.</strong> E se a margem bruta cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.</p>
+      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong>, medida em 12 meses móveis. Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. <strong>E as duas métricas convivem:</strong> receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua operacional que libera ou pausa contratação. O envelope do ano é definido a cada ciclo pelo C-level, a partir do crescimento real da margem bruta — <strong>hoje; EBITDA na maturidade</strong> — e do runway. <strong>O time atual é pago primeiro; vagas novas absorvem o que sobra.</strong> E se a margem bruta cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.</p>
       <p style="margin-top:12px;font-size:.84rem;color:var(--grafite-claro)">Existe um mecanismo completo por trás — construí e opero um em outra empresa.</p>
       <button class="sim-toggle" id="simTgl" aria-expanded="false" onclick="toggleSim()">Quer aprofundar? Ver o mecanismo e simular →</button>
       <div class="sim-deep" id="simDeep">
         <div class="sim-how">
           <div class="hw"><span class="hn">1</span><p><strong>O cenário é uma pergunta só:</strong> entregamos quantos % do plano de margem bruta? Abaixo de 70%, pisamos no freio. De 70 a 100%, ritmo normal. Acima de 100%, aceleramos.</p></div>
-          <div class="hw"><span class="hn">2</span><p><strong>A conta é uma multiplicação só:</strong> crescimento da margem bruta × elasticidade do cenário = quanto a verba de gente pode crescer no ano.</p></div>
-          <div class="hw"><span class="hn">3</span><p><strong>O time atual é pago primeiro</strong> — mérito, promoção, retenção. O que sobra vira vagas novas.</p></div>
+          <div class="hw"><span class="hn">2</span><p><strong>A conta é uma multiplicação só:</strong> crescimento da margem bruta × elasticidade do cenário = teto da verba de gente no ano. Elasticidades deliberadamente menores que o benchmark (0,3× · 0,5× · 0,7×): empresa alavancada por agentes converte crescimento em gente numa taxa menor.</p></div>
+          <div class="hw"><span class="hn">3</span><p><strong>O time atual é pago primeiro</strong> — mérito, promoção, retenção. O que sobra vira vagas novas — e o envelope é teto, não meta: cada vaga passa pela Regra Tobi.</p></div>
         </div>
         <p class="sim-meta"><strong>Por que margem bruta e não receita cheia?</strong> Porque numa fintech a receita pode crescer com o custo junto — margem bruta só cresce se o crescimento for saudável. <strong>E por que ainda não EBITDA?</strong> Porque em estágio venture-backed ele é negativo por desenho; perto do breakeven, o índice migra para EBITDA e a régua de saúde vira a Rule of 40 (crescimento + margem ≥ 40%).</p>
+        <p class="sim-meta"><strong>A válvula:</strong> acima de ~45% de headcount/ano a contratação não para — <strong>sobe de alçada</strong>: decisão explícita do C-level, com a régua subindo no ritmo maior e runway acima de 24 meses. Nos dois extremos o automático desliga e o humano decide: contração nunca vira layoff por fórmula; expansão acelerada nunca vira contratação por fórmula.</p>
         <div class="sim-lab">
           <label>Entregamos quantos % do plano de margem bruta? <span id="vPlan">92%</span></label>
           <input type="range" id="sPlan" min="40" max="140" value="92" oninput="simCalc()">
-          <label>E a margem bruta cresceu quanto vs. ano anterior? <span id="vYoy">+120%</span></label>
-          <input type="range" id="sYoy" min="-20" max="200" value="120" step="5" oninput="simCalc()">
+          <label>E a margem bruta cresceu quanto vs. ano anterior? <span id="vYoy">+80%</span></label>
+          <input type="range" id="sYoy" min="-20" max="200" value="80" step="5" oninput="simCalc()">
           <div class="sim-out">
             <div class="sim-o full"><span class="k">Cenário</span><div style="margin-top:6px"><span id="simCen"></span> <span class="sim-why" id="simWhy"></span></div></div>
             <div class="sim-o full"><span class="k">A conta, aberta</span><div class="v" id="oGrow"></div></div>
             <div class="sim-o"><span class="k">Verba nova de gente no ano</span><div class="v" id="oInc"></div></div>
             <div class="sim-o"><span class="k">1º · time atual (mérito + promo + retenção)</span><div class="v" id="oEnv"></div></div>
             <div class="sim-o full"><span class="k">2º · o que sobra vira vagas</span><div class="v" id="oHires"></div></div>
+            <div class="sim-o full"><span class="k">A régua, testada</span><div class="v" id="oRegua"></div></div>
           </div>
           <p class="sim-guard" id="oGuard"></p>
           <p class="sim-note">Folha ilustrativa de R$ 14M (≈40 pessoas) e R$ 420 mil de custo carregado por contratação — números de exemplo; as métricas reais calibramos juntos.</p>
@@ -1434,32 +1436,37 @@ function simCalc(){
   var plan = +document.getElementById('sPlan').value, yoy = +document.getElementById('sYoy').value;
   document.getElementById('vPlan').textContent = plan + '%';
   document.getElementById('vYoy').textContent = (yoy >= 0 ? '+' : '') + yoy + '%';
-  var folha = 14000000, custo = 420000, e, nome, cor, env, why;
-  if(plan < 70){ e = .4; nome = 'Pessimista'; cor = '#B3411F'; env = .055; why = 'abaixo de 70% do plano → pisa no freio'; }
-  else if(plan <= 100){ e = .65; nome = 'Conservador'; cor = '#9A7B00'; env = .062; why = 'dentro do plano → ritmo normal'; }
-  else { e = .95; nome = 'Otimista'; cor = '#1E7B4F'; env = .075; why = 'acima do plano → acelera'; }
+  var folha = 14000000, custo = 420000, pessoas = 40, checkpoint = 18, e, nome, cor, env, why;
+  if(plan < 70){ e = .3; nome = 'Pessimista'; cor = '#B3411F'; env = .055; why = 'abaixo de 70% do plano → pisa no freio'; }
+  else if(plan <= 100){ e = .5; nome = 'Conservador'; cor = '#9A7B00'; env = .062; why = 'dentro do plano → ritmo normal'; }
+  else { e = .7; nome = 'Otimista'; cor = '#1E7B4F'; env = .075; why = 'acima do plano → acelera'; }
   var cen = document.getElementById('simCen');
   cen.textContent = nome; cen.style.background = cor; cen.style.color = '#fff';
   document.getElementById('simWhy').textContent = why;
   var eStr = (e + '').replace('.', ',') + '×';
   function br(v){ return 'R$ ' + (v / 1e6).toFixed(1).replace('.', ',') + 'M'; }
-  var g = document.getElementById('oGrow'), inc = document.getElementById('oInc'), ev = document.getElementById('oEnv'), hr = document.getElementById('oHires'), gd = document.getElementById('oGuard');
+  var g = document.getElementById('oGrow'), inc = document.getElementById('oInc'), ev = document.getElementById('oEnv'), hr = document.getElementById('oHires'), gd = document.getElementById('oGuard'), rg = document.getElementById('oRegua');
   if(yoy <= 0){
     g.textContent = 'margem bruta não cresceu → verba nova = 0 (congela)';
     inc.textContent = br(0);
     ev.textContent = br(folha * .035) + ' — mérito no piso de mercado (3,5%)';
     hr.textContent = '0 vagas — backfills críticos caso a caso';
+    rg.textContent = 'margem por pessoa cairia com contratação → pausa até recuperar';
     gd.innerHTML = 'Congelar não é cortar: layoff é decisão de governança (CEO + CFO + People), nunca fórmula.';
     return;
   }
   var growth = yoy / 100 * e, incR = folha * growth, envR = folha * env, resid = Math.max(0, incR - envR);
-  var n = Math.floor(resid / custo), cap = 30, capped = n > cap;
-  var G = Math.round(growth * 100);
-  g.textContent = '+' + yoy + '% de margem bruta × ' + eStr + ' = verba de gente pode crescer +' + G + '%';
+  var n = Math.floor(resid / custo), G = Math.round(growth * 100), hc = Math.round(n / pessoas * 100);
+  g.textContent = '+' + yoy + '% de margem bruta × ' + eStr + ' = teto de +' + G + '% na verba de gente';
   inc.textContent = '+' + G + '% sobre R$ 14M de folha = ' + br(incR);
   ev.textContent = br(envR) + ' (' + (env * 100).toFixed(1).replace('.', ',') + '% da folha)';
-  hr.textContent = br(resid) + ' ÷ R$ 420 mil ≈ ' + (capped ? cap : n) + ' vagas' + (capped ? ' (capado pela capacidade)' : '');
-  gd.innerHTML = 'Guardrails — o menor número vence: runway > ' + (nome === 'Otimista' ? '24 meses (exigência do otimista)' : '18 meses') + ' · receita por pessoa sem degradar · onboarding ~2–3/mês' + (capped ? '. <strong>Excedente vai para equity refresh e runway, não para inflar mérito.</strong>' : '.');
+  hr.textContent = br(resid) + ' ÷ R$ 420 mil ≈ ' + n + ' vagas (+' + hc + '% de headcount)';
+  rg.textContent = '+' + yoy + '% de margem vs. +' + hc + '% de headcount → margem por pessoa sobe ✓';
+  if(n > checkpoint){
+    gd.innerHTML = '<strong>Acima do checkpoint de absorção (~45%/ano ≈ 18 pessoas):</strong> a contratação não para — sobe de alçada. Decisão explícita do C-level, com a régua subindo no ritmo maior e runway > 24 meses.';
+  } else {
+    gd.innerHTML = 'Guardrails: runway > ' + (nome === 'Otimista' ? '24 meses (exigência do otimista)' : '18 meses') + ' · envelope é teto, não meta — a Regra Tobi decide vaga a vaga.';
+  }
 }
 // ---------- Carta de oferta ----------
 function openLetter(e){ if(e) e.preventDefault(); document.getElementById('ltOv').classList.add('open'); }
