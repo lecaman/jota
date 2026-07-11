@@ -59,23 +59,48 @@ body{
 
 /* ---------- GUARD-RAILS ---------- */
 .sim{border:1px solid var(--linha);border-radius:var(--r);padding:30px 32px;margin-top:26px;background:var(--creme)}
-.gchips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-.gchip{font-family:inherit;font-size:.78rem;font-weight:700;color:var(--grafite);background:#fff;border:1px solid var(--linha);padding:7px 14px;border-radius:99px;cursor:pointer}
-.gchip.on{background:var(--sol);color:var(--tinta);border-color:var(--sol)}
-.gflow svg{width:100%;max-width:560px;height:auto;display:block;margin:10px auto 0}
-.gflow .gt{font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:700;letter-spacing:.08em;fill:var(--tinta)}
-.gflow .gts{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.06em;fill:var(--grafite-claro)}
-.gflow .gall,.gflow .gs2,.gflow .gbadge{transition:opacity .35s}
-.gflow[data-state=flat] .gs2{opacity:.15}
-.gflow[data-state=down] .gall{opacity:.15;filter:grayscale(1)}
-.gflow .gbadge{opacity:0}
-.gflow[data-state=down] .gbadge{opacity:1}
-.gflow[data-state=flat] .gm2{display:none}
-.gflow[data-state=down] .gm1,.gflow[data-state=down] .gm2{display:none}
-@media(prefers-reduced-motion:reduce){.gflow .gm1,.gflow .gm2{display:none}}
-.gcap{margin-top:10px;font-size:.85rem;color:var(--grafite)}
+.env-ctl{display:flex;gap:28px;flex-wrap:wrap;margin-top:20px}
+.seg-lab{display:block;font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--grafite-claro);margin-bottom:7px}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--linha);border-radius:99px;padding:3px;gap:2px}
+.seg button{font-family:inherit;font-size:.78rem;font-weight:700;color:var(--grafite);background:transparent;border:0;border-radius:99px;padding:7px 15px;cursor:pointer;transition:background .35s cubic-bezier(.4,0,.2,1),color .35s}
+.seg button.on{background:var(--tinta);color:var(--sol)}
+.seg.dim{opacity:.35;pointer-events:none}
+.env-head{margin-top:24px;font-size:1.26rem;font-weight:800;letter-spacing:-.02em;color:var(--tinta)}
+.env{position:relative;margin-top:14px}
+.diss{border:1.5px dashed var(--linha);border-radius:12px;padding:8px 14px;margin-bottom:12px}
+.diss span{font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:700;letter-spacing:.1em;color:var(--grafite-claro)}
+.env-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1.55fr;gap:12px;transition:filter .5s,opacity .5s}
+.ebox{position:relative;overflow:hidden;background:#fff;border:1px solid var(--linha-suave);border-radius:18px;padding:16px 16px 20px;min-height:152px;display:flex;flex-direction:column;gap:4px;box-shadow:0 12px 32px rgba(23,21,15,.06);animation:floaty 7s ease-in-out infinite alternate}
+.ebox:nth-child(2){animation-delay:-1.8s}
+.ebox:nth-child(3){animation-delay:-3.6s}
+.ebox:nth-child(4){animation-delay:-5.2s}
+@keyframes floaty{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+.ebox>*{position:relative;z-index:2}
+.ebox.rio{border-color:rgba(242,194,0,.55)}
+.ek{font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:700;letter-spacing:.12em;color:var(--grafite-claro)}
+.ev{font-family:'IBM Plex Mono',monospace;font-size:1.28rem;font-weight:700;color:var(--tinta);letter-spacing:-.01em}
+.ev i{font-style:normal;font-size:.7rem;color:var(--ambar);vertical-align:super}
+.ed{font-size:.72rem;line-height:1.45;color:var(--grafite)}
+.efill{position:absolute;inset:0;z-index:0;pointer-events:none}
+.efill i{position:absolute;left:0;right:0;bottom:0;height:var(--lv,50%);background:linear-gradient(180deg,rgba(255,230,26,.24),rgba(255,230,26,.5));transition:height .9s cubic-bezier(.4,0,.2,1)}
+.efill i::before{content:"";position:absolute;left:-20%;right:-20%;top:-6px;height:12px;border-radius:50%;background:rgba(242,194,0,.45);filter:blur(3px);animation:lap 5s ease-in-out infinite alternate}
+@keyframes lap{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+.track{display:flex;align-items:center;margin-top:10px;overflow-x:auto;scrollbar-width:none;padding:8px 2px;transition:filter .5s,opacity .5s}
+.tnode{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:.64rem;font-weight:700;letter-spacing:.06em;padding:8px 13px;border-radius:99px;border:1.5px solid var(--linha);color:var(--grafite);background:#fff;white-space:nowrap;transition:all .45s cubic-bezier(.34,1.56,.64,1)}
+.tnode.done{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.tnode.lock{border-style:dashed;opacity:.75}
+.tnode.lock.open{background:var(--sol);border:1.5px solid var(--sol);color:var(--tinta);opacity:1}
+.tnode.leva{opacity:.4}
+.tnode.leva.open{opacity:1;border-color:var(--tinta);color:var(--tinta)}
+.tlink{flex:0 0 24px;height:1.5px;background:var(--linha)}
+.env[data-m=down] .env-grid,.env[data-m=down] .track{filter:grayscale(1);opacity:.32}
+.env-badge{position:absolute;left:50%;top:110px;translate:-50%;background:var(--sol);color:var(--tinta);font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:.82rem;letter-spacing:.1em;padding:12px 22px;border-radius:99px;box-shadow:0 16px 44px rgba(23,21,15,.28);opacity:0;scale:.85;transition:opacity .4s,scale .45s cubic-bezier(.34,1.56,.64,1);pointer-events:none;z-index:5}
+.env[data-m=down] .env-badge{opacity:1;scale:1}
+.gcap{margin-top:12px;font-size:.85rem;color:var(--grafite)}
 .sim-note{margin-top:16px;font-size:.8rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:14px}
-@media(max-width:680px){.sim{padding:22px 18px}.gflow .gt{font-size:23px}.gflow .gts{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.ebox{animation:none}.efill i::before{animation:none}}
+@media(max-width:860px){.env-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sim{padding:22px 18px}.env-grid{grid-template-columns:1fr}.env-head{font-size:1.08rem}}
 
 /* ---------- LADDER ESCADA ---------- */
 .lsteps{display:flex;gap:12px;align-items:stretch}
@@ -979,52 +1004,45 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
       <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano.</strong> Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. Margem bruta, e não receita — numa fintech, receita pode crescer com o custo junto; margem só cresce se o crescimento for saudável. As duas métricas convivem: receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua que libera ou pausa contratação. Hoje a régua é margem bruta; na maturidade, migra para EBITDA.</p>
-      <div class="gchips" role="group" aria-label="Estados da margem">
-        <button class="gchip on" onclick="setG('up',this)">Margem por pessoa subindo</button>
-        <button class="gchip" onclick="setG('flat',this)">Estável</button>
-        <button class="gchip" onclick="setG('down',this)">Caindo</button>
+      <p style="max-width:72ch;margin-top:10px">O envelope do ano vive <strong>acima do dissídio</strong> — que é lei, camada zero — e se divide em quatro: <strong>mérito, promoções, fora de ciclo e novas vagas</strong>. Marcos do próprio plano destravan as levas; o runway limita quanto do envelope se exerce. Mexa nos dois controles e veja o sistema raciocinar:</p>
+      <div class="env-ctl">
+        <div class="seg-group"><span class="seg-lab">Margem bruta / pessoa</span>
+          <div class="seg" id="segM">
+            <button class="on" onclick="envSet('m','up',this)">Subindo</button>
+            <button onclick="envSet('m','flat',this)">Estável</button>
+            <button onclick="envSet('m','down',this)">Caindo</button>
+          </div>
+        </div>
+        <div class="seg-group"><span class="seg-lab">Runway</span>
+          <div class="seg" id="segR">
+            <button class="on" onclick="envSet('r','ok',this)">Folgado</button>
+            <button onclick="envSet('r','tight',this)">No limite</button>
+          </div>
+        </div>
       </div>
-      <div class="gflow" id="gflow" data-state="up" aria-hidden="true">
-        <svg viewBox="0 0 640 570" xmlns="http://www.w3.org/2000/svg">
-          <defs><marker id="gah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="rgba(23,21,15,.45)"/></marker></defs>
-          <g class="gall">
-            <text class="gt" x="320" y="30" text-anchor="middle">MARGEM BRUTA</text>
-            <rect x="245" y="42" width="150" height="10" rx="5" fill="#FFE61A"/>
-            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="1.7s" repeatCount="indefinite" path="M 272 58 L 272 176"/></g>
-            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="2.1s" begin="-0.6s" repeatCount="indefinite" path="M 308 58 L 308 172"/></g>
-            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="1.9s" begin="-1.2s" repeatCount="indefinite" path="M 344 58 L 344 175"/></g>
-            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="2.3s" begin="-0.3s" repeatCount="indefinite" path="M 380 58 L 380 173"/></g>
-            <path d="M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z" fill="#FFE61A" opacity=".55"><animate attributeName="d" values="M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z;M 154 186 Q 196 196 238 186 Q 280 176 322 186 Q 364 196 406 186 Q 448 176 486 186 L 486 249 L 154 249 Z;M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z" dur="3.6s" repeatCount="indefinite"/></path>
-            <path d="M 150 150 L 150 240 Q 150 252 162 252 L 478 252 Q 490 252 490 240 L 490 150" fill="none" stroke="rgba(23,21,15,.5)" stroke-width="2.5" stroke-linecap="round"/>
-            <text class="gt" x="320" y="280" text-anchor="middle">1º · TIME ATUAL</text>
-            <text class="gts" x="320" y="300" text-anchor="middle">mérito · promoção · retenção</text>
-            <g class="gs2">
-              <path d="M 490 152 C 524 152, 534 174, 534 208 L 534 298" fill="none" stroke="#F2C200" stroke-width="2.5"/>
-              <path d="M 534 362 L 534 446" fill="none" stroke="#F2C200" stroke-width="2.5"/>
-              <path d="M 534 300 L 564 330 L 534 360 L 504 330 Z" fill="#FFE61A"/>
-              <text class="gts" x="534" y="327" text-anchor="middle" style="fill:#17150F;font-weight:700">REGRA</text>
-              <text class="gts" x="534" y="342" text-anchor="middle" style="fill:#17150F;font-weight:700">TOBI</text>
-              <path d="M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z" fill="#FFE61A" opacity=".55"><animate attributeName="d" values="M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z;M 404 455 Q 439 463 474 455 Q 509 447 544 455 Q 579 463 616 455 L 616 502 L 404 502 Z;M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z" dur="4.2s" begin="-1s" repeatCount="indefinite"/></path>
-              <path d="M 400 422 L 400 493 Q 400 505 412 505 L 608 505 Q 620 505 620 493 L 620 422" fill="none" stroke="rgba(23,21,15,.5)" stroke-width="2.5" stroke-linecap="round"/>
-              <text class="gt" x="510" y="532" text-anchor="middle">NOVAS VAGAS</text>
-              <text class="gts" x="510" y="552" text-anchor="middle">teto, não meta</text>
-              <path d="M 508 344 C 400 402, 250 392, 208 302 C 198 280, 194 266, 193 256" fill="none" stroke="rgba(23,21,15,.4)" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#gah)"/>
-              <text class="gts" x="240" y="420" text-anchor="middle">não passou →</text>
-              <text class="gts" x="240" y="438" text-anchor="middle">volta ao time · reinveste no negócio</text>
-              <g class="gm2"><circle r="7" fill="#FFE61A" opacity=".5"/><circle r="3.2" fill="#F2C200"/><animateMotion dur="3.2s" repeatCount="indefinite" path="M 490 152 C 524 152, 534 174, 534 208 L 534 446"/></g>
-              <g class="gm2"><circle r="7" fill="#FFE61A" opacity=".5"/><circle r="3.2" fill="#F2C200"/><animateMotion dur="3.2s" begin="-1.6s" repeatCount="indefinite" path="M 490 152 C 524 152, 534 174, 534 208 L 534 446"/></g>
-              <g class="gm2"><circle r="6" fill="#FFE61A" opacity=".4"/><circle r="2.8" fill="#F2C200"/><animateMotion dur="5s" repeatCount="indefinite" path="M 508 344 C 400 402, 250 392, 208 302 C 198 280, 194 266, 193 256"/></g>
-            </g>
-          </g>
-          <g class="gbadge">
-            <rect x="205" y="168" width="230" height="44" rx="22" fill="#FFE61A"/>
-            <text class="gt" x="320" y="196" text-anchor="middle">O HUMANO DECIDE</text>
-          </g>
-        </svg>
+      <p class="env-head" id="envHead"></p>
+      <div class="env" id="env" data-m="up" data-r="ok">
+        <div class="diss"><span>DISSÍDIO · CAMADA ZERO — LEI, SEMPRE PAGO, FORA DO ENVELOPE</span></div>
+        <div class="env-grid">
+          <div class="ebox" id="bxMer" style="--lv:78%"><span class="ek">MÉRITO</span><span class="ev">3,5–4%<i>*</i></span><span class="ed" id="dMer">matriz nota × banda — nunca peanut butter</span><div class="efill"><i></i></div></div>
+          <div class="ebox" id="bxPro" style="--lv:60%"><span class="ek">PROMOÇÕES</span><span class="ev">1–1,5%<i>*</i></span><span class="ed">só com espaço de escopo</span><div class="efill"><i></i></div></div>
+          <div class="ebox" id="bxFor" style="--lv:45%"><span class="ek">FORA DE CICLO</span><span class="ev">~0,5%<i>*</i></span><span class="ed">retenção e correções de mercado</span><div class="efill"><i></i></div></div>
+          <div class="ebox rio" id="bxVag" style="--lv:92%"><span class="ek">NOVAS VAGAS</span><span class="ev" id="vVag">o residual</span><span class="ed">teto, não meta — Regra Tobi vaga a vaga; o que não passa volta ao time ou ao negócio</span><div class="efill"><i></i></div></div>
+        </div>
+        <span class="ek" style="display:block;margin-top:18px">ESTEIRA DE MARCOS · O PLANO COMPRA AS LEVAS; O MARCO DESTRAVA</span>
+        <div class="track">
+          <span class="tnode done">Time atual</span><span class="tlink"></span>
+          <span class="tnode lock" id="tk1">M1 · margem</span><span class="tlink"></span>
+          <span class="tnode leva" id="lv1">Leva 1</span><span class="tlink"></span>
+          <span class="tnode lock" id="tk2">M2 · aposta validada</span><span class="tlink"></span>
+          <span class="tnode leva" id="lv2">Leva 2</span><span class="tlink"></span>
+          <span class="tnode lock" id="tk3">Série B</span><span class="tlink"></span>
+          <span class="tnode leva" id="lv3">Plano de escala</span>
+        </div>
+        <div class="env-badge">O HUMANO DECIDE</div>
       </div>
-      <p class="gcap" id="gcap"><strong>Contratação liberada</strong> — no ritmo que o negócio pedir; a Regra Tobi decide vaga a vaga, e o que ela não liberar volta para o time ou para o negócio.</p>
-      <p style="max-width:72ch;margin-top:16px">Nos dois extremos, o automático desliga e o humano decide: <strong>contração congela em vez de cortar</strong> — layoff é governança, nunca fórmula — e <strong>expansão acelerada sobe de alçada</strong> do C-level em vez de rodar sozinha.</p>
-      <p class="sim-note"><strong>E os parâmetros?</strong> Os números certos nascem dos dados do Jota, não de benchmark. <strong>Assim que eu entrar, sento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar.</p>
+      <p class="gcap" id="envCap"></p>
+      <p class="sim-note"><i style="font-style:normal;color:var(--ambar)">*</i> Percentuais da folha/ano, acima do dissídio: <strong>sugestão de mercado</strong> (Mercer, WorldatWork e Pave, ciclos 2025–26) — os finais nascem dos dados do Jota. <strong>Assim que eu entrar, sento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar. Equity refresh corre em paralelo, fora do envelope de caixa. Tipos de marco: margem do plano, aposta validada, rodada.</p>
     </div>
   </div>
 </section>
@@ -1455,19 +1473,47 @@ function spy(){
     if(box0.scrollTo){ box0.scrollTo({left: 0, behavior: reduced ? 'auto' : 'smooth'}); } else { box0.scrollLeft = 0; }
   }
 }
-// ---------- Guard-rails: estados do fluxo ----------
-function setG(s, btn){
-  document.getElementById('gflow').setAttribute('data-state', s);
-  var caps = {
-    up: '<strong>Contratação liberada</strong> — no ritmo que o negócio pedir; a Regra Tobi decide vaga a vaga, e o que ela não liberar volta para o time ou para o negócio.',
-    flat: '<strong>Novas vagas seguram</strong> — o time atual segue protegido: mérito, promoção e retenção primeiro.',
-    down: '<strong>Verba congela — sem cortes automáticos.</strong> Layoff é decisão de governança, nunca fórmula.'
-  };
-  document.getElementById('gcap').innerHTML = caps[s];
-  var bs = document.querySelectorAll('.gchip');
-  for(var i = 0; i < bs.length; i++) bs[i].classList.remove('on');
-  if(btn) btn.classList.add('on');
+// ---------- Envelope de guard-rails ----------
+var envM = 'up', envR = 'ok';
+function envSet(k, v, btn){
+  if(k === 'm'){ envM = v; } else { envR = v; }
+  var sib = btn.parentElement.children;
+  for(var i = 0; i < sib.length; i++) sib[i].classList.remove('on');
+  btn.classList.add('on');
+  envRender();
 }
+function envRender(){
+  var e = document.getElementById('env'); if(!e) return;
+  e.setAttribute('data-m', envM); e.setAttribute('data-r', envR);
+  document.getElementById('segR').classList.toggle('dim', envM === 'down');
+  var head = document.getElementById('envHead'), cap = document.getElementById('envCap');
+  var tight = envR === 'tight';
+  if(envM === 'down'){
+    head.textContent = 'Congela — sem cortes automáticos.';
+    cap.innerHTML = 'Dissídio segue (é lei) e o mérito vai ao piso, concentrado nos melhores. Vagas param. <strong>Layoff é decisão de governança, nunca fórmula.</strong>';
+  } else if(envM === 'flat'){
+    head.textContent = 'Vagas seguram. O time atual segue protegido.';
+    cap.innerHTML = 'Mérito e promoções primeiro; as levas esperam o marco. <strong>Apostas validadas ainda podem destravar</strong>' + (tight ? ' — e com runway no limite, só backfills críticos.' : '.');
+  } else if(tight){
+    head.textContent = 'O pulo do gato: a margem abriu — o runway segurou.';
+    cap.innerHTML = 'Envelope aberto, exercício limitado pelo caixa: levas além do runway <strong>sobem de alçada do C-level</strong>. É aqui que empresas morrem de ano bom — o Jota não.';
+  } else {
+    head.textContent = 'Acelera. O envelope inteiro está aberto.';
+    cap.innerHTML = 'Marcos batidos destravan as levas — e cada vaga ainda passa pela <strong>Regra Tobi</strong>. O que ela não liberar cascateia para o time ou volta ao negócio.';
+  }
+  function lv(id, pct){ document.getElementById(id).style.setProperty('--lv', pct); }
+  var down = envM === 'down', flat = envM === 'flat', up = envM === 'up';
+  lv('bxMer', down ? '28%' : flat ? '55%' : '78%');
+  lv('bxPro', down ? '0%' : flat ? '35%' : '60%');
+  lv('bxFor', down ? '18%' : '45%');
+  lv('bxVag', down ? '0%' : flat ? '12%' : tight ? '46%' : '92%');
+  document.getElementById('dMer').textContent = down ? 'piso — concentrado nos melhores' : 'matriz nota × banda — nunca peanut butter';
+  document.getElementById('vVag').textContent = down ? 'congeladas' : flat ? 'esperam o marco' : tight ? 'capadas pelo caixa' : 'o residual';
+  var st = { tk1: up, lv1: up, tk2: up && !tight, lv2: up && !tight, tk3: false, lv3: false };
+  var ids = ['tk1','lv1','tk2','lv2','tk3','lv3'];
+  for(var j = 0; j < ids.length; j++){ document.getElementById(ids[j]).classList.toggle('open', !!st[ids[j]]); }
+}
+envRender();
 // ---------- Carta de oferta ----------
 function openLetter(e){ if(e) e.preventDefault(); document.getElementById('ltOv').classList.add('open'); }
 function closeLetter(){ var o = document.getElementById('ltOv'); if(o) o.classList.remove('open'); }
