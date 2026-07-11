@@ -21,12 +21,22 @@ O futuro do trabalho é uma conversa.
 Assim como o Jota é o agente que cuida do dinheiro do dono de pequeno negócio, People deve ser o sistema que cuida da jornada de cada pessoa — contínuo, leve e alavancado por IA. Esta é a proposta completa: da atração ao último dia.
 Humanos
 + Agentes
-A EMPRESA QUE CONTRATAMOS
+AS PESSOAS QUE CONTRATAMOS
 Poucas pessoas excepcionais, com barra altíssima, mentalidade de dono e autonomia real — cada contratação é uma decisão de fundador.
 ↓  Navegue pela jornada completa — todas as perguntas do case respondidas dentro dela
 A tese
 Antes de tudo
 · por que People muda de natureza agora
+A tese em 90 segundos (resumo executivo no topo da página)
+Um resumo para um tempo que não para — seis linhas que resumem o sistema; o resto da página é a prova.
+Visual do resumo: um infinito animado — os cinco capítulos da jornada fluindo continuamente pelo traçado (alumni retornam à atração) com Founder Mode × IA no cruzamento.
+1. A aposta: a empresa extraordinária da era da IA não é a que mais contrata — é a que mais alavanca. Densidade de talento × frota de agentes é o modelo; receita por pessoa é a métrica-guia.
+2. A barra: cada contratação é decisão de fundador — funil com freio estrutural (Guardião da Barra com veto), fundadores em toda oferta e cadeira vazia > contratação mediana.
+3. O sistema: People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, Loop mensal com Granola, ciclo leve em Jul + Dez pelos dois pilares, saídas rápidas e dignas.
+4. O perfil: founder mode atravessa tudo — identificado na atração, desenvolvido com escopo, contexto e equity compreendido, sustentado pela cadência. In-person first, com flexibilidade de adulto.
+5. A função: dois humanos + uma frota de agentes servem o Jota até ~150 pessoas. O agente prepara; o humano decide.
+6. O plano: primeiros 90 dias com data — escutar e calibrar a barra, fundações no ar, sistema girando.
+Todas as 14 perguntas do case estão respondidas dentro da jornada e indexadas na seção Respostas.
 A empresa extraordinária de 2030 não é a que mais contrata. É a que mais alavanca.
 A curva headcount × receita quebrou. Empresas AI-native estão gerando resultados que exigiam exércitos — com times que cabem numa sala. Para o Jota, isso muda a pergunta fundadora de People: não é "quantas pessoas precisamos", é
 "quanta alavancagem cada pessoa carrega"
@@ -169,7 +179,7 @@ Construir em público
 memo de cultura aberto
 (atrai os certos, repele os errados, como o da Netflix),
 experiência de candidato como produto
-(resposta em até 7 dias para todos, feedback verdadeiro a quem não passa — quem não entra sai fã) e
+(feedback em até 10 dias para todos, feedback verdadeiro a quem não passa — quem não entra sai fã) e
 comunidade própria
 juntando donos de PME + tech. Quando a vaga abre, a fila já existe.
 Engrenagem 2 · O funil da barra
@@ -195,7 +205,7 @@ O agente lê cada candidatura contra o
 scorecard da barra
 : obra e não logos, sinais de slope, evidências de founder mode.
 Triagem em horas, não semanas — e
-resposta a 100% dos candidatos em até 7 dias
+feedback a 100% dos candidatos em até 10 dias — e vaga fechada na meta de ~30 dias, calibrada pela complexidade da posição
 .
 Casos-limite ("quase") sobem para revisão humana: agente prepara, humano decide.
 Freio da barra nesta etapa
@@ -265,7 +275,7 @@ banda de salário-base + equity fixada pelo ladder de 6 faixas antes do primeiro
 Debrief estruturado com notas escritas antes da conversa — apoiado pelo dossiê que a IA monta a partir das transcrições do Granola, consolidando evidências por sinal (inteligência, execução, autonomia, cultura) contra o scorecard. Decisão por consenso; na falta dele, o HM decide, com o veto do Guardião preservado.
 Fundadores olham toda oferta até ~150 pessoas
 (como os 3 fundadores da Ramp fazem até hoje) — e o equity é explicado de verdade: ninguém age como dono do que não entende que possui.
-A oferta é um evento, não um e-mail: um fundador liga pessoalmente para fazer a proposta, acompanhada de uma carta de oferta personalizada — por que esta pessoa, para este momento do Jota. Fechar excepcionais é metade do jogo.
+A oferta é um evento, não um e-mail: um fundador liga pessoalmente para fazer a proposta, acompanhada de uma carta de oferta personalizada — por que esta pessoa, para este momento do Jota. Fechar excepcionais é metade do jogo. (A página traz uma carta de oferta de exemplo, para uma candidata fictícia: rascunhada pelo agente de People a partir do debrief e das transcrições do Granola, lapidada e assinada por um humano.)
 Freios contínuos do sistema
 Auditoria de safra a cada 6 meses
 ("sabendo o que sei hoje, contrataria de novo?"), taxa de aprovação do funil monitorada (se sobe demais, a barra caiu), só os melhores entrevistam — e cadeira vazia é melhor que contratação mediana. Mediocridade cobra juros compostos.
@@ -504,6 +514,8 @@ Equity é parte central da total compensation
 — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O
 keeper test contínuo
 ("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. Para posições muito específicas e competitivas — talento escasso de IA e engenharia sênior — a referência sobe para o mercado Brazil-remote em dólar: o concorrente real pelos nossos melhores não é a fintech vizinha, é a startup americana contratando via Deel. O pagamento segue em reais, e mantemos a escolha que já existe hoje: cada pessoa define seu mix entre equity e dinheiro.
+Guard-rails de crescimento (mecanismo 100% sugerido)
+Quanto a folha pode crescer? A receita decide. Verba de gente cresce indexada ao crescimento do negócio, com elasticidade por cenário: Pessimista (<70% do plano) 0,3–0,5×; Conservador (70–100%) 0,5–0,8×; Otimista (>100%) 0,8–1,1×. O time atual é pago primeiro (mérito, promoção e retenção saem antes); vagas novas absorvem o residual. Contração congela, não corta — layoff nunca é fórmula, é decisão de governança. O menor número vence: runway, receita por pessoa e capacidade de onboarding limitam qualquer cenário. Cláusula de time pequeno: abaixo de ~40 pessoas, distribuição de notas é direcional, nunca quota — exatamente o tamanho do Jota hoje. Os números do simulador interativo na página (folha ilustrativa de R$ 14M, custo carregado de R$ 420k por contratação) são ilustrativos; as métricas certas para o Jota — receita, EBITDA, receita por pessoa — serão calibradas com os fundadores. Mecanismo destilado de um framework de elasticidade que o candidato construiu e opera. É isto que liga mérito, promoções e cronograma de vagas ao crescimento real.
 Capítulo 05 · Saídas
 O último dia
 · offboarding & alumni
@@ -643,7 +655,7 @@ HUMANO · PEOPLE & TALENT PARTNER
 Experiência e comunidade
 Jornada do Jotter, processos críticos (folha e benefícios via parceiros), candidate experience, eventos.
 Agente Recrutador
-Sourcing do Pipeline dos 300, triagem contra o scorecard, agendamento e resposta em até 7 dias a todo candidato.
+Sourcing do Pipeline dos 300, triagem contra o scorecard, agendamento e feedback em até 10 dias a todo candidato.
 Agente de Onboarding
 Provisiona acessos e ferramentas, guia as metas de 90 dias, dispara os check-ins de 30/60/90.
 Agente de 1:1 & PDI
@@ -654,9 +666,12 @@ Agente Helpdesk
 Responde a maioria das dúvidas de política, benefícios e processos na hora — e escala o resto para o humano certo.
 Agente Analytics
 Dashboards vivos: receita por pessoa, rampa, aceite de oferta, attrition regretted, NPS de candidato.
+FERRAMENTAS · STACK BRASILEIRO
+Compramos o burocrático, construímos o que é nosso
+Tako para folha, admissões e a burocracia CLT — pagamento sem fricção não é diferencial, é higiene. inHire ou Ashby como ATS com IA no recrutamento — triagem e o CRM do Pipeline dos 300 (avaliamos os dois). Granola + Claude para o que é proprietário: os agentes da frota, treinados no nosso contexto. Ferramenta de prateleira para o commodity; engenharia própria onde mora a vantagem.
 SCORECARD DO PEOPLE OS
 O que medimos
-Receita por pessoa · aceite de oferta >85% · resposta a candidato <7 dias · rampa <90 dias · attrition regretted <5% a.a. · % de processos de People rodando com agente.
+Receita por pessoa · aceite de oferta >85% · feedback a candidato ≤10 dias · vaga fechada ~30 dias (por complexidade) · rampa <90 dias · attrition regretted <5% a.a. · % de processos de People rodando com agente.
 Tema do case · Escala
 Os próximos anos
 · decisões que compõem juros
@@ -719,7 +734,7 @@ Memo de cultura v1 + funil completo
 Memo de cultura publicado (missão, visão, os dois pilares) e enviado a todo candidato na primeira entrevista. Funil da barra rodando com Bar Raisers treinados e budget por vaga definido pelo ladder. Primeiro agente da frota — o recrutador — em produção.
 Dias 61–90 · O sistema gira
 Ladder v1 + ciclo piloto
-Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. Scorecard do People OS no dashboard dos fundadores — receita por pessoa incluída.
+Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. Scorecard do People OS no dashboard dos fundadores — receita por pessoa incluída. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
 Índice auditável
 Todas as perguntas do case
 · resposta direta + onde ela vive na jornada
@@ -748,7 +763,7 @@ Ver os freios em cada etapa →
 Talento · 05
 Como atrair talentos excepcionais de forma orgânica, antes da vaga existir?
 +
-O ímã orgânico do sourcing: construir em público (inclusive a própria função People), memo de cultura aberto que atrai os certos e repele os errados, experiência de candidato como produto (até 7 dias de resposta e feedback real a todos — quem não passa sai fã) e comunidade própria de donos de PME + tech alimentando o Pipeline dos 300.
+O ímã orgânico do sourcing: construir em público (inclusive a própria função People), memo de cultura aberto que atrai os certos e repele os errados, experiência de candidato como produto (feedback em até 10 dias a todos, verdadeiro — quem não passa sai fã) e comunidade própria de donos de PME + tech alimentando o Pipeline dos 300.
 Ver o ímã orgânico →
 Founder Mode · 06
 Como identificar e desenvolver o perfil de dono?
