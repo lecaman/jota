@@ -67,6 +67,7 @@ body{
 .hw{background:#fff;border:1px solid var(--linha-suave);border-radius:14px;padding:14px 16px;display:flex;gap:12px}
 .hw .hn{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sol);color:var(--tinta);font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
 .hw p{font-size:.85rem;line-height:1.55;color:var(--grafite)}
+.sim-meta{font-size:.8rem;color:var(--grafite);margin:-4px 0 20px;max-width:74ch}
 .sim-lab{max-width:660px}
 .sim label{display:flex;justify-content:space-between;font-size:.82rem;font-weight:700;margin:14px 0 6px}
 .sim label span{font-family:'IBM Plex Mono',monospace}
@@ -967,19 +968,20 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
-      <p style="max-width:72ch">O envelope de mérito, promoções e novas vagas é definido a cada ciclo pelo C-level, a partir do crescimento real do negócio — receita ou EBITDA — e dos parâmetros do momento: runway, receita por pessoa, capacidade de onboarding. <strong>O time atual é pago primeiro; vagas novas absorvem o que sobra.</strong> E se a receita cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.</p>
-      <p style="margin-top:12px;font-size:.84rem;color:var(--grafite-claro)">Existe um mecanismo completo por trás.</p>
+      <p style="max-width:72ch">O envelope de mérito, promoções e novas vagas é definido a cada ciclo pelo C-level, a partir do crescimento real do negócio — <strong>margem bruta hoje, EBITDA na maturidade</strong> — e dos parâmetros do momento: runway, receita por pessoa, capacidade de onboarding. <strong>O time atual é pago primeiro; vagas novas absorvem o que sobra.</strong> E se a margem bruta cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.</p>
+      <p style="margin-top:12px;font-size:.84rem;color:var(--grafite-claro)">Existe um mecanismo completo por trás — construí e opero um em outra empresa.</p>
       <button class="sim-toggle" id="simTgl" aria-expanded="false" onclick="toggleSim()">Quer aprofundar? Ver o mecanismo e simular →</button>
       <div class="sim-deep" id="simDeep">
         <div class="sim-how">
-          <div class="hw"><span class="hn">1</span><p><strong>O cenário é uma pergunta só:</strong> entregamos quantos % do plano de receita? Abaixo de 70%, pisamos no freio. De 70 a 100%, ritmo normal. Acima de 100%, aceleramos.</p></div>
-          <div class="hw"><span class="hn">2</span><p><strong>A conta é uma multiplicação só:</strong> crescimento da receita × elasticidade do cenário = quanto a verba de gente pode crescer no ano.</p></div>
+          <div class="hw"><span class="hn">1</span><p><strong>O cenário é uma pergunta só:</strong> entregamos quantos % do plano de margem bruta? Abaixo de 70%, pisamos no freio. De 70 a 100%, ritmo normal. Acima de 100%, aceleramos.</p></div>
+          <div class="hw"><span class="hn">2</span><p><strong>A conta é uma multiplicação só:</strong> crescimento da margem bruta × elasticidade do cenário = quanto a verba de gente pode crescer no ano.</p></div>
           <div class="hw"><span class="hn">3</span><p><strong>O time atual é pago primeiro</strong> — mérito, promoção, retenção. O que sobra vira vagas novas.</p></div>
         </div>
+        <p class="sim-meta"><strong>Por que margem bruta e não receita cheia?</strong> Porque numa fintech a receita pode crescer com o custo junto — margem bruta só cresce se o crescimento for saudável. <strong>E por que ainda não EBITDA?</strong> Porque em estágio venture-backed ele é negativo por desenho; perto do breakeven, o índice migra para EBITDA e a régua de saúde vira a Rule of 40 (crescimento + margem ≥ 40%).</p>
         <div class="sim-lab">
-          <label>Entregamos quantos % do plano de receita? <span id="vPlan">92%</span></label>
+          <label>Entregamos quantos % do plano de margem bruta? <span id="vPlan">92%</span></label>
           <input type="range" id="sPlan" min="40" max="140" value="92" oninput="simCalc()">
-          <label>E a receita cresceu quanto vs. ano anterior? <span id="vYoy">+120%</span></label>
+          <label>E a margem bruta cresceu quanto vs. ano anterior? <span id="vYoy">+120%</span></label>
           <input type="range" id="sYoy" min="-20" max="200" value="120" step="5" oninput="simCalc()">
           <div class="sim-out">
             <div class="sim-o full"><span class="k">Cenário</span><div style="margin-top:6px"><span id="simCen"></span> <span class="sim-why" id="simWhy"></span></div></div>
@@ -1443,7 +1445,7 @@ function simCalc(){
   function br(v){ return 'R$ ' + (v / 1e6).toFixed(1).replace('.', ',') + 'M'; }
   var g = document.getElementById('oGrow'), inc = document.getElementById('oInc'), ev = document.getElementById('oEnv'), hr = document.getElementById('oHires'), gd = document.getElementById('oGuard');
   if(yoy <= 0){
-    g.textContent = 'receita não cresceu → verba nova = 0 (congela)';
+    g.textContent = 'margem bruta não cresceu → verba nova = 0 (congela)';
     inc.textContent = br(0);
     ev.textContent = br(folha * .035) + ' — mérito no piso de mercado (3,5%)';
     hr.textContent = '0 vagas — backfills críticos caso a caso';
@@ -1453,7 +1455,7 @@ function simCalc(){
   var growth = yoy / 100 * e, incR = folha * growth, envR = folha * env, resid = Math.max(0, incR - envR);
   var n = Math.floor(resid / custo), cap = 30, capped = n > cap;
   var G = Math.round(growth * 100);
-  g.textContent = '+' + yoy + '% de receita × ' + eStr + ' = verba de gente pode crescer +' + G + '%';
+  g.textContent = '+' + yoy + '% de margem bruta × ' + eStr + ' = verba de gente pode crescer +' + G + '%';
   inc.textContent = '+' + G + '% sobre R$ 14M de folha = ' + br(incR);
   ev.textContent = br(envR) + ' (' + (env * 100).toFixed(1).replace('.', ',') + '% da folha)';
   hr.textContent = br(resid) + ' ÷ R$ 420 mil ≈ ' + (capped ? cap : n) + ' vagas' + (capped ? ' (capado pela capacidade)' : '');
