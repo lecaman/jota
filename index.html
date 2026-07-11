@@ -57,32 +57,42 @@ body{
 @media(max-width:680px){.infin .nlab{font-size:23px}.infin .cbad{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.infin .mov{display:none}}
 
-/* ---------- SIMULADOR ---------- */
+/* ---------- GUARD-RAILS ---------- */
 .sim{border:1px solid var(--linha);border-radius:var(--r);padding:30px 32px;margin-top:26px;background:var(--creme)}
-.sim-toggle{margin-top:14px;font-size:.82rem;font-weight:800;color:var(--tinta);background:var(--sol);border:0;padding:9px 18px;border-radius:99px;cursor:pointer;font-family:inherit}
-.sim-toggle:hover{background:var(--sol-alto)}
-.sim-deep{display:none;margin-top:24px;border-top:1px dashed var(--linha);padding-top:24px}
-.sim-deep.open{display:block}
-.sim-how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}
-.hw{background:#fff;border:1px solid var(--linha-suave);border-radius:14px;padding:14px 16px;display:flex;gap:12px}
-.hw .hn{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sol);color:var(--tinta);font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
-.hw p{font-size:.85rem;line-height:1.55;color:var(--grafite)}
-.sim-meta{font-size:.8rem;color:var(--grafite);margin:-4px 0 20px;max-width:74ch}
-.sim-lab{max-width:660px}
-.sim label{display:flex;justify-content:space-between;font-size:.82rem;font-weight:700;margin:14px 0 6px}
-.sim label span{font-family:'IBM Plex Mono',monospace}
-.sim input[type=range]{width:100%;accent-color:var(--ambar)}
-.sim-out{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.sim-o{background:#fff;border:1px solid var(--linha-suave);border-radius:14px;padding:12px 14px}
-.sim-o .k{font-size:.66rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--grafite-claro)}
-.sim-o .v{font-family:'IBM Plex Mono',monospace;font-size:.95rem;font-weight:700;margin-top:3px}
-.sim-o.full{grid-column:1/-1}
-#simCen{display:inline-block;padding:4px 12px;border-radius:99px;font-size:.78rem;font-weight:800}
-.sim-why{font-size:.78rem;color:var(--grafite)}
-.sim-guard{margin-top:12px;font-size:.78rem;color:var(--grafite)}
-.sim-note{margin-top:14px;font-size:.76rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:12px}
-@media(max-width:900px){.sim-how{grid-template-columns:1fr}}
-@media(max-width:680px){.sim{padding:22px 18px}.sim-out{grid-template-columns:1fr}}
+.gchips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.gchip{font-family:inherit;font-size:.78rem;font-weight:700;color:var(--grafite);background:#fff;border:1px solid var(--linha);padding:7px 14px;border-radius:99px;cursor:pointer}
+.gchip.on{background:var(--sol);color:var(--tinta);border-color:var(--sol)}
+.gflow svg{width:100%;max-width:560px;height:auto;display:block;margin:10px auto 0}
+.gflow .gt{font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:700;letter-spacing:.08em;fill:var(--tinta)}
+.gflow .gts{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.06em;fill:var(--grafite-claro)}
+.gflow .gall,.gflow .gs2,.gflow .gbadge{transition:opacity .35s}
+.gflow[data-state=flat] .gs2{opacity:.15}
+.gflow[data-state=down] .gall{opacity:.15;filter:grayscale(1)}
+.gflow .gbadge{opacity:0}
+.gflow[data-state=down] .gbadge{opacity:1}
+.gflow[data-state=flat] .gm2{display:none}
+.gflow[data-state=down] .gm1,.gflow[data-state=down] .gm2{display:none}
+@media(prefers-reduced-motion:reduce){.gflow .gm1,.gflow .gm2{display:none}}
+.gcap{margin-top:10px;font-size:.85rem;color:var(--grafite)}
+.sim-note{margin-top:16px;font-size:.8rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:14px}
+@media(max-width:680px){.sim{padding:22px 18px}.gflow .gt{font-size:23px}.gflow .gts{font-size:17px}}
+
+/* ---------- LADDER ESCADA ---------- */
+.lsteps{display:flex;gap:12px;align-items:stretch}
+.lstep{flex:1;min-width:0}
+.lhead{height:212px;display:flex;align-items:flex-end;margin-bottom:12px}
+.lblock{width:100%;height:var(--h);background:var(--sol);border-radius:12px 12px 4px 4px;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;transition:transform .2s}
+.lstep:hover .lblock{transform:translateY(-4px)}
+.lblock span{font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--tinta)}
+.lstep.exec .lblock{background:var(--tinta)}
+.lstep.exec .lblock span{color:var(--sol)}
+.lstep h4{font-size:.92rem;margin:4px 0 6px;letter-spacing:-.01em}
+.lstep p{font-size:.78rem;line-height:1.5;color:var(--grafite)}
+@media(max-width:860px){
+ .lsteps{flex-direction:column;gap:14px}
+ .lhead{height:auto;margin-bottom:8px}
+ .lblock{height:34px;width:var(--w);border-radius:10px;padding-top:0;align-items:center}
+}
 
 /* ---------- CARTA ---------- */
 .lt-ov{position:fixed;inset:0;background:rgba(23,21,15,.72);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
@@ -453,7 +463,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
         <li><strong>A barra:</strong> cada contratação é decisão de fundador — funil com freio estrutural (Guardião da Barra com veto), fundadores em toda oferta e cadeira vazia &gt; contratação mediana.</li>
         <li><strong>O sistema:</strong> People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, Loop mensal com Granola, ciclo leve em Jul + Dez pelos dois pilares, saídas rápidas e dignas.</li>
         <li><strong>O perfil:</strong> founder mode atravessa tudo — identificado na atração, desenvolvido com escopo, contexto e equity compreendido, sustentado pela cadência. In-person first, com flexibilidade de adulto.</li>
-        <li><strong>A função:</strong> dois humanos + uma frota de agentes servem o Jota até ~150 pessoas. O agente prepara; <strong>o humano decide</strong>.</li>
+        <li><strong>A função:</strong> People enxuta, alavancada por uma frota de agentes — o agente prepara; <strong>o humano decide</strong> — e que cresce por dor real, não por playbook.</li>
         <li><strong>O plano:</strong> primeiros 90 dias com data — escutar e calibrar a barra, fundações no ar, sistema girando.</li>
       </ol>
       <p class="tail">As 14 perguntas do case estão respondidas na jornada — e indexadas em Respostas.</p>
@@ -961,41 +971,60 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Compensação · filosofia</span>
         <h3>Estratégia 80–100–120, sempre olhando P75+ do mercado</h3>
-        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O <strong>keeper test contínuo</strong> ("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. Para posições muito específicas e competitivas — talento escasso de IA e engenharia sênior — a referência sobe para o mercado <strong>Brazil-remote em dólar</strong>: o concorrente real pelos nossos melhores não é a fintech vizinha, é a startup americana contratando via Deel. O pagamento segue em reais, e mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
+        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O <strong>keeper test contínuo</strong> ("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. E mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
       </div>
     </div>
 
     <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
-      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong>, medida em 12 meses móveis. Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. <strong>E as duas métricas convivem:</strong> receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua operacional que libera ou pausa contratação. O envelope do ano é definido a cada ciclo pelo C-level, a partir do crescimento real da margem bruta — <strong>hoje; EBITDA na maturidade</strong> — e do runway. <strong>O time atual é pago primeiro; vagas novas absorvem o que sobra.</strong> E se a margem bruta cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.</p>
-      <p style="margin-top:12px;font-size:.84rem;color:var(--grafite-claro)">Existe um mecanismo completo por trás — construí e opero um em outra empresa.</p>
-      <button class="sim-toggle" id="simTgl" aria-expanded="false" onclick="toggleSim()">Quer aprofundar? Ver o mecanismo e simular →</button>
-      <div class="sim-deep" id="simDeep">
-        <div class="sim-how">
-          <div class="hw"><span class="hn">1</span><p><strong>O cenário é uma pergunta só:</strong> entregamos quantos % do plano de margem bruta? Abaixo de 70%, pisamos no freio. De 70 a 100%, ritmo normal. Acima de 100%, aceleramos.</p></div>
-          <div class="hw"><span class="hn">2</span><p><strong>A conta é uma multiplicação só:</strong> crescimento da margem bruta × elasticidade do cenário = teto da verba de gente no ano. Elasticidades deliberadamente menores que o benchmark (0,3× · 0,5× · 0,7×): empresa alavancada por agentes converte crescimento em gente numa taxa menor.</p></div>
-          <div class="hw"><span class="hn">3</span><p><strong>O time atual é pago primeiro</strong> — mérito, promoção, retenção. O que sobra vira vagas novas — e o envelope é teto, não meta: cada vaga passa pela Regra Tobi.</p></div>
-        </div>
-        <p class="sim-meta"><strong>Por que margem bruta e não receita cheia?</strong> Porque numa fintech a receita pode crescer com o custo junto — margem bruta só cresce se o crescimento for saudável. <strong>E por que ainda não EBITDA?</strong> Porque em estágio venture-backed ele é negativo por desenho; perto do breakeven, o índice migra para EBITDA e a régua de saúde vira a Rule of 40 (crescimento + margem ≥ 40%).</p>
-        <p class="sim-meta"><strong>A válvula:</strong> acima de ~45% de headcount/ano a contratação não para — <strong>sobe de alçada</strong>: decisão explícita do C-level, com a régua subindo no ritmo maior e runway acima de 24 meses. Nos dois extremos o automático desliga e o humano decide: contração nunca vira layoff por fórmula; expansão acelerada nunca vira contratação por fórmula.</p>
-        <div class="sim-lab">
-          <label>Entregamos quantos % do plano de margem bruta? <span id="vPlan">92%</span></label>
-          <input type="range" id="sPlan" min="40" max="140" value="92" oninput="simCalc()">
-          <label>E a margem bruta cresceu quanto vs. ano anterior? <span id="vYoy">+80%</span></label>
-          <input type="range" id="sYoy" min="-20" max="200" value="80" step="5" oninput="simCalc()">
-          <div class="sim-out">
-            <div class="sim-o full"><span class="k">Cenário</span><div style="margin-top:6px"><span id="simCen"></span> <span class="sim-why" id="simWhy"></span></div></div>
-            <div class="sim-o full"><span class="k">A conta, aberta</span><div class="v" id="oGrow"></div></div>
-            <div class="sim-o"><span class="k">Verba nova de gente no ano</span><div class="v" id="oInc"></div></div>
-            <div class="sim-o"><span class="k">1º · time atual (mérito + promo + retenção)</span><div class="v" id="oEnv"></div></div>
-            <div class="sim-o full"><span class="k">2º · o que sobra vira vagas</span><div class="v" id="oHires"></div></div>
-            <div class="sim-o full"><span class="k">A régua, testada</span><div class="v" id="oRegua"></div></div>
-          </div>
-          <p class="sim-guard" id="oGuard"></p>
-          <p class="sim-note">Folha ilustrativa de R$ 14M (≈40 pessoas) e R$ 420 mil de custo carregado por contratação — números de exemplo; as métricas reais calibramos juntos.</p>
-        </div>
+      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano.</strong> Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. Margem bruta, e não receita — numa fintech, receita pode crescer com o custo junto; margem só cresce se o crescimento for saudável. As duas métricas convivem: receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua que libera ou pausa contratação. Hoje a régua é margem bruta; na maturidade, migra para EBITDA.</p>
+      <div class="gchips" role="group" aria-label="Estados da margem">
+        <button class="gchip on" onclick="setG('up',this)">Margem por pessoa subindo</button>
+        <button class="gchip" onclick="setG('flat',this)">Estável</button>
+        <button class="gchip" onclick="setG('down',this)">Caindo</button>
       </div>
+      <div class="gflow" id="gflow" data-state="up" aria-hidden="true">
+        <svg viewBox="0 0 640 570" xmlns="http://www.w3.org/2000/svg">
+          <defs><marker id="gah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="rgba(23,21,15,.45)"/></marker></defs>
+          <g class="gall">
+            <text class="gt" x="320" y="30" text-anchor="middle">MARGEM BRUTA</text>
+            <rect x="245" y="42" width="150" height="10" rx="5" fill="#FFE61A"/>
+            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="1.7s" repeatCount="indefinite" path="M 272 58 L 272 176"/></g>
+            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="2.1s" begin="-0.6s" repeatCount="indefinite" path="M 308 58 L 308 172"/></g>
+            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="1.9s" begin="-1.2s" repeatCount="indefinite" path="M 344 58 L 344 175"/></g>
+            <g class="gm1"><ellipse rx="3.5" ry="5.5" fill="#F2C200"/><animateMotion dur="2.3s" begin="-0.3s" repeatCount="indefinite" path="M 380 58 L 380 173"/></g>
+            <path d="M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z" fill="#FFE61A" opacity=".55"><animate attributeName="d" values="M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z;M 154 186 Q 196 196 238 186 Q 280 176 322 186 Q 364 196 406 186 Q 448 176 486 186 L 486 249 L 154 249 Z;M 154 186 Q 196 176 238 186 Q 280 196 322 186 Q 364 176 406 186 Q 448 196 486 186 L 486 249 L 154 249 Z" dur="3.6s" repeatCount="indefinite"/></path>
+            <path d="M 150 150 L 150 240 Q 150 252 162 252 L 478 252 Q 490 252 490 240 L 490 150" fill="none" stroke="rgba(23,21,15,.5)" stroke-width="2.5" stroke-linecap="round"/>
+            <text class="gt" x="320" y="280" text-anchor="middle">1º · TIME ATUAL</text>
+            <text class="gts" x="320" y="300" text-anchor="middle">mérito · promoção · retenção</text>
+            <g class="gs2">
+              <path d="M 490 152 C 524 152, 534 174, 534 208 L 534 298" fill="none" stroke="#F2C200" stroke-width="2.5"/>
+              <path d="M 534 362 L 534 446" fill="none" stroke="#F2C200" stroke-width="2.5"/>
+              <path d="M 534 300 L 564 330 L 534 360 L 504 330 Z" fill="#FFE61A"/>
+              <text class="gts" x="534" y="327" text-anchor="middle" style="fill:#17150F;font-weight:700">REGRA</text>
+              <text class="gts" x="534" y="342" text-anchor="middle" style="fill:#17150F;font-weight:700">TOBI</text>
+              <path d="M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z" fill="#FFE61A" opacity=".55"><animate attributeName="d" values="M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z;M 404 455 Q 439 463 474 455 Q 509 447 544 455 Q 579 463 616 455 L 616 502 L 404 502 Z;M 404 455 Q 439 447 474 455 Q 509 463 544 455 Q 579 447 616 455 L 616 502 L 404 502 Z" dur="4.2s" begin="-1s" repeatCount="indefinite"/></path>
+              <path d="M 400 422 L 400 493 Q 400 505 412 505 L 608 505 Q 620 505 620 493 L 620 422" fill="none" stroke="rgba(23,21,15,.5)" stroke-width="2.5" stroke-linecap="round"/>
+              <text class="gt" x="510" y="532" text-anchor="middle">NOVAS VAGAS</text>
+              <text class="gts" x="510" y="552" text-anchor="middle">teto, não meta</text>
+              <path d="M 508 344 C 400 402, 250 392, 208 302 C 198 280, 194 266, 193 256" fill="none" stroke="rgba(23,21,15,.4)" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#gah)"/>
+              <text class="gts" x="240" y="420" text-anchor="middle">não passou →</text>
+              <text class="gts" x="240" y="438" text-anchor="middle">volta ao time · reinveste no negócio</text>
+              <g class="gm2"><circle r="7" fill="#FFE61A" opacity=".5"/><circle r="3.2" fill="#F2C200"/><animateMotion dur="3.2s" repeatCount="indefinite" path="M 490 152 C 524 152, 534 174, 534 208 L 534 446"/></g>
+              <g class="gm2"><circle r="7" fill="#FFE61A" opacity=".5"/><circle r="3.2" fill="#F2C200"/><animateMotion dur="3.2s" begin="-1.6s" repeatCount="indefinite" path="M 490 152 C 524 152, 534 174, 534 208 L 534 446"/></g>
+              <g class="gm2"><circle r="6" fill="#FFE61A" opacity=".4"/><circle r="2.8" fill="#F2C200"/><animateMotion dur="5s" repeatCount="indefinite" path="M 508 344 C 400 402, 250 392, 208 302 C 198 280, 194 266, 193 256"/></g>
+            </g>
+          </g>
+          <g class="gbadge">
+            <rect x="205" y="168" width="230" height="44" rx="22" fill="#FFE61A"/>
+            <text class="gt" x="320" y="196" text-anchor="middle">O HUMANO DECIDE</text>
+          </g>
+        </svg>
+      </div>
+      <p class="gcap" id="gcap"><strong>Contratação liberada</strong> — no ritmo que o negócio pedir; a Regra Tobi decide vaga a vaga, e o que ela não liberar volta para o time ou para o negócio.</p>
+      <p style="max-width:72ch;margin-top:16px">Nos dois extremos, o automático desliga e o humano decide: <strong>contração congela em vez de cortar</strong> — layoff é governança, nunca fórmula — e <strong>expansão acelerada sobe de alçada</strong> do C-level em vez de rodar sozinha.</p>
+      <p class="sim-note"><strong>E os parâmetros?</strong> Os números certos nascem dos dados do Jota, não de benchmark. <strong>Assim que eu entrar, sento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar.</p>
     </div>
   </div>
 </section>
@@ -1064,7 +1093,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Termômetro</span>
         <h3>Medindo o que parece imensurável</h3>
-        <p>eNPS trimestral com uma pergunta extra: <strong>"você postou, indicou ou defendeu o Jota espontaneamente este trimestre?"</strong> — advocacy que precisa ser pedida já nasceu morta. Complementos: taxa de indicação por Jotter, participação espontânea em conteúdo público e attrition regretted abaixo de 5% ao ano.</p>
+        <p>eNPS trimestral <strong>como termômetro</strong> — a tendência importa mais que o número absoluto, e ele não vira meta de ninguém. O teste duro é outro: <strong>attrition regretted abaixo de 5% ao ano</strong> — defensor de verdade fica.</p>
       </div>
     </div>
   </div>
@@ -1110,11 +1139,11 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <div class="pergunta reveal" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18)">
       <p class="q" style="color:#fff">Se tivesse que construir uma função de People extremamente enxuta e alavancada por IA, como faria?</p>
-      <p class="oneliner" style="color:rgba(255,255,255,.85);border-color:var(--sol)">Dois humanos + uma frota de agentes servem o Jota até ~150 pessoas. O agente prepara; o humano decide.</p>
+      <p class="oneliner" style="color:rgba(255,255,255,.85);border-color:var(--sol)">Um Head of People operando uma frota de agentes — e crescendo pela mesma régua da empresa: Regra Tobi antes de headcount. O agente prepara; o humano decide.</p>
       <div class="resposta">
         <div class="mecanismos">
           <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">HUMANO · HEAD OF PEOPLE</span><h4 style="color:#fff">Estratégia, barra e conversas difíceis</h4><p style="color:rgba(255,255,255,.65)">Cultura, calibração, comp, par dos fundadores. Dona da barra e do sistema.</p></div>
-          <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">HUMANO · PEOPLE &amp; TALENT PARTNER</span><h4 style="color:#fff">Experiência e comunidade</h4><p style="color:rgba(255,255,255,.65)">Jornada do Jotter, processos críticos (folha e benefícios via parceiros), candidate experience, eventos.</p></div>
+          <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">HUMANO · PEOPLE &amp; TALENT PARTNER</span><h4 style="color:#fff">Experiência e comunidade</h4><p style="color:rgba(255,255,255,.65)"><strong>Entra quando a dor de volume for real — não agora.</strong> Jornada do Jotter, processos críticos (folha e benefícios via parceiros), candidate experience, eventos.</p></div>
         </div>
         <div class="agents">
           <div class="agent"><span class="a-name">Agente Recrutador</span><p>Sourcing do Pipeline dos 300, triagem contra a job description, agendamento e feedback em até 10 dias úteis a todo candidato.</p></div>
@@ -1146,10 +1175,10 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
         <div class="mecanismos">
           <div class="mec"><span class="n">DECISÃO 1</span><h4>Barra inegociável nos primeiros 50</h4><p>Os primeiros 50 contratam os próximos 500. Guardiões da Barra + fundadores em toda oferta + cadeira vazia &gt; contratação mediana.</p></div>
           <div class="mec"><span class="n">DECISÃO 2</span><h4>Escrever a cultura antes dos 50</h4><p>Memo vivo, público, usado em contratação, ciclo e promoção. Empresa de 30 acha que não precisa; a de 300 paga o preço do telefone sem fio.</p></div>
-          <div class="mec"><span class="n">DECISÃO 3</span><h4>Escolher gestores tarde — e muito bem</h4><p>Não contratar camadas de gestão cedo: org achatada, ICs excepcionais (o padrão Ramp). Um time só ganha líder quando a dor de coordenação é real (~8+ pessoas) — e aí a preferência é promover player-coaches de dentro, que já carregam a cultura; de fora, só com barra dupla (ofício + liderança), e enablement antes de liderar alguém, não depois. O porquê: os primeiros gestores se replicam — são eles que contratam, avaliam e dão feedback, e por isso definem a cultura do dia a dia mais que qualquer memo.</p></div>
-          <div class="mec"><span class="n">DECISÃO 4</span><h4>Comp e equity explicados desde já</h4><p>Filosofia clara desde já: bandas pelo ladder com estratégia 80–100–120, referência em P75+ do mercado e equity como parte central da total compensation — com refresh antes de virar crise e educação de equity, porque o maior motivador do pacote é o menos entendido.</p></div>
-          <div class="mec"><span class="n">DECISÃO 5</span><h4>Desenhar a organização híbrida agora</h4><p>Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.</p></div>
-          <div class="mec"><span class="n">DECISÃO 6</span><h4>Cadência é cultura</h4><p>Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.</p></div>
+          
+          <div class="mec"><span class="n">DECISÃO 3</span><h4>Comp e equity explicados desde já</h4><p>Filosofia clara desde já: bandas pelo ladder com estratégia 80–100–120, referência em P75+ do mercado e equity como parte central da total compensation — com refresh antes de virar crise e educação de equity, porque o maior motivador do pacote é o menos entendido.</p></div>
+          <div class="mec"><span class="n">DECISÃO 4</span><h4>Desenhar a organização híbrida agora</h4><p>Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.</p></div>
+          <div class="mec"><span class="n">DECISÃO 5</span><h4>Cadência é cultura</h4><p>Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.</p></div>
         </div>
       </div>
     </div>
@@ -1193,7 +1222,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Dias 61–90 · O sistema gira</span>
         <h3>Ladder v1 + ciclo piloto</h3>
-        <p>Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. Scorecard do People OS no dashboard dos fundadores — receita por pessoa incluída. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
+        <p>Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
       </div>
     </div>
   </div>
@@ -1230,7 +1259,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 11</span><h4>Qual deveria ser o papel da área de People nos próximos anos?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Engenharia de alavancagem humana, em quatro papéis: guardiã da densidade de talento, arquiteta de contexto (cultura, pilares, rituais), designer da organização híbrida (Regra Tobi no headcount) e curadora de julgamento e ética no uso de IA com dados de pessoas. <a href="#ia">Ver os papéis →</a></p></div></div>
 
-      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 12</span><h4>Como construir uma função de People enxuta e alavancada por IA?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Dois humanos (Head of People + People &amp; Talent Partner) e uma frota de agentes — recrutador, onboarding, 1:1 &amp; PDI via Granola, ciclo, helpdesk, analytics — servem até ~150 pessoas. Regra inegociável: o agente prepara, o humano decide. Um scorecard mede o sistema, de receita por pessoa a attrition regretted. <a href="#ia">Ver o blueprint →</a></p></div></div>
+      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 12</span><h4>Como construir uma função de People enxuta e alavancada por IA?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Um Head of People operando uma frota de agentes — recrutador, onboarding, 1:1 &amp; PDI via Granola, ciclo, helpdesk, analytics. Um People &amp; Talent Partner entra quando a dor de volume for real — não antes. Regra inegociável: o agente prepara, o humano decide. Um scorecard mede o sistema, de receita por pessoa a attrition regretted. <a href="#ia">Ver o blueprint →</a></p></div></div>
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Escala · 13</span><h4>Quais decisões de pessoas e cultura mais aumentam a chance de uma empresa extraordinária?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Seis decisões baratas agora e caríssimas depois: barra inegociável nos primeiros 50, cultura escrita antes dos 50, gestores escolhidos tarde e muito bem, comp e equity explicados desde já, organização híbrida desenhada agora (Regra Tobi) e cadência tratada como cultura. <a href="#escala">Ver as decisões →</a></p></div></div>
 
@@ -1263,7 +1292,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 var lineHum = '<span class="mono">AS PESSOAS QUE CONTRATAMOS</span>' +
   'Poucas pessoas excepcionais, com barra altíssima, mentalidade de dono e autonomia real — cada contratação é uma decisão de fundador.';
 var lineAg = '<span class="mono">A ALAVANCAGEM QUE OPERAMOS</span>' +
-  'Cada pessoa comanda uma frota de agentes — inclusive People, com dois humanos e seus agentes. Alavancagem por cabeça é o novo headcount.';
+  'Cada pessoa comanda uma frota de agentes — inclusive People, com sua própria frota. Alavancagem por cabeça é o novo headcount.';
 function setView(v){
   var line = document.getElementById('toggleLine');
   var bh = document.getElementById('btnHum');
@@ -1370,14 +1399,16 @@ function setLadder(area, btn){
   tabs.forEach(function(t){ t.classList.remove('on'); });
   if(btn){ btn.classList.add('on'); }
   var body = document.getElementById('ladderBody');
-  var html = '';
+  var html = '<div class="lsteps">';
   var rows = ladderData[area];
   for(var i = 0; i < rows.length; i++){
     var execCls = (i === rows.length - 1) ? ' exec' : '';
-    html += '<div class="lrow' + execCls + '"><span class="lbadge">' + rows[i][0] + '</span>' +
-      '<div><span class="faixa">Faixa ' + (i+1) + ' de 6</span><h4>' + rows[i][1] + '</h4>' +
-      '<p>' + rows[i][2] + '</p></div></div>';
+    html += '<div class="lstep' + execCls + '" style="--h:' + (56 + i * 30) + 'px;--w:' + (30 + i * 14) + '%">' +
+      '<div class="lhead"><div class="lblock"><span>' + rows[i][0] + '</span></div></div>' +
+      '<span class="faixa">Faixa ' + (i + 1) + ' de 6</span><h4>' + rows[i][1] + '</h4>' +
+      '<p>' + rows[i][2] + '</p></div>';
   }
+  html += '</div>';
   body.innerHTML = html;
 }
 setLadder('tech', null);
@@ -1424,49 +1455,18 @@ function spy(){
     if(box0.scrollTo){ box0.scrollTo({left: 0, behavior: reduced ? 'auto' : 'smooth'}); } else { box0.scrollLeft = 0; }
   }
 }
-// ---------- Simulador de guard-rails ----------
-function toggleSim(){
-  var d = document.getElementById('simDeep'), b = document.getElementById('simTgl');
-  var open = d.classList.toggle('open');
-  b.setAttribute('aria-expanded', open);
-  b.textContent = open ? 'Fechar o mecanismo ↑' : 'Quer aprofundar? Ver o mecanismo e simular →';
-  if(open) simCalc();
-}
-function simCalc(){
-  var plan = +document.getElementById('sPlan').value, yoy = +document.getElementById('sYoy').value;
-  document.getElementById('vPlan').textContent = plan + '%';
-  document.getElementById('vYoy').textContent = (yoy >= 0 ? '+' : '') + yoy + '%';
-  var folha = 14000000, custo = 420000, pessoas = 40, checkpoint = 18, e, nome, cor, env, why;
-  if(plan < 70){ e = .3; nome = 'Pessimista'; cor = '#B3411F'; env = .055; why = 'abaixo de 70% do plano → pisa no freio'; }
-  else if(plan <= 100){ e = .5; nome = 'Conservador'; cor = '#9A7B00'; env = .062; why = 'dentro do plano → ritmo normal'; }
-  else { e = .7; nome = 'Otimista'; cor = '#1E7B4F'; env = .075; why = 'acima do plano → acelera'; }
-  var cen = document.getElementById('simCen');
-  cen.textContent = nome; cen.style.background = cor; cen.style.color = '#fff';
-  document.getElementById('simWhy').textContent = why;
-  var eStr = (e + '').replace('.', ',') + '×';
-  function br(v){ return 'R$ ' + (v / 1e6).toFixed(1).replace('.', ',') + 'M'; }
-  var g = document.getElementById('oGrow'), inc = document.getElementById('oInc'), ev = document.getElementById('oEnv'), hr = document.getElementById('oHires'), gd = document.getElementById('oGuard'), rg = document.getElementById('oRegua');
-  if(yoy <= 0){
-    g.textContent = 'margem bruta não cresceu → verba nova = 0 (congela)';
-    inc.textContent = br(0);
-    ev.textContent = br(folha * .035) + ' — mérito no piso de mercado (3,5%)';
-    hr.textContent = '0 vagas — backfills críticos caso a caso';
-    rg.textContent = 'margem por pessoa cairia com contratação → pausa até recuperar';
-    gd.innerHTML = 'Congelar não é cortar: layoff é decisão de governança (CEO + CFO + People), nunca fórmula.';
-    return;
-  }
-  var growth = yoy / 100 * e, incR = folha * growth, envR = folha * env, resid = Math.max(0, incR - envR);
-  var n = Math.floor(resid / custo), G = Math.round(growth * 100), hc = Math.round(n / pessoas * 100);
-  g.textContent = '+' + yoy + '% de margem bruta × ' + eStr + ' = teto de +' + G + '% na verba de gente';
-  inc.textContent = '+' + G + '% sobre R$ 14M de folha = ' + br(incR);
-  ev.textContent = br(envR) + ' (' + (env * 100).toFixed(1).replace('.', ',') + '% da folha)';
-  hr.textContent = br(resid) + ' ÷ R$ 420 mil ≈ ' + n + ' vagas (+' + hc + '% de headcount)';
-  rg.textContent = '+' + yoy + '% de margem vs. +' + hc + '% de headcount → margem por pessoa sobe ✓';
-  if(n > checkpoint){
-    gd.innerHTML = '<strong>Acima do checkpoint de absorção (~45%/ano ≈ 18 pessoas):</strong> a contratação não para — sobe de alçada. Decisão explícita do C-level, com a régua subindo no ritmo maior e runway > 24 meses.';
-  } else {
-    gd.innerHTML = 'Guardrails: runway > ' + (nome === 'Otimista' ? '24 meses (exigência do otimista)' : '18 meses') + ' · envelope é teto, não meta — a Regra Tobi decide vaga a vaga.';
-  }
+// ---------- Guard-rails: estados do fluxo ----------
+function setG(s, btn){
+  document.getElementById('gflow').setAttribute('data-state', s);
+  var caps = {
+    up: '<strong>Contratação liberada</strong> — no ritmo que o negócio pedir; a Regra Tobi decide vaga a vaga, e o que ela não liberar volta para o time ou para o negócio.',
+    flat: '<strong>Novas vagas seguram</strong> — o time atual segue protegido: mérito, promoção e retenção primeiro.',
+    down: '<strong>Verba congela — sem cortes automáticos.</strong> Layoff é decisão de governança, nunca fórmula.'
+  };
+  document.getElementById('gcap').innerHTML = caps[s];
+  var bs = document.querySelectorAll('.gchip');
+  for(var i = 0; i < bs.length; i++) bs[i].classList.remove('on');
+  if(btn) btn.classList.add('on');
 }
 // ---------- Carta de oferta ----------
 function openLetter(e){ if(e) e.preventDefault(); document.getElementById('ltOv').classList.add('open'); }
