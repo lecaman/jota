@@ -34,7 +34,7 @@ Visual do resumo: um infinito em ondas — os cinco capítulos da jornada fluind
 2. A barra: cada contratação é decisão de fundador — funil com freio estrutural (Guardião da Barra com veto), fundadores em toda oferta e cadeira vazia > contratação mediana.
 3. O sistema: People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, Loop mensal com Granola, ciclo leve em Jul + Dez pelos dois pilares, saídas rápidas e dignas.
 4. O perfil: founder mode atravessa tudo — identificado na atração, desenvolvido com escopo, contexto e equity compreendido, sustentado pela cadência. In-person first, com flexibilidade de adulto.
-5. A função: dois humanos + uma frota de agentes servem o Jota até ~150 pessoas. O agente prepara; o humano decide.
+5. A função: People enxuta, alavancada por uma frota de agentes — o agente prepara; o humano decide — e que cresce por dor real, não por playbook.
 6. O plano: primeiros 90 dias com data — escutar e calibrar a barra, fundações no ar, sistema girando.
 As 14 perguntas do case estão respondidas na jornada e indexadas em Respostas.
 A empresa extraordinária de 2030 não é a que mais contrata. É a que mais alavanca.
@@ -504,13 +504,12 @@ Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em 
 Equity é parte central da total compensation
 — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O
 keeper test contínuo
-("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. Para posições muito específicas e competitivas — talento escasso de IA e engenharia sênior — a referência sobe para o mercado Brazil-remote em dólar: o concorrente real pelos nossos melhores não é a fintech vizinha, é a startup americana contratando via Deel. O pagamento segue em reais, e mantemos a escolha que já existe hoje: cada pessoa define seu mix entre equity e dinheiro.
+("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. E mantemos a escolha que já existe hoje: cada pessoa define seu mix entre equity e dinheiro.
 Crescimento com guard-rails (mecanismo 100% sugerido)
-Folha cresce com a empresa — nunca na frente dela. A régua cabe numa linha: margem bruta por pessoa sobe todo ano, medida em 12 meses móveis. Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. E as duas métricas convivem: receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua operacional que libera ou pausa contratação. O envelope do ano é definido a cada ciclo pelo C-level, a partir do crescimento real da margem bruta (hoje; EBITDA na maturidade) e do runway. O time atual é pago primeiro; vagas novas absorvem o que sobra. Se a margem bruta cai, a verba congela — sem cortes automáticos: layoff é decisão de governança, nunca fórmula.
-Ao aprofundar (botão na página), o mecanismo em 3 passos: 1) o cenário é uma pergunta só — entregamos quantos % do plano de margem bruta? (abaixo de 70% pisa no freio; 70–100% ritmo normal; acima de 100% acelera); 2) a conta é uma multiplicação só — crescimento da margem bruta × elasticidade do cenário = teto da verba de gente no ano; as elasticidades (0,3× / 0,5× / 0,7×) são deliberadamente menores que o benchmark de mercado, porque uma empresa alavancada por agentes converte crescimento em gente numa taxa menor; 3) o time atual é pago primeiro (mérito, promoção, retenção) e o que sobra vira vagas novas — o envelope é teto, não meta: cada vaga passa pela Regra Tobi.
-A válvula (checkpoint de absorção): acima de ~45% de headcount/ano a contratação não para — sobe de alçada: decisão explícita do C-level, verificando que margem bruta por pessoa continua subindo no ritmo maior e que o runway passa de 24 meses. Nos dois extremos o automático desliga e o humano decide: contração nunca vira layoff por fórmula; expansão acelerada nunca vira contratação por fórmula.
-Por que margem bruta e não receita cheia? Numa fintech a receita pode crescer com o custo junto — margem bruta só cresce se o crescimento for saudável. Por que ainda não EBITDA? Em estágio venture-backed ele é negativo por desenho; perto do breakeven o índice migra para EBITDA e a régua de saúde vira a Rule of 40 (crescimento + margem ≥ 40%). Benchmark vivo: a Klarna opera com receita por pessoa como régua — de ~US$ 300 mil para ~US$ 1,3 milhão por pessoa desde 2022 — e devolve parte do ganho de eficiência no contracheque do time.
-O simulador mostra a conta aberta (ex.: +80% × 0,5 = teto de +40%) com números ilustrativos: folha de R$ 14M e R$ 420 mil por contratação — as métricas reais serão calibradas com os fundadores. Mecanismo destilado de um framework que o candidato construiu e opera em outra empresa.
+Folha cresce com a empresa — nunca na frente dela. A régua cabe numa linha: margem bruta por pessoa sobe todo ano. Enquanto sobe, contratar está liberado — no ritmo que o negócio pedir; se cair, contratação pausa até recuperar. Margem bruta, e não receita: numa fintech a receita pode crescer com o custo junto — margem só cresce se o crescimento for saudável. As duas métricas convivem: receita por pessoa é o símbolo público da alavancagem; margem bruta por pessoa é a régua que libera ou pausa contratação. Hoje a régua é margem bruta; na maturidade, migra para EBITDA (e a régua de saúde vira a Rule of 40: soma do % de crescimento anual com o % de margem de lucro ≥ 40).
+O time atual é pago primeiro — mérito, promoção, retenção; o que sobra vira vagas novas. O envelope é teto, não meta: cada vaga passa pela Regra Tobi — e vaga que não passar não é dinheiro perdido: cascateia para o time (retenção, equity refresh, bônus pontual) ou é reinvestido no negócio, onde o retorno for maior. Nos dois extremos, o automático desliga e o humano decide: contração congela em vez de cortar (layoff é governança, nunca fórmula); expansão acelerada sobe de alçada do C-level em vez de rodar sozinha.
+A página traz uma cascata animada: a margem bruta cai como chuva e enche primeiro o reservatório do time atual (mérito · promoção · retenção); só o transbordo desce ao reservatório de novas vagas, passando pela comporta da Regra Tobi — o que não passa volta ao time ou é reinvestido no negócio. Três estados clicáveis (margem por pessoa subindo / estável / caindo): liberado, vagas seguram, ou tudo congela e acende "O HUMANO DECIDE". Frase-síntese: a folha é uma cascata — a margem enche primeiro o pote do time atual; só o transbordo vira vaga, e a Regra Tobi é a comporta. O ladder também é visual: as 6 faixas são degraus de uma escada que sobe.
+E os parâmetros? Os números certos nascem dos dados do Jota, não de benchmark — assim que o candidato entrar, senta com o CFO para calibrá-los, e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar.
 Capítulo 05 · Saídas
 O último dia
 · offboarding & alumni
@@ -602,9 +601,7 @@ identidade com orgulho
 (rituais próprios, linguagem própria, construir em público). O Jotter que viveu isso defende a missão sem ninguém pedir.
 Termômetro
 Medindo o que parece imensurável
-eNPS trimestral com uma pergunta extra:
-"você postou, indicou ou defendeu o Jota espontaneamente este trimestre?"
-— advocacy que precisa ser pedida já nasceu morta. Complementos: taxa de indicação por Jotter, participação espontânea em conteúdo público e attrition regretted abaixo de 5% ao ano.
+eNPS trimestral como termômetro — a tendência importa mais que o número absoluto, e ele não vira meta de ninguém. O teste duro é outro: attrition regretted abaixo de 5% ao ano — defensor de verdade fica.
 Tema do case · IA e o futuro de People
 O futuro próximo
 · como IA muda a construção de empresas
@@ -642,13 +639,13 @@ Pesquisa com 20 mil trabalhadores em 10 países: fatores organizacionais — cul
 mais de 2x do impacto real da IA
 (67%) do que o mindset individual (32%). Tradução: adoção de IA não é problema de ferramenta. É trabalho de People.
 Se tivesse que construir uma função de People extremamente enxuta e alavancada por IA, como faria?
-Dois humanos + uma frota de agentes servem o Jota até ~150 pessoas. O agente prepara; o humano decide.
+Um Head of People operando uma frota de agentes — e crescendo pela mesma régua da empresa: Regra Tobi antes de headcount. O agente prepara; o humano decide.
 HUMANO · HEAD OF PEOPLE
 Estratégia, barra e conversas difíceis
 Cultura, calibração, comp, par dos fundadores. Dona da barra e do sistema.
 HUMANO · PEOPLE & TALENT PARTNER
 Experiência e comunidade
-Jornada do Jotter, processos críticos (folha e benefícios via parceiros), candidate experience, eventos.
+Entra quando a dor de volume for real — não agora. Jornada do Jotter, processos críticos (folha e benefícios via parceiros), candidate experience, eventos.
 Agente Recrutador
 Sourcing do Pipeline dos 300, triagem contra a job description, agendamento e feedback em até 10 dias úteis a todo candidato.
 Agente de Onboarding
@@ -681,15 +678,12 @@ DECISÃO 2
 Escrever a cultura antes dos 50
 Memo vivo, público, usado em contratação, ciclo e promoção. Empresa de 30 acha que não precisa; a de 300 paga o preço do telefone sem fio.
 DECISÃO 3
-Escolher gestores tarde — e muito bem
-Não contratar camadas de gestão cedo: org achatada, ICs excepcionais (o padrão Ramp). Um time só ganha líder quando a dor de coordenação é real (~8+ pessoas) — e aí a preferência é promover player-coaches de dentro, que já carregam a cultura; de fora, só com barra dupla (ofício + liderança), e enablement antes de liderar alguém, não depois. O porquê: os primeiros gestores se replicam — são eles que contratam, avaliam e dão feedback, e por isso definem a cultura do dia a dia mais que qualquer memo.
-DECISÃO 4
 Comp e equity explicados desde já
 Filosofia clara desde já: bandas pelo ladder com estratégia 80–100–120, referência em P75+ do mercado e equity como parte central da total compensation — com refresh antes de virar crise e educação de equity, porque o maior motivador do pacote é o menos entendido.
-DECISÃO 5
+DECISÃO 4
 Desenhar a organização híbrida agora
 Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.
-DECISÃO 6
+DECISÃO 5
 Cadência é cultura
 Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.
 Pergunta do case · 14
@@ -726,7 +720,7 @@ Memo de cultura v1 + funil completo
 Memo de cultura publicado (missão, visão, os dois pilares) e enviado a todo candidato na primeira entrevista. Funil da barra rodando com Bar Raisers treinados e budget por vaga definido pelo ladder. Primeiro agente da frota — o recrutador — em produção.
 Dias 61–90 · O sistema gira
 Ladder v1 + ciclo piloto
-Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. Scorecard do People OS no dashboard dos fundadores — receita por pessoa incluída. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
+Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
 Índice auditável
 Todas as perguntas do case
 · resposta direta + onde ela vive na jornada
@@ -790,7 +784,7 @@ Ver os papéis →
 IA · 12
 Como construir uma função de People enxuta e alavancada por IA?
 +
-Dois humanos (Head of People + People & Talent Partner) e uma frota de agentes — recrutador, onboarding, 1:1 & PDI via Granola, ciclo, helpdesk, analytics — servem até ~150 pessoas. Regra inegociável: o agente prepara, o humano decide. Um scorecard mede o sistema, de receita por pessoa a attrition regretted.
+Um Head of People operando uma frota de agentes — recrutador, onboarding, 1:1 & PDI via Granola, ciclo, helpdesk, analytics. Um People & Talent Partner entra quando a dor de volume for real — não antes. Regra inegociável: o agente prepara, o humano decide. Um scorecard mede o sistema, de receita por pessoa a attrition regretted.
 Ver o blueprint →
 Escala · 13
 Quais decisões de pessoas e cultura mais aumentam a chance de uma empresa extraordinária?
