@@ -1549,9 +1549,8 @@ function wkRender(){
   var t=document.getElementById('wkTxt'); t.style.opacity=0;
   setTimeout(function(){ t.textContent=wkTexts[wkI]; t.style.opacity=1; },180);
 }
-function wkGo(i){ wkI=i; wkRender(); clearInterval(wkTimer); wkTimer=setInterval(wkNext,5200); }
-function wkNext(){ wkI=(wkI+1)%wkTexts.length; wkRender(); }
-if(document.getElementById('wk')){ wkRender(); wkTimer=setInterval(wkNext,5200); }
+function wkGo(i){ wkI=i; wkRender(); }
+if(document.getElementById('wk')){ wkRender(); }
 document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeLetter(); closeRetr(); } });
 var navBox = document.getElementById('navLinks');
 if(navBox){ navBox.addEventListener('wheel', function(e){ if(navBox.scrollWidth > navBox.clientWidth && Math.abs(e.deltaY) > Math.abs(e.deltaX)){ navBox.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false}); }
