@@ -105,7 +105,7 @@ Valores que ninguém lembra de cor não mudam comportamento. Doze valores viram 
 Como operamos
 (o output) e
 Como nos comportamos
-(o comportamento no dia a dia). São os mesmos dois pilares que a entrevista do Bar Raiser testa, que o ciclo de julho e dezembro pergunta e que o ladder descreve nível a nível — uma régua só, do primeiro contato à promoção.
+(o comportamento no dia a dia). São os mesmos dois pilares que a entrevista do Bar Raiser testa, que o Loop acompanha conversa a conversa e que o ladder descreve nível a nível — uma régua só, do primeiro contato à promoção.
 O mapa
 A jornada completa
 · o ciclo de vida como o Jota conta o dia do cliente
@@ -127,7 +127,7 @@ O Loop
 →
 O ANO INTEIRO
 Organismo, Mérito & Ladder
-Avaliação sem Dia D: memória contínua, retratos trimestrais e duas paradas de decisão + ladder.
+Sem Dia D: memória contínua, retratos trimestrais e duas paradas de decisão + ladder.
 →
 ÚLTIMO DIA
 Offboarding
@@ -299,7 +299,7 @@ DIA 30 · 60
 Check-ins agendados na oferta
 Não "quando lembrar": os checkpoints são marcados no aceite. Rampa medida: metas de 90 dias andando, tempo até primeira entrega, autonomia crescente.
 DIA 90
-Avaliação de integração
+Decisão de integração
 Decisão explícita contra as metas: entregou? Se sim, entra no Loop — e a conversa de carreira começa. Se não, conversa honesta e rápida — coerente com a barra, digno com a pessoa.
 Não-negociáveis do gestor
 O onboarding tem dono
@@ -309,8 +309,7 @@ Metas claras de 90 dias
 — 2–3 resultados concretos, escritos, revisados nos check-ins.
 Check-ins de 30/60/90
 agendados no aceite da oferta.
-Decisão do dia 90
-registrada — continuar, ajustar ou corrigir a rota.
+Conversa do dia 90 — continuar, ajustar ou corrigir a rota, dito com todas as letras.
 Casos especiais
 Uma trilha para cada porta de entrada
 Estagiários e BAs
@@ -323,10 +322,10 @@ Capítulo 03 · Desenvolvimento contínuo
 Todo mês
 · o loop que nunca para
 Desempenho não é um evento em julho. É a soma de todas as conversas.
-O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. Quando a parada semestral chega, ela não avalia do zero — só decide sobre o que as conversas já registraram. Regra nº 1: nada na parada pode ser surpresa.
-MENSAL · 45 MIN
+O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. Não temos PDI, formulário obrigatório nem pesquisa de clima — a avaliação virou Loop: acontece o ano inteiro, sozinha, e a única coisa com data é a decisão. Custo para o time: zero ferramentas novas, zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica. Regra nº 1: nada na parada pode ser surpresa.
+NO RITMO DA DUPLA
 1:1 conduzida pelo liderado
-O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com gestor, liderado e RH.
+O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.
 AGENTE PEOPLE
 Extrai o sinal, descarta o ruído
 Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar. A dupla aprova o resumo antes de ele contar.
@@ -339,44 +338,6 @@ O agente compila as conversas num retrato por pessoa — para o líder e para a 
 JUL + DEZ
 A parada
 Semana de calibração: mérito, promoção e comp decididos sobre a evidência acumulada. Devolutiva na 1:1 — o loop segue girando.
-Menu de temas da 1:1
-Um tema rotativo por mês
-Energia:
-onde você está gastando energia que não volta?
-Relações:
-com quem você precisa trabalhar melhor? Qual é o não-dito?
-Gap de skill:
-o que este mês revelou que o ladder diz que você deveria ter?
-Direção de carreira:
-se rodássemos seu caso de promoção em 6 meses, qual seria a evidência?
-Feedback ao gestor:
-o que eu poderia mudar para ser mais útil a você?
-Ambição × realidade:
-onde está o gap entre o que você disse que faria e o que está fazendo?
-Privacidade por desenho
-Confiança é o que faz o sistema funcionar
-Consentimento explícito na gravação; transcrição visível para gestor, liderado e RH; o que sobe para o sistema é o
-resumo estruturado aprovado pela dupla
-, nunca o áudio ou o texto bruto. O agente prepara, o humano decide — em avaliação, promoção e qualquer conversa difícil.
-E o feedback contínuo vive fora do sistema também:
-SBI no fluxo do trabalho, peer-to-peer, nunca anônimo
-— no drama, good karma na prática.
-Autonomia com alinhamento · a cadência que sustenta o dono
-Desenvolver donos exige dar autonomia de verdade — e autonomia sem alinhamento vira caos. A resposta não é controle: é
-contexto + ritmo
-. Cada pessoa decide dentro de guardrails claros porque o ciclo de reuniões garante que todo mundo sabe o que importa agora.
-Semanal
-Tactical de liderança
-Metas em verde/amarelo/vermelho. O que travou, o que mudou. Sinal, não relatório.
-Mensal
-All-hands
-Abre com a história de um cliente real; números abertos, perguntas sem filtro. E dois rituais de 5 min: o AI Speed Run (um Jotter mostra seu melhor fluxo com IA do mês) e o shout-out de valores.
-Trimestral
-Metas por área
-2–3 apostas grandes por área, com um dono cada. Fechadas com veredito: entregue, escorregou ou morreu.
-Semestral + Anual
-Paradas + Offsite
-Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.
 Contexto, não controle
 Como a decisão acontece
 Líderes dão contexto e clareza para o time decidir bem — não aprovam cada passo. Toda decisão grande tem
@@ -412,14 +373,14 @@ Ver o Loop →
 Autonomia sem perder alinhamento
 Contexto, não controle: tactical semanal, all-hands mensal, metas trimestrais com dono único, ciclo semestral. Um dono por decisão, discordância buscada antes, compromisso de todos depois. O ritmo é o que faz a autonomia escalar sem virar caos.
 Ver a cadência →
-Capítulo 04 · Performance, mérito & crescimento
+(performance, mérito e crescimento vivem dentro do Capítulo 03 · O Loop — performance, mérito & crescimento
 O ano inteiro · o organismo + o ladder
-Avaliação sem Dia D: um organismo, não um processo.
+O organismo, dentro do Loop: avaliação sem Dia D.
 Não temos PDI, formulário obrigatório nem pesquisa de clima — temos memória e conversa. A avaliação acontece o ano inteiro, sozinha; a única coisa com data é a decisão. Custo para o time: zero ferramentas novas e zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica.
-Contínuo — a conversa que não se perde: 1:1s com o Granola na sala, no ritmo de cada dupla (semanal, quinzenal, como a relação pedir). Líder e pessoa alinham o que está sendo entregue, o que funciona e o que não funciona. O inegociável não é a agenda: é que a conversa vira memória. Assunto pessoal? Pausa o Granola — o que é da vida não vira dado.
-Trimestral — o retrato de duas páginas: o agente compila as conversas do trimestre num retrato por pessoa (entregas com data e fonte, evidências pelos dois pilares, próximo salto, delta vs. o anterior). Vai para o líder e para a pessoa ao mesmo tempo e aterrissa na 1:1: acompanhamento e ajuste de rota na conversa que já ia acontecer — não existe calibração trimestral. O líder anexa um parecer de um parágrafo; quem quiser soma uma autoavaliação facultativa (não fazer não conta contra: a voz da pessoa já está na memória). Retrato magro denuncia sozinho a conversa que não aconteceu. A página traz um retrato de exemplo (Ana, fictícia), com parecer do líder e autoavaliação.
-Semestral — a semana da decisão: duas vezes ao ano, People monta o pacote por pessoa (retratos, pareceres, autoavaliação se houver e a nota proposta pelo líder) e a liderança dedica uma semana de calibração — leitura assíncrona, sessões por área onde a nota é validada contra a evidência (evidência vence opinião; sem consenso, o gestor do gestor decide) e fechamento de mérito e promoções com CEO + CFO, contra o envelope, na mesma semana do fechamento financeiro. A avaliação já aconteceu — a semana só efetiva a decisão. Devolutiva na 1:1 seguinte, com o porquê; efetivo no pagamento seguinte. As notas (1–5) só nascem na parada — idioma comum da decisão, nunca formulário do dia a dia.
-Sob o capô (mecanismo real): Granola e Claude falam MCP nativo. Um agente lê as notas das 1:1s, passa por um portão de privacidade (só trabalho atravessa; saúde, família e desabafo são descartados estruturalmente) e grava a destilação num banco próprio — Supabase com permissão por linha: cada líder vê só os seus; cada pessoa, o próprio. A transcrição crua nunca sai do Granola e nem People a acessa — pertence à dupla. Do banco nascem os retratos, os pacotes da calibração e o Jotabot no Slack: o líder pergunta ("o que combinei com a Maria sobre o projeto X?") e recebe resposta com citações datadas, no mesmo escopo de permissão — o pessoal nunca entrou, então nunca sai. Custo de tokens: menos que um almoço por mês. O candidato constrói o v1, do jeito que construiu a própria página do case.
+Contínuo — a conversa que não se perde: 1:1s com o Granola na sala, no ritmo de cada dupla (semanal, quinzenal, como a relação pedir). Líder e pessoa alinham o que está sendo entregue, o que funciona e o que não funciona. O inegociável não é a agenda: é que a conversa vira memória. Assunto pessoal? O agente descarta automaticamente antes de virar dado — e a dupla pode pausar a gravação se preferir.
+Trimestral — o retrato de duas páginas: o agente compila as conversas do trimestre num retrato por pessoa (entregas com data e fonte, evidências pelos dois pilares, próximo salto, delta vs. o anterior). Vai para o líder e para a pessoa ao mesmo tempo e aterrissa na 1:1: acompanhamento e ajuste de rota na conversa que já ia acontecer — não existe calibração trimestral. O líder anexa um parecer de um parágrafo. Retrato magro denuncia sozinho a conversa que não aconteceu. A página traz um retrato de exemplo (Ana, fictícia), com parecer do líder.
+Semestral — a semana da decisão: duas vezes ao ano, People monta o pacote por pessoa (retratos, pareceres e a nota proposta pelo líder), abre a janela de autoavaliação facultativa — quem quiser soma a própria leitura; não fazer não conta contra — e a liderança dedica uma semana de calibração — leitura assíncrona, sessões por área onde a nota é validada contra a evidência (evidência vence opinião; sem consenso, o gestor do gestor decide) e fechamento de mérito e promoções com CEO + CFO, contra o envelope, na mesma semana do fechamento financeiro. O Loop já contou a história — a semana só efetiva a decisão. Devolutiva na 1:1 seguinte, com o porquê; efetivo no pagamento seguinte. As notas (1–5) só nascem na parada — idioma comum da decisão, nunca formulário do dia a dia.
+Sob o capô (mecanismo real): Granola e Claude falam MCP nativo. Um agente lê as notas das 1:1s, passa por um portão de privacidade (só trabalho atravessa; saúde, família e desabafo são descartados estruturalmente) e grava a destilação num banco próprio — Supabase com permissão por linha: cada líder vê só os seus; cada pessoa, o próprio. A transcrição crua nunca sai do Granola e nem People a acessa — pertence à dupla. Do banco nascem os retratos, os pacotes da calibração e o Jotabot no Slack: o líder pergunta ("o que combinei com a Maria sobre o projeto X?") e recebe resposta com citações datadas, no mesmo escopo de permissão — o pessoal nunca entrou, então nunca sai. Custo de tokens: menos que um almoço por mês. O candidato constrói o v1, do jeito que construiu a própria página do case. Visual na página: a Correnteza — uma única onda contínua com seis momentos como pontos tipográficos (1:1 no Granola → dados protegidos → tudo no banco → retrato trimestral → semana de calibração → devolutiva) e o Jotabot como cápsula amarela viajando sem parar pela onda: contínuo, respondendo sobre performance no Slack.
 O Ladder · 6 faixas × 5 áreas
 Mesma espinha em todas as áreas, com a linguagem de cada ofício.
 Ladder é direção, não checklist. Escolha a área:
@@ -429,15 +390,11 @@ Comercial
 Operações
 Corporativo
 Da nota à decisão · mérito e promoção sem mistério
-Cada nota tem uma consequência sugerida — decidida na calibração, dentro do envelope de budget, e comunicada junto com o feedback. Sugestões, não vereditos: a sala pode divergir, mas
-toda exceção é documentada
-(quem decidiu, qual regra quebrou, por quê).
+Cada nota tem uma consequência sugerida — decidida na calibração, dentro do envelope de budget, e comunicada junto com o feedback. Sugestões, não vereditos: a sala pode divergir — desde que diga em voz alta quem decidiu e por quê.
 5
 REDEFINE EXPECTATIVAS · RARO
 Promoção sugerida
-Se passa nos
-4 portões
-. Se tenure ou escopo bloqueiam a promoção neste ciclo, vira
+Se passa nos quatro critérios. Se tenure ou escopo bloqueiam a promoção nesta parada, vira
 mérito banda alta
 .
 4
@@ -457,10 +414,10 @@ Duas notas 2 seguidas → PIP.
 FICOU DEVENDO EM TUDO
 Conversa de correção
 Começa na 1:1 de hoje — prazo curto, critérios claros; se não virar, saída rápida e digna. Sem PIP de teatro, sem renegociação na sala.
-Promoção · os 4 portões
+Promoção
 Promove-se padrão, não pico
 Nota abre a conversa
-— não a encerra. Dois ciclos fortes são o sinal real.
+— não a encerra. Duas paradas fortes são o sinal real.
 6 meses na faixa
 — um ciclo completo, regra única enquanto formos pequenos.
 Já opera na faixa seguinte
@@ -480,7 +437,7 @@ O envelope anual se divide em quatro caixinhas (percentuais da folha/ano: sugest
 Dois controles: margem bruta por pessoa (subindo / estável / caindo) e runway (folgado / no limite). Subindo + folgado: acelera — envelope inteiro aberto. Subindo + no limite: o pulo do gato — a margem abriu, o runway segurou; além da trava, só por decisão explícita de CEO + CFO (é onde empresas morrem de ano bom). Estável: vagas seguram; time atual protegido, mérito e promoções primeiro. Caindo (modo de segurança — pausa, não paralisia): contratação espera a régua recuperar; mérito no piso, concentrado nos melhores; ajustes pontuais seguem possíveis com aprovação CEO + CFO (a caixinha fora de ciclo permanece ativa); enxugar o time nunca é reflexo de um trimestre.
 A página mostra a Barra do Envelope: um preenchimento amarelo que cresce da esquerda (margem abre) e nunca cruza o marcador escuro (runway segura) — quando a margem empurra e o runway trava, o marcador pulsa. Abaixo, as quatro caixinhas flutuam com níveis que sobem e descem conforme os controles. O ladder do case também é visual: as 6 faixas são degraus de uma escada que sobe.
 E os parâmetros finais? Nascem dos dados do Jota, não de benchmark — alinhamento com o CFO para calibrá-los, e a fórmula roda em modo sombra por um semestre inteiro antes de ganhar o direito de governar.
-Capítulo 05 · Saídas
+Capítulo 04 · Saídas
 O último dia
 · offboarding & alumni
 A pessoa sai. A relação, não.
@@ -521,12 +478,9 @@ Ritual:
 o atendimento.
 Exemplo:
 o cliente de verdade cuja empresa não pode morrer.
-NA AVALIAÇÃO · OS PILARES SÃO A RÉGUA
+NO LOOP · OS PILARES SÃO A RÉGUA
 Cultura decide nota, mérito e promoção
-As quatro perguntas do ciclo são os dois pilares em ação; o ladder descreve os pilares por faixa.
-Ritual: as paradas de Jul + Dez.
-Exemplo:
-as evidências concretas que cada pessoa traz — 1 a 3 por pilar.
+Os dois pilares viram comportamentos esperados, descritos no ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. Ritual: as paradas de Jul + Dez. Exemplo: o retrato trimestral de cada pessoa, lido pelos dois pilares.
 NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO
 All-hands abre com cliente
 Todo all-hands começa com a história de um dono de PME e fecha com dois momentos de 5 min: o AI Speed Run (um Jotter demonstra o melhor fluxo com IA do mês — prática emprestada da Coinbase) e o shout-out de quem viveu um valor na prática.
