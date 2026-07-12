@@ -394,8 +394,6 @@ Promoção
 Promove-se padrão, não pico
 Nota abre a conversa
 — não a encerra. Duas calibrações fortes são o sinal real.
-6 meses na faixa
-— um ciclo completo, regra única enquanto formos pequenos.
 Já opera na faixa seguinte
 — na prática, recorrente, contra o ladder da área.
 Envelope aprovado antes
@@ -459,7 +457,7 @@ Cultura decide nota, mérito e promoção
 Os dois pilares viram comportamentos esperados, descritos no ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. Ritual: as calibrações de Jul + Dez. Exemplo: o retrato trimestral de cada pessoa, lido pelos dois pilares.
 NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO
 All-hands abre com cliente
-Todo all-hands começa com a história de um dono de PME e fecha com dois momentos de 5 min: o AI Speed Run (um Jotter demonstra o melhor fluxo com IA do mês — prática emprestada da Coinbase) e o shout-out de quem viveu um valor na prática.
+Todo all-hands começa com a história de um dono de PME e fecha com um momento de 5 min: o shout-out de quem viveu um valor na prática.
 Ritual:
 a cadência.
 Exemplo:
