@@ -145,18 +145,21 @@ body{
 .rtc{border:1px solid var(--linha-suave);border-radius:12px;padding:10px 12px;background:#fff}
 .rtc .rth{font-family:'IBM Plex Mono',monospace;font-size:.56rem;font-weight:700;letter-spacing:.12em;color:var(--ambar);display:block;margin-bottom:6px}
 .rtc p{font-size:.76rem;margin:0 0 6px;line-height:1.5}
-.wk{margin-top:14px}
-.wk-track{position:relative;display:flex;justify-content:space-between;align-items:flex-start;margin:30px 4px 4px}
+.wk-native{margin-top:44px;padding-top:36px;border-top:1px solid var(--linha)}
+.wk{margin-top:16px}
+.wk-track{position:relative;display:flex;justify-content:space-between;align-items:flex-start;margin:34px 4px 4px}
 .wk-track::before{content:"";position:absolute;left:8px;right:8px;top:7px;height:2px;background:var(--linha)}
 .wk-bar{position:absolute;left:8px;top:7px;height:2px;background:var(--ambar);width:0;transition:width .5s cubic-bezier(.4,0,.2,1);max-width:calc(100% - 16px)}
 .wk-dot{position:relative;z-index:2;width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid var(--linha);cursor:pointer;padding:0;transition:background .3s,border-color .3s,box-shadow .3s;scale:1}
 .wk-dot.done{background:var(--ambar);border-color:var(--ambar)}
 .wk-dot.on{background:var(--sol);border-color:var(--tinta);box-shadow:0 0 0 5px rgba(255,230,26,.35);scale:1.15}
 .wk-dot span{position:absolute;top:-24px;left:50%;translate:-50%;font-family:'IBM Plex Mono',monospace;font-size:.55rem;font-weight:700;letter-spacing:.08em;color:var(--grafite-claro);white-space:nowrap}
+.wk-dot:first-child span{left:0;translate:0}
+.wk-dot:last-child span{left:auto;right:0;translate:0}
 .wk-dot.on span{color:var(--tinta)}
-.wk-txt{margin-top:18px;font-size:.88rem;line-height:1.6;color:var(--grafite);min-height:66px;transition:opacity .2s}
+.wk-txt{margin-top:18px;font-size:.78rem;line-height:1.65;color:var(--grafite);min-height:60px;transition:opacity .2s;max-width:62ch}
 .wk-foot{margin-top:10px;padding-top:12px;border-top:1px dashed var(--linha);font-size:.78rem;color:var(--grafite-claro)}
-@media(max-width:680px){.wk-dot span{display:none}.wk-dot.on span{display:block}.wk-txt{min-height:120px}}
+@media(max-width:680px){.wk-dot span{display:none}.wk-dot.on span{display:block;left:50%;right:auto;translate:-50%}.wk-dot:first-child.on span{left:0;translate:0}.wk-dot:last-child.on span{left:auto;right:0;translate:0}.wk-txt{min-height:120px}}
 .op-deep{display:none;margin-top:18px}
 .op-deep.open{display:block}
 .opflow{list-style:none;counter-reset:op;margin:4px 0 0 14px;padding-left:28px;border-left:2px solid rgba(242,194,0,.55)}
@@ -887,13 +890,15 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
         <li><strong>Jotabot.</strong> No Slack, faz as duas pontas: <strong>pergunta</strong> → Claude consulta o cofre (nunca o Granola) → resposta com citações datadas; e <strong>captura</strong> a nota do líder e a autoavaliação, que sobem ao cofre pela mesma trilha. Todas as respostas sobre seus liderados num único lugar, sob demanda, a qualquer momento.</li>
       </ol></div></div>
 
-    <div class="card reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
+    <div class="wk-native reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
       <div class="wk" id="wk">
         <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>PERFORMANCE PACKAGE</span></button><button class="wk-dot" onclick="wkGo(1)"><span>NOTA PROPOSTA</span></button><button class="wk-dot" onclick="wkGo(2)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(3)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(4)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(5)"><span>DEVOLUTIVA</span></button></div>
         <p class="wk-txt" id="wkTxt"></p>
       </div>
       <p class="wk-foot">Quem tem <strong>menos de um trimestre de casa</strong> não entra — a conversa do dia 90 é o checkpoint. <strong>O Loop já contou a história — a calibração só efetiva a decisão.</strong></p>
     </div>
+
+    
 
 
     <div class="grid2" style="grid-template-columns:1fr">
