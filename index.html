@@ -877,22 +877,23 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <p class="mleg">MCP NATIVO · PORTÃO AUTOMÁTICO DE PRIVACIDADE — O PESSOAL NUNCA VIRA DADO · NEM PEOPLE VÊ A TRANSCRIÇÃO · PERMISSÃO POR LINHA NO BANCO · MENOS QUE UM ALMOÇO/MÊS · EU CONSTRUO O V1</p>
     </div>
 
-    <div class="card reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
-      <div class="wk" id="wk">
-        <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>T−1 · PACOTE</span></button><button class="wk-dot" onclick="wkGo(1)"><span>NOTA PROPOSTA</span></button><button class="wk-dot" onclick="wkGo(2)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(3)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(4)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(5)"><span>DEVOLUTIVA</span></button></div>
-        <p class="wk-txt" id="wkTxt"></p>
-      </div>
-      <p class="wk-foot">Quem tem <strong>menos de um trimestre de casa</strong> não entra — a conversa do dia 90 é o checkpoint. <strong>O Loop já contou a história — a calibração só efetiva a decisão.</strong></p>
-    </div>
-
     <div class="card reveal" style="margin-top:16px"><span class="tag">Sob o capô</span><h3>Como funciona por baixo</h3><p style="max-width:76ch">Os líderes não enviam nada: as 1:1s recorrentes caem sozinhas numa pasta compartilhada <strong>só com o assento-robô "Loop"</strong> — o Claude lê por MCP, destila e guarda. Setup de cinco minutos por líder, uma vez. <strong>Sistema novo: zero. Código: só o bot que escuta o Slack. Operador: o Claude, por comando.</strong></p><a class="lt-btn" href="#" id="opTgl" aria-expanded="false" onclick="toggleOp(event)">Abrir o passo a passo →</a>
       <div class="op-deep" id="opDeep"><ol class="opflow">
         <li><strong>Assento-robô no Granola.</strong> Uma identidade de serviço ("Loop") no workspace; cada líder compartilha a pasta das 1:1s recorrentes com ela — reunião recorrente herda a pasta, toda 1:1 futura entra sozinha.</li>
         <li><strong>Claude lê por MCP e aplica o portão.</strong> Só trabalho atravessa — entregas, compromissos, evidências pelos dois pilares; o pessoal é descartado na leitura e a transcrição nunca é copiada.</li>
         <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (via MCP): líder vê os seus; cada um, o próprio; People, nenhuma conversa — a chave do robô vive em cofre, nenhum humano a usa.</li>
-        <li><strong>Retrato por DM no Slack.</strong> O retrato <strong>é</strong> o relatório trimestral: duas tabelinhas — Como operamos · Como nos comportamos — mais próximo salto e parecer, para líder e pessoa. Uma semana antes da calibração, chega o <strong>consolidado do semestre</strong> — os dois retratos, prontos para a nota.</li>
-        <li><strong>Jotabot.</strong> No Slack: pergunta → Claude consulta o cofre (nunca o Granola) → resposta com citações datadas, permissões herdadas do banco.</li>
+        <li><strong>Retrato por DM no Slack.</strong> O retrato <strong>é</strong> o relatório trimestral: duas tabelinhas — Como operamos · Como nos comportamos — mais próximo salto e parecer, para líder e pessoa. Nota do líder e autoavaliação entram pelo Jotabot e sobem ao cofre.</li>
+        <li><strong>People aciona; o Claude monta.</strong> Uma semana antes da calibração, People dá um comando e o Claude junta, por pessoa, os dois retratos + nota + autoavaliação no relatório de duas páginas, já com as notas — People revisa e distribui. Prepara o agente; decide o humano.</li>
+        <li><strong>Jotabot.</strong> No Slack, faz as duas pontas: <strong>pergunta</strong> → Claude consulta o cofre (nunca o Granola) → resposta com citações datadas; e <strong>captura</strong> a nota do líder e a autoavaliação, que sobem ao cofre pela mesma trilha. Todas as respostas sobre seus liderados num único lugar, sob demanda, a qualquer momento.</li>
       </ol></div></div>
+
+    <div class="card reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
+      <div class="wk" id="wk">
+        <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>PERFORMANCE PACKAGE</span></button><button class="wk-dot" onclick="wkGo(1)"><span>NOTA PROPOSTA</span></button><button class="wk-dot" onclick="wkGo(2)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(3)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(4)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(5)"><span>DEVOLUTIVA</span></button></div>
+        <p class="wk-txt" id="wkTxt"></p>
+      </div>
+      <p class="wk-foot">Quem tem <strong>menos de um trimestre de casa</strong> não entra — a conversa do dia 90 é o checkpoint. <strong>O Loop já contou a história — a calibração só efetiva a decisão.</strong></p>
+    </div>
 
 
     <div class="grid2" style="grid-template-columns:1fr">
@@ -1171,7 +1172,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           <div class="agent"><span class="a-name">Agente Recrutador</span><p>Sourcing do Pipeline dos 300, triagem contra a job description, agendamento e feedback em até 10 dias úteis a todo candidato.</p></div>
           <div class="agent"><span class="a-name">Agente de Onboarding</span><p>Provisiona acessos e ferramentas, guia as metas de 90 dias, dispara os check-ins de 30/60/90.</p></div>
           <div class="agent"><span class="a-name">Agente de Memória (1:1)</span><p>Granola → portão de privacidade → banco: compromissos, bloqueios e evidências por pilar. Só trabalho — o pessoal nunca entra.</p></div>
-          <div class="agent"><span class="a-name">Jotabot (Slack)</span><p>O líder pergunta ("o que combinei com a Maria?") e recebe resposta com citações datadas — cada um enxerga só o próprio escopo.</p></div>
+          <div class="agent"><span class="a-name">Jotabot (Slack)</span><p>Pergunta e captura: o líder consulta ("o que combinei com a Maria?") e também registra nota e autoavaliação por ali. Tudo sobre seus liderados num só lugar, sob demanda — cada um enxerga só o próprio escopo.</p></div>
           <div class="agent"><span class="a-name">Agente Helpdesk</span><p>Responde a maioria das dúvidas de política, benefícios e processos na hora — e escala o resto para o humano certo.</p></div>
           <div class="agent"><span class="a-name">Agente de Sinais</span><p>Cuida da única métrica — attrition regretted — e dos porquês das saídas. Qualquer outro corte existe sob demanda, não em painel.</p></div>
         </div>
@@ -1536,9 +1537,9 @@ function closeRetr(){ var o = document.getElementById('rtOv'); if(o) o.classList
 function toggleOp(e){ if(e) e.preventDefault(); var d=document.getElementById('opDeep'),b=document.getElementById('opTgl'); var o=d.classList.toggle('open'); b.setAttribute('aria-expanded',o); b.textContent=o?'Fechar o passo a passo ↑':'Abrir o passo a passo →'; }
 var wkTexts=[
  'Uma semana antes, cada líder recebe pelo Slack o consolidado do semestre de cada liderado — os dois retratos trimestrais, prontos para a leitura.',
- 'O líder atribui a nota proposta, com um parecer — antes da sala, com o material na mão.',
- 'Abre a janela facultativa: quem quiser soma a própria leitura ao pacote. Não fazer não conta contra — a voz da pessoa já está na memória.',
- 'O pacote vira um relatório de no máximo duas páginas por pessoa, distribuído aos avaliadores.',
+ 'O líder registra a nota proposta e o porquê pelo próprio Jotabot, no Slack — que sobe ao cofre. Sem formulário, sem sair do canal.',
+ 'Janela facultativa: quem quiser envia a autoavaliação ao Jotabot, que a grava no mesmo lugar. Não fazer não conta contra — a voz da pessoa já está na memória.',
+ 'People aciona um comando e o Claude monta: junta os dois retratos, a nota do líder e a autoavaliação num relatório de até duas páginas por pessoa, já com as notas — People revisa e distribui aos avaliadores.',
  'Sessões por área: a nota é validada contra a evidência — evidência vence opinião; sem consenso, o gestor do gestor decide. CEO + CFO fecham mérito e promoções contra o envelope, na mesma semana do fechamento financeiro.',
  'Na 1:1 seguinte, com o porquê — efetivo no pagamento seguinte.'];
 var wkI=0, wkTimer=null;
