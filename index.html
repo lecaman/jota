@@ -141,7 +141,16 @@ body{
 .lt-x{position:absolute;top:14px;right:16px;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--grafite-claro);line-height:1}
 .lt-cap{margin-top:18px;padding-top:14px;border-top:1px dashed var(--linha);font-size:.76rem;color:var(--grafite-claro)}
 .lt-btn{display:inline-block;margin-top:8px;font-size:.78rem;font-weight:700;color:var(--tinta);background:var(--sol);padding:6px 13px;border-radius:99px;text-decoration:none}
-@media(max-width:680px){.lt-card{padding:26px 20px}}
+.rt2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.rtc{border:1px solid var(--linha-suave);border-radius:12px;padding:10px 12px;background:#fff}
+.rtc .rth{font-family:'IBM Plex Mono',monospace;font-size:.56rem;font-weight:700;letter-spacing:.12em;color:var(--ambar);display:block;margin-bottom:6px}
+.rtc p{font-size:.76rem;margin:0 0 6px;line-height:1.5}
+.op-deep{display:none;margin-top:18px}
+.op-deep.open{display:block}
+.opflow{list-style:none;counter-reset:op;margin:4px 0 0 14px;padding-left:28px;border-left:2px solid rgba(242,194,0,.55)}
+.opflow li{position:relative;counter-increment:op;padding-bottom:16px;font-size:.86rem;line-height:1.55;color:var(--grafite)}
+.opflow li::before{content:counter(op,decimal-leading-zero);position:absolute;left:-42px;top:-2px;width:26px;height:26px;border-radius:50%;background:var(--sol);color:var(--tinta);font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px var(--creme)}
+@media(max-width:680px){.lt-card{padding:26px 20px}.rt2{grid-template-columns:1fr}}
 
 /* ---------- NAV ---------- */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha-suave)}
@@ -498,7 +507,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <ol>
         <li><strong>A aposta:</strong> a empresa extraordinária da era da IA não é a que mais contrata — é a que mais alavanca. Densidade de talento × frota de agentes é o modelo; <strong>receita por pessoa</strong> é a métrica-guia.</li>
         <li><strong>A barra:</strong> cada contratação é decisão de fundador — funil com freio estrutural (Guardião da Barra com veto), fundadores em toda oferta e cadeira vazia &gt; contratação mediana.</li>
-        <li><strong>O sistema:</strong> People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, 1:1s que viram memória, retratos trimestrais automáticos, duas paradas de decisão por ano e saídas rápidas e dignas.</li>
+        <li><strong>O sistema:</strong> People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, 1:1s que viram memória, retratos trimestrais automáticos, duas calibrações por ano e saídas rápidas e dignas.</li>
         <li><strong>O perfil:</strong> founder mode atravessa tudo — identificado na atração, desenvolvido com escopo, contexto e equity compreendido, sustentado pela cadência. In-person first, com flexibilidade de adulto.</li>
         <li><strong>A função:</strong> People enxuta, alavancada por uma frota de agentes — o agente prepara; <strong>o humano decide</strong> — e que cresce por dor real, não por playbook.</li>
         <li><strong>O plano:</strong> primeiros 90 dias com data — escutar e calibrar a barra, fundações no ar, sistema girando.</li>
@@ -542,7 +551,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Implicação 02</span>
         <h3>People vira engenharia de alavancagem</h3>
-        <p>O papel deixa de ser administrar processos e passa a ser maximizar (talento excepcional × contexto claro × frota de agentes). Métrica-guia proposta: <strong>receita por pessoa</strong>, acompanhada trimestre a trimestre ao lado das métricas de saúde do time.</p>
+        <p>O papel deixa de ser administrar processos e passa a ser maximizar (talento excepcional × contexto claro × frota de agentes). Métrica-guia proposta: <strong>receita por pessoa</strong>, acompanhada trimestre a trimestre ao lado da métrica de attrition.</p>
       </div>
     </div>
   </div>
@@ -621,7 +630,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <a href="#atracao"><span class="clock">ANTES DO DIA 1</span><h4>Atração &amp; Seleção</h4><p>Sourcing antes da vaga + o funil da barra, etapa por etapa.</p><span class="go">→</span></a>
       <a href="#onboarding"><span class="clock">DIA 1–90</span><h4>Onboarding</h4><p>Cliente na semana 1, entrega na semana 1, metas claras de 90 dias.</p><span class="go">→</span></a>
       <a href="#loop"><span class="clock">CONTÍNUO</span><h4>O Loop</h4><p>1:1s com Granola — a conversa que vira memória; autonomia sustentada pela cadência.</p><span class="go">→</span></a>
-      <a href="#merito"><span class="clock">O ANO INTEIRO</span><h4>Organismo, Mérito &amp; Ladder</h4><p>Sem Dia D: memória contínua, retratos trimestrais e duas paradas de decisão + ladder.</p><span class="go">→</span></a>
+      <a href="#merito"><span class="clock">O ANO INTEIRO</span><h4>Organismo, Mérito &amp; Ladder</h4><p>Sem Dia D: memória contínua, retratos trimestrais e duas calibrações por ano + ladder.</p><span class="go">→</span></a>
       <a href="#offboarding"><span class="clock">ÚLTIMO DIA</span><h4>Offboarding</h4><p>Saídas rápidas e dignas. Alumni como ativo, não como passado.</p><span class="go">→</span></a>
     </div>
   </div>
@@ -670,7 +679,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <!-- ===== FUNIL DA BARRA ===== -->
     <p class="subhead reveal">Engrenagem 2 · O funil da barra</p>
-    <p class="subhead-note reveal">A barra não é um discurso: é construída em fases, ponto a ponto. Cada etapa mede sinais específicos — inteligência, execução, autonomia, alinhamento cultural — e carrega um freio que impede a qualidade de cair com o tempo. Processo inteiro em <strong>até 10 dias úteis</strong>: velocidade também é respeito. E todas as entrevistas são transcritas no Granola — a IA consolida as evidências por sinal e apoia a decisão; quem decide é sempre gente.</p>
+    <p class="subhead-note reveal">A barra não é um discurso: é construída em fases, ponto a ponto. Cada etapa mede sinais específicos — inteligência, execução, autonomia, alinhamento cultural — e carrega um freio que impede a qualidade de cair com o tempo. Processo inteiro em <strong>~30 dias corridos, a depender da complexidade da vaga</strong> — e resposta nunca espera a vaga fechar. E todas as entrevistas são transcritas no Granola — a IA consolida as evidências por sinal e apoia a decisão; quem decide é sempre gente.</p>
 
     <div class="stepper reveal">
       <div class="track" id="track">
@@ -691,11 +700,9 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             <ul>
               <li>O agente lê cada candidatura contra a <strong>job description da vaga</strong>: obra e não logos, sinais de slope, evidências de founder mode.</li>
               <li>Triagem em horas, não semanas — e <strong>feedback a 100% dos candidatos em até 10 dias úteis. Vagas fecham em ~30 dias — mais ou menos, conforme a complexidade da posição</strong>.</li>
-              <li>Casos-limite ("quase") sobem para revisão humana: agente prepara, humano decide.</li>
             </ul>
           </div>
           <div class="sp-guard">
-            <span class="sp-lbl">Freio da barra nesta etapa</span>
             <p>Os critérios são codificados a partir da job description e da régua dos fundadores — o agente aplica a barra em escala, sem cansaço de sexta-feira à tarde. E nunca reprova sozinho um caso ambíguo.</p>
           </div>
         </div>
@@ -714,7 +721,6 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </ul>
           </div>
           <div class="sp-guard">
-            <span class="sp-lbl">Freio da barra nesta etapa</span>
             <p>Régua pública = auto-seleção: quem não se vê nos pilares sai do processo sozinho — antes de custar tempo do time. O memo aberto atrai os certos e repele os errados.</p>
           </div>
         </div>
@@ -732,7 +738,6 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </ul>
           </div>
           <div class="sp-guard">
-            <span class="sp-lbl">Freio da barra nesta etapa</span>
             <p>O HM é dono da vaga e recrutador nº 1 — mas não decide sozinho. Entrevista estruturada, mesmas perguntas para todos, notas por escrito <em>antes</em> do debrief para não contaminar.</p>
           </div>
         </div>
@@ -751,7 +756,6 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </ul>
           </div>
           <div class="sp-guard">
-            <span class="sp-lbl">Freio da barra nesta etapa</span>
             <p>Rubrica de correção única por vaga: a nota compara candidatos com a mesma régua. Escopo enxuto e respeitoso com o tempo de quem está no processo — é entrevista, não freela.</p>
           </div>
         </div>
@@ -770,7 +774,6 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </ul>
           </div>
           <div class="sp-guard">
-            <span class="sp-lbl">Freio da barra nesta etapa</span>
             <p><strong>Poder de veto.</strong> O Guardião não reporta ao HM e não sente a pressão do "preciso de alguém ontem" — é o freio estrutural que impede a barra de cair quando a empresa cresce (o mecanismo dos bar raisers da Amazon).</p>
           </div>
         </div>
@@ -827,11 +830,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           <li><strong>Conversa do dia 90</strong> — continuar, ajustar ou corrigir a rota, dito com todas as letras.</li>
         </ul>
       </div>
-      <div class="card reveal">
-        <span class="tag">Casos especiais</span>
-        <h3>Uma trilha para cada porta de entrada</h3>
-        <p><strong>Estagiários e BAs</strong> seguem track próprio de 90 dias e só entram no ciclo semestral ao efetivar. <strong>Movimentações internas</strong> fazem re-onboarding parcial: cafés com o novo time, novo buddy, metas de rampa da nova função. <strong>Retornados</strong> (boomerangs em até 12 meses) pulam a integração e fazem recalibração de 30 dias. Quem entra no meio do ciclo é avaliado no ciclo seguinte — expectativa alinhada na oferta, sem pró-rata confusa.</p>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -840,34 +839,42 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 <section class="alt" id="loop">
   <div class="wrap">
     <span class="eyebrow reveal">Capítulo 03 · O Loop — performance, mérito &amp; crescimento</span>
-    <p class="momento reveal">Todo mês <span>· o loop que nunca para</span></p>
+    <p class="momento reveal">O loop que nunca para</p>
     <h2 class="reveal">Desempenho não é um evento em julho. É a soma de todas as conversas.</h2>
-    <p class="lead reveal" style="font-size:.98rem;max-width:80ch">O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. <strong>Não temos PDI, formulário obrigatório nem pesquisa de clima — a avaliação virou Loop:</strong> acontece o ano inteiro, sozinha, e a única coisa com data é a decisão. Custo para o time: zero ferramentas novas, zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica. <strong>Regra nº 1: nada na parada pode ser surpresa.</strong></p>
+    <p class="lead reveal" style="font-size:.98rem;max-width:80ch">O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. <strong>Não temos PDI, formulário obrigatório nem pesquisa de clima — a avaliação virou Loop:</strong> acontece o ano inteiro, sozinha, e a única coisa com data é a decisão. Custo para o time: zero ferramentas novas, zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica. <strong>Regra nº 1: nada na calibração pode ser surpresa.</strong></p>
 
     <div class="flow reveal">
       <div class="step"><span class="n">NO RITMO DA DUPLA</span><h4>1:1 conduzida pelo liderado</h4><p>O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.</p></div>
       <div class="step hi"><span class="n">AGENTE PEOPLE</span><h4>Extrai o sinal, descarta o ruído</h4><p>Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar. A dupla aprova o resumo antes de ele contar.</p></div>
       <div class="step"><span class="n">CONTÍNUO</span><h4>Próximo salto</h4><p>Combinado na conversa, lembrado pela memória: o agente traz o delta a cada retrato — o que andou, o que travou. Ninguém "atualiza planilha".</p></div>
-      <div class="step"><span class="n">TRIMESTRAL</span><h4>Retrato de 2 páginas</h4><p>O agente compila as conversas num retrato por pessoa — para o líder e para a pessoa, com um <strong>parecer de um parágrafo do líder</strong>. Ajuste de rota na própria 1:1; nada para preencher. <a class="lt-btn" href="#" onclick="openRetr(event)">Ver um retrato →</a></p></div>
-      <div class="step"><span class="n">JUL + DEZ</span><h4>A parada</h4><p>Semana de calibração: mérito, promoção e comp decididos sobre a evidência acumulada. Devolutiva na 1:1 — o loop segue girando.</p></div>
+      <div class="step"><span class="n">TRIMESTRAL</span><h4>Retrato de 2 páginas</h4><p>O agente compila as conversas num retrato por pessoa — <strong>entregue por DM no Slack</strong>, para o líder e para a pessoa, com um parecer de um parágrafo do líder. Ajuste de rota na própria 1:1; nada para preencher. <a class="lt-btn" href="#" onclick="openRetr(event)">Ver um retrato →</a></p></div>
+      <div class="step"><span class="n">JUL + DEZ</span><h4>A calibração</h4><p>Semana de calibração: mérito, promoção e comp decididos sobre a evidência acumulada. Devolutiva na 1:1 — o loop segue girando.</p></div>
     </div>
     <div class="memflow reveal" aria-hidden="true">
       <svg viewBox="0 0 800 215" xmlns="http://www.w3.org/2000/svg">
         <path d="M -40 105 Q 30 91 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105" fill="none" stroke="rgba(23,21,15,.16)" stroke-width="1"/>
         <path class="mov" d="M -40 105 Q 30 91 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105" fill="none" stroke="#F2C200" stroke-width="2.2" opacity=".9"><animate attributeName="d" values="M -40 105 Q 30 91 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105;M -40 105 Q 30 119 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105;M -40 105 Q 30 91 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105" dur="9s" repeatCount="indefinite"/></path>
         <line x1="80" y1="58" x2="80" y2="97" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="80" y="50" text-anchor="middle"><tspan class="mn">01</tspan> 1:1 NO GRANOLA</text><circle cx="80" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="0.0s" repeatCount="indefinite"/></circle>
-          <line x1="205" y1="113" x2="205" y2="152" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="205" y="168" text-anchor="middle"><tspan class="mn">02</tspan> DADOS PROTEGIDOS</text><circle cx="205" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="0.6s" repeatCount="indefinite"/></circle>
-          <line x1="330" y1="58" x2="330" y2="97" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="330" y="50" text-anchor="middle"><tspan class="mn">03</tspan> TUDO NO BANCO</text><circle cx="330" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></circle>
-          <line x1="455" y1="113" x2="455" y2="152" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="455" y="168" text-anchor="middle"><tspan class="mn">04</tspan> RETRATO TRIMESTRAL</text><circle cx="455" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="1.7999999999999998s" repeatCount="indefinite"/></circle>
-          <line x1="585" y1="58" x2="585" y2="97" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="585" y="50" text-anchor="middle"><tspan class="mn">05</tspan> SEMANA DE CALIBRAÇÃO</text><circle cx="585" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="2.4s" repeatCount="indefinite"/></circle>
-          <line x1="715" y1="113" x2="715" y2="152" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="715" y="168" text-anchor="middle"><tspan class="mn">06</tspan> DEVOLUTIVA</text><circle cx="715" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="3.0s" repeatCount="indefinite"/></circle>
+          <line x1="242" y1="113" x2="242" y2="152" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="242" y="168" text-anchor="middle"><tspan class="mn">02</tspan> DADOS PROTEGIDOS NO BANCO</text><circle cx="242" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="0.7s" repeatCount="indefinite"/></circle>
+          <line x1="404" y1="58" x2="404" y2="97" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="404" y="50" text-anchor="middle"><tspan class="mn">03</tspan> RETRATO NO SLACK</text><circle cx="404" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="1.4s" repeatCount="indefinite"/></circle>
+          <line x1="566" y1="113" x2="566" y2="152" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="566" y="168" text-anchor="middle"><tspan class="mn">04</tspan> SEMANA DE CALIBRAÇÃO</text><circle cx="566" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="2.0999999999999996s" repeatCount="indefinite"/></circle>
+          <line x1="718" y1="58" x2="718" y2="97" stroke="rgba(23,21,15,.22)" stroke-width="1"/><text class="mt" x="718" y="50" text-anchor="middle"><tspan class="mn">05</tspan> DEVOLUTIVA</text><circle cx="718" cy="105" r="3.5" fill="#F2C200"><animate attributeName="r" values="3.5;5.6;3.5" dur="3.6s" begin="2.8s" repeatCount="indefinite"/></circle>
           <g class="mov"><rect x="-43" y="-11" width="86" height="22" rx="11" fill="#FFE61A"/><text x="0" y="4" text-anchor="middle" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:700;letter-spacing:.1em;fill:#17150F">JOTABOT</text><animateMotion dur="14s" repeatCount="indefinite" path="M -40 105 Q 30 91 100 105 T 240 105 T 380 105 T 520 105 T 660 105 T 800 105 T 940 105"/></g>
         <text class="mts" x="792" y="206" text-anchor="end">JOTABOT · contínuo — responde sobre performance no Slack</text>
       </svg>
-      <p class="mleg">MCP NATIVO · PORTÃO AUTOMÁTICO DE PRIVACIDADE — O PESSOAL NUNCA VIRA DADO · NEM PEOPLE VÊ A TRANSCRIÇÃO · PERMISSÃO POR LINHA NO BANCO · MENOS QUE UM ALMOÇO/MÊS</p>
+      <p class="mleg">MCP NATIVO · PORTÃO AUTOMÁTICO DE PRIVACIDADE — O PESSOAL NUNCA VIRA DADO · NEM PEOPLE VÊ A TRANSCRIÇÃO · PERMISSÃO POR LINHA NO BANCO · MENOS QUE UM ALMOÇO/MÊS · EU CONSTRUO O V1</p>
     </div>
 
-    <div class="card reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3><p>Duas vezes ao ano, People monta o pacote por pessoa — retratos, pareceres do líder e a <strong>nota proposta</strong> — e abre a <strong>janela de autoavaliação facultativa</strong>: quem quiser soma a própria leitura ao pacote; não fazer não conta contra. A liderança dedica <strong>uma semana de calibração</strong>: leitura assíncrona, sessões por área onde a nota é validada contra a evidência — evidência vence opinião; sem consenso, o gestor do gestor decide — e o fechamento de mérito e promoções com CEO + CFO, contra o envelope, na mesma semana do fechamento financeiro. <strong>O Loop já contou a história — a semana só efetiva a decisão.</strong> Devolutiva na 1:1 seguinte, com o porquê; efetivo no pagamento seguinte.</p></div>
+    <div class="card reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3><p><strong>Uma semana antes</strong>, cada líder recebe pelo Slack o pacote do liderado — retratos e pareceres do semestre — e <strong>atribui a nota proposta</strong>; na mesma semana abre a <strong>janela de autoavaliação facultativa</strong> (quem quiser soma a própria leitura; não fazer não conta contra). O pacote vira um <strong>relatório de no máximo duas páginas por pessoa</strong>, distribuído aos avaliadores. Na <strong>semana de calibração</strong>: sessões por área onde a nota é validada contra a evidência — evidência vence opinião; sem consenso, o gestor do gestor decide — e o fechamento de mérito e promoções com CEO + CFO, contra o envelope, na mesma semana do fechamento financeiro. Quem tem <strong>menos de um trimestre de casa não entra</strong> — a conversa do dia 90 é o checkpoint. <strong>O Loop já contou a história — a calibração só efetiva a decisão.</strong> Devolutiva na 1:1 seguinte; efetivo no pagamento seguinte.</p></div>
+
+    <div class="card reveal"><span class="tag">Sob o capô</span><h3>Como funciona por baixo</h3><p style="max-width:76ch">Os líderes não enviam nada: as 1:1s recorrentes caem sozinhas numa pasta compartilhada <strong>só com o assento-robô "Loop"</strong> — o Claude lê por MCP, destila e guarda. Setup de cinco minutos por líder, uma vez. <strong>Sistema novo: zero. Código: só o bot que escuta o Slack. Operador: o Claude, por comando.</strong></p><button class="sim-toggle" id="opTgl" aria-expanded="false" onclick="toggleOp()">Abrir o passo a passo →</button>
+      <div class="op-deep" id="opDeep"><ol class="opflow">
+        <li><strong>Assento-robô no Granola.</strong> Uma identidade de serviço ("Loop") no workspace; cada líder compartilha a pasta das 1:1s recorrentes com ela — reunião recorrente herda a pasta, toda 1:1 futura entra sozinha.</li>
+        <li><strong>Claude lê por MCP e aplica o portão.</strong> Só trabalho atravessa — entregas, compromissos, evidências pelos dois pilares; o pessoal é descartado na leitura e a transcrição nunca é copiada.</li>
+        <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (via MCP): líder vê os seus; cada um, o próprio; People, nenhuma conversa — a chave do robô vive em cofre, nenhum humano a usa.</li>
+        <li><strong>Retrato por DM no Slack.</strong> A cada trimestre, duas tabelinhas — Como operamos · Como nos comportamos — mais próximo salto e parecer. Uma semana antes da calibração, o pacote vira o relatório de 2 páginas dos avaliadores.</li>
+        <li><strong>Jotabot.</strong> Um app fininho no Slack: pergunta → Claude consulta o cofre (nunca o Granola) → resposta com citações datadas, permissões herdadas do banco.</li>
+      </ol><p class="sim-note">Artefatos? O retrato <strong>é</strong> o artefato — mensagem rica + PDF. Sistema novo? Zero: Granola é a fonte, <strong>Claude é o operador</strong>, Supabase o cofre, Slack a interface. Plano B, se o plano do Granola não tiver assento/pasta restrita: cada líder conecta o próprio Granola ao Claude uma vez — validamos no modo sombra, com o CFO.</p></div></div>
 
 
     <div class="grid2" style="grid-template-columns:1fr">
@@ -885,17 +892,13 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <div class="ritmo reveal">
       <div class="rit"><span class="r-f">Semanal</span><h4>Tactical de liderança</h4><p>Metas em verde/amarelo/vermelho. O que travou, o que mudou. Sinal, não relatório.</p></div>
-      <div class="rit"><span class="r-f">Mensal</span><h4>All-hands</h4><p>Abre com a história de um cliente real; números abertos, perguntas sem filtro. E dois rituais de 5 min: o AI Speed Run (um Jotter mostra seu melhor fluxo com IA do mês) e o shout-out de valores.</p></div>
+      <div class="rit"><span class="r-f">Mensal</span><h4>All-hands</h4><p>Abre com a história de um cliente real; números abertos, perguntas sem filtro. E um ritual de 5 min: o shout-out de valores.</p></div>
       <div class="rit"><span class="r-f">Trimestral</span><h4>Metas por área</h4><p>2–3 apostas grandes por área, com um dono cada. Fechadas com veredito: entregue, escorregou ou morreu.</p></div>
-      <div class="rit"><span class="r-f">Semestral + Anual</span><h4>Paradas + Offsite</h4><p>Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.</p></div>
+      <div class="rit"><span class="r-f">Semestral + Anual</span><h4>Calibrações + Offsite</h4><p>Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.</p></div>
     </div>
 
-    <div class="grid2">
-      <div class="card reveal">
-        <span class="tag">Contexto, não controle</span>
-        <h3>Como a decisão acontece</h3>
-        <p>Líderes dão contexto e clareza para o time decidir bem — não aprovam cada passo. Toda decisão grande tem <strong>um dono único, nunca um comitê</strong>: ele busca discordância antes de decidir e, decidido, todo mundo se compromete com a direção. O reversível, a pessoa decide; o irreversível ou regulatório sobe com memo escrito.</p>
-      </div>
+    <div class="grid2" style="grid-template-columns:1fr">
+      
       <div class="card reveal">
         <span class="tag">Desenvolvendo donos</span>
         <h3>Escopo antes de título</h3>
@@ -913,7 +916,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <p class="subhead-note reveal">Cada nota tem uma consequência sugerida — decidida na calibração, dentro do envelope de budget, e comunicada junto com o feedback. Sugestões, não vereditos: a sala pode divergir — <strong>desde que diga em voz alta quem decidiu e por quê</strong>.</p>
 
     <div class="reveal">
-      <div class="drow"><span class="dnum">5</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">REDEFINE EXPECTATIVAS · RARO</span><h4>Promoção sugerida</h4></div><p class="dres">Se passa nos <strong>quatro critérios</strong>. Se tenure ou escopo bloqueiam a promoção nesta parada, vira <strong>mérito banda alta</strong>.</p></div>
+      <div class="drow"><span class="dnum">5</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">REDEFINE EXPECTATIVAS · RARO</span><h4>Promoção sugerida</h4></div><p class="dres">Se tenure ou escopo ainda não alcançaram, a promoção nesta calibração vira <strong>mérito banda alta</strong>.</p></div>
       <div class="drow"><span class="dnum">4</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">SUPERA EXPECTATIVAS ALTAS</span><h4>Mérito banda alta</h4></div><p class="dres">Mérito maior — <strong>promoção só se houver espaço</strong> de escopo na estrutura, nunca automática por tempo de faixa.</p></div>
       <div class="drow"><span class="dnum">3</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">ATENDE EXPECTATIVAS ALTAS</span><h4>Mérito padrão</h4></div><p class="dres">O baseline de que nos orgulhamos. Em ano apertado pode não haver mérito; promoção só com caso forte e evidenciado.</p></div>
       <div class="drow low"><span class="dnum">2</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">FICOU DEVENDO EM PARTES</span><h4>Sem mérito + conversa dura</h4></div><p class="dres">Plano informal de 30 dias, documentado pelo gestor — chance real de correção. <strong>Duas notas 2 seguidas → PIP.</strong></p></div>
@@ -926,8 +929,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
         <span class="tag">Promoção</span>
         <h3>Promove-se padrão, não pico</h3>
         <ul>
-          <li><strong>Nota abre a conversa</strong> — não a encerra. Duas paradas fortes são o sinal real.</li>
-          <li><strong>6 meses na faixa</strong> — uma parada completa, regra única enquanto formos pequenos.</li>
+          <li><strong>Nota abre a conversa</strong> — não a encerra. Duas calibrações fortes são o sinal real.</li>
           <li><strong>Já opera na faixa seguinte</strong> — na prática, recorrente, contra o ladder da área.</li>
           <li><strong>Envelope aprovado antes</strong> — People + fundadores definem o budget antes da calibração.</li>
         </ul>
@@ -1075,8 +1077,8 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <div class="mecanismos" style="margin-top:44px">
       <div class="mec reveal"><span class="n">NA AQUISIÇÃO · ENTREVISTA CULTURAL</span><h4>A régua é pública e reprova</h4><p>Material de cultura enviado na primeira entrevista; Bar Raiser avaliando os dois pilares com peso igual ao técnico e poder de veto. <strong>Ritual:</strong> a entrevista cultural. <strong>Exemplo:</strong> histórias reais de dono que o candidato conta — e as que não consegue contar.</p></div>
       <div class="mec reveal"><span class="n">NO ONBOARDING · CLIENTE NA SEMANA 1</span><h4>A missão com rosto</h4><p>Todo Jotter atende um dono de PME na primeira semana e participa da sessão de pilares com casos reais. <strong>Ritual:</strong> o atendimento. <strong>Exemplo:</strong> o cliente de verdade cuja empresa não pode morrer.</p></div>
-      <div class="mec reveal"><span class="n">NO LOOP · OS PILARES SÃO A RÉGUA</span><h4>Cultura decide nota, mérito e promoção</h4><p>Os dois pilares viram <strong>comportamentos esperados</strong>, descritos no ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. <strong>Ritual:</strong> as paradas de Jul + Dez. <strong>Exemplo:</strong> o retrato trimestral de cada pessoa, lido pelos dois pilares.</p></div>
-      <div class="mec reveal"><span class="n">NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO</span><h4>All-hands abre com cliente</h4><p>Todo all-hands começa com a história de um dono de PME e fecha com dois momentos de 5 min: o AI Speed Run (um Jotter demonstra o melhor fluxo com IA do mês — prática emprestada da Coinbase) e o shout-out de quem viveu um valor na prática. <strong>Ritual:</strong> a cadência. <strong>Exemplo:</strong> a história — do cliente e do Jotter.</p></div>
+      <div class="mec reveal"><span class="n">NO LOOP · OS PILARES SÃO A RÉGUA</span><h4>Cultura decide nota, mérito e promoção</h4><p>Os dois pilares viram <strong>comportamentos esperados</strong>, descritos no ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. <strong>Ritual:</strong> as calibrações de Jul + Dez. <strong>Exemplo:</strong> o retrato trimestral de cada pessoa, lido pelos dois pilares.</p></div>
+      <div class="mec reveal"><span class="n">NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO</span><h4>All-hands abre com cliente</h4><p>Todo all-hands começa com a história de um dono de PME e fecha com dois momentos de 5 min: e o shout-out de quem viveu um valor na prática. <strong>Ritual:</strong> a cadência. <strong>Exemplo:</strong> a história — do cliente e do Jotter.</p></div>
       <div class="mec reveal"><span class="n">NO DIA A DIA · FEEDBACK NO FLUXO</span><h4>No drama, good karma em prática</h4><p>SBI direto, peer-to-peer, nunca anônimo; problema visto tem dono ("nothing is someone else's problem"); números abertos. <strong>Ritual:</strong> o feedback na hora. <strong>Exemplo:</strong> a verdade dita para a pessoa, não para o corredor.</p></div>
       <div class="mec reveal"><span class="n">NA SAÍDA · DIGNIDADE COMO MENSAGEM</span><h4>Como tratamos quem sai</h4><p>Saídas rápidas e generosas, alumni cuidado. <strong>Ritual:</strong> o offboarding com conversa humana. <strong>Exemplo:</strong> o ex-Jotter que indica, volta ou vira cliente.</p></div>
     </div>
@@ -1224,7 +1226,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Dias 61–90 · O sistema gira</span>
         <h3>Ladder v1 + ciclo piloto</h3>
-        <p>Ladder de 6 faixas publicado por área; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da parada com um time voluntário, para calibrar a régua. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
+        <p>Ladder de 6 faixas publicado por área; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da calibração com um time voluntário, para calibrar a régua. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
       </div>
     </div>
   </div>
@@ -1513,6 +1515,7 @@ function openLetter(e){ if(e) e.preventDefault(); document.getElementById('ltOv'
 function closeLetter(){ var o = document.getElementById('ltOv'); if(o) o.classList.remove('open'); }
 function openRetr(e){ if(e) e.preventDefault(); document.getElementById('rtOv').classList.add('open'); }
 function closeRetr(){ var o = document.getElementById('rtOv'); if(o) o.classList.remove('open'); }
+function toggleOp(){ var d=document.getElementById('opDeep'),b=document.getElementById('opTgl'); var o=d.classList.toggle('open'); b.setAttribute('aria-expanded',o); b.textContent=o?'Fechar o passo a passo ↑':'Abrir o passo a passo →'; }
 document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeLetter(); closeRetr(); } });
 var navBox = document.getElementById('navLinks');
 if(navBox){ navBox.addEventListener('wheel', function(e){ if(navBox.scrollWidth > navBox.clientWidth && Math.abs(e.deltaY) > Math.abs(e.deltaX)){ navBox.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false}); }
@@ -1543,11 +1546,10 @@ spy();
     <span class="mono">Retrato trimestral · exemplo (pessoa fictícia)</span>
     <p><strong>Ana · Engenharia · T3</strong> — 11 conversas no trimestre.</p>
     <p><strong>O trimestre em uma linha:</strong> assumiu a conciliação ponta a ponta e derrubou o fechamento de 3 dias para 4 horas.</p>
-    <p><strong>Entregas, com fonte:</strong> pipeline novo de conciliação no ar (1:1 de 14/ago) · incidente P1 resolvido com post-mortem escrito (02/set) · mentorou o onboarding do Théo (23/set).</p>
-    <p><strong>Como operamos:</strong> o post-mortem virou padrão do time. <strong>Como nos comportamos:</strong> puxou a conversa com o cliente X sem ser pedida.</p>
+    <div class="rt2"><div class="rtc"><span class="rth">COMO OPERAMOS</span><p>Pipeline de conciliação no ar — fechamento de 3 dias para 4h (1:1 de 14/ago)</p><p>P1 resolvido; post-mortem virou padrão do time (02/set)</p></div><div class="rtc"><span class="rth">COMO NOS COMPORTAMOS</span><p>Puxou a conversa com o cliente X sem ser pedida (09/set)</p><p>Mentorou o onboarding do Théo (23/set)</p></div></div>
     <p><strong>Próximo salto (combinado na 1:1):</strong> liderar o piloto de crédito no T4.</p>
     <p><strong>Parecer do líder:</strong> "Pronta para escopo maior; o gap é delegação — o piloto de crédito é o teste que combinamos."</p>
-    <p class="lt-cap">Gerado pelo agente a partir da memória das 1:1s — cada afirmação com data e fonte. Ninguém preencheu nada. Vai para o líder e para a Ana ao mesmo tempo, e aterrissa na 1:1.</p>
+    <p class="lt-cap">Gerado pelo agente a partir da memória das 1:1s — cada afirmação com data e fonte. Ninguém preencheu nada. Chega por DM no Slack, para o líder e para a Ana ao mesmo tempo, e aterrissa na 1:1.</p>
   </div>
 </div>
 <div id="jota-chat" data-jc-version="v3">
