@@ -32,7 +32,7 @@ Um resumo para um tempo que não para — seis linhas que resumem o sistema; o r
 Visual do resumo: um infinito em ondas — os cinco capítulos da jornada fluindo continuamente pelo traçado (alumni retornam à atração) com Founder Mode × IA no cruzamento.
 1. A aposta: a empresa extraordinária da era da IA não é a que mais contrata — é a que mais alavanca. Densidade de talento × frota de agentes é o modelo; receita por pessoa é a métrica-guia.
 2. A barra: cada contratação é decisão de fundador — funil com freio estrutural (Guardião da Barra com veto), fundadores em toda oferta e cadeira vazia > contratação mediana.
-3. O sistema: People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, Loop mensal com Granola, ciclo leve em Jul + Dez pelos dois pilares, saídas rápidas e dignas.
+3. O sistema: People é a jornada inteira, não uma área de processos — sourcing antes da vaga, entrega na semana 1, 1:1s que viram memória, retratos trimestrais automáticos, duas paradas de decisão por ano e saídas rápidas e dignas.
 4. O perfil: founder mode atravessa tudo — identificado na atração, desenvolvido com escopo, contexto e equity compreendido, sustentado pela cadência. In-person first, com flexibilidade de adulto.
 5. A função: People enxuta, alavancada por uma frota de agentes — o agente prepara; o humano decide — e que cresce por dor real, não por playbook.
 6. O plano: primeiros 90 dias com data — escutar e calibrar a barra, fundações no ar, sistema girando.
@@ -121,13 +121,13 @@ DIA 1–90
 Onboarding
 Cliente na semana 1, entrega na semana 1, metas claras de 90 dias.
 →
-TODO MÊS
+CONTÍNUO
 O Loop
-1:1s com Granola, PDI vivo, autonomia sustentada pela cadência.
+1:1s com Granola — a conversa que vira memória; autonomia sustentada pela cadência.
 →
-JUL + DEZ
-Ciclo, Mérito & Ladder
-Ciclo leve pelos dois pilares + ladder de 6 faixas por área.
+O ANO INTEIRO
+Organismo, Mérito & Ladder
+Avaliação sem Dia D: memória contínua, retratos trimestrais e duas paradas de decisão + ladder.
 →
 ÚLTIMO DIA
 Offboarding
@@ -300,7 +300,7 @@ Check-ins agendados na oferta
 Não "quando lembrar": os checkpoints são marcados no aceite. Rampa medida: metas de 90 dias andando, tempo até primeira entrega, autonomia crescente.
 DIA 90
 Avaliação de integração
-Decisão explícita contra as metas: entregou? Se sim, entra no Loop e abre o PDI de carreira. Se não, conversa honesta e rápida — coerente com a barra, digno com a pessoa.
+Decisão explícita contra as metas: entregou? Se sim, entra no Loop — e a conversa de carreira começa. Se não, conversa honesta e rápida — coerente com a barra, digno com a pessoa.
 Não-negociáveis do gestor
 O onboarding tem dono
 Primeira 1:1 na semana 2
@@ -322,11 +322,8 @@ Retornados
 Capítulo 03 · Desenvolvimento contínuo
 Todo mês
 · o loop que nunca para
-Desempenho não é um evento em julho. É a soma de doze conversas.
-O coração do People OS: 1:1s mensais capturadas pelo Granola, um agente que extrai
-só a parte que importa
-, e um PDI vivo que se alimenta sozinho. Quando o ciclo de julho e dezembro chega, ele não avalia do zero — só consolida o que as conversas já registraram.
-Regra nº 1: nada no ciclo pode ser surpresa.
+Desempenho não é um evento em julho. É a soma de todas as conversas.
+O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. Quando a parada semestral chega, ela não avalia do zero — só decide sobre o que as conversas já registraram. Regra nº 1: nada na parada pode ser surpresa.
 MENSAL · 45 MIN
 1:1 conduzida pelo liderado
 O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com gestor, liderado e RH.
@@ -334,15 +331,15 @@ AGENTE PEOPLE
 Extrai o sinal, descarta o ruído
 Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar. A dupla aprova o resumo antes de ele contar.
 CONTÍNUO
-PDI vivo
-2 objetivos por ciclo, mapeados nos pilares e no ladder. O agente traz o delta todo mês: o que andou, o que travou. Ninguém "atualiza planilha".
+Próximo salto
+Combinado na conversa, lembrado pela memória: o agente traz o delta a cada retrato — o que andou, o que travou. Ninguém "atualiza planilha".
+TRIMESTRAL
+Retrato de 2 páginas
+O agente compila as conversas num retrato por pessoa — para o líder e para a pessoa. Ajuste de rota na própria 1:1; nada para preencher.
 JUL + DEZ
-Ciclo leve
-A avaliação nasce pré-preenchida de evidências de 6 meses de conversas. O ciclo consolida; não surpreende.
-RECOMEÇA
-Novo PDI
-Devolutiva + comp + novo PDI na 1:1 pós-ciclo. O loop gira de novo — contínuo, para sempre.
-Menu de temas da 1:1 mensal
+A parada
+Semana de calibração: mérito, promoção e comp decididos sobre a evidência acumulada. Devolutiva na 1:1 — o loop segue girando.
+Menu de temas da 1:1
 Um tema rotativo por mês
 Energia:
 onde você está gastando energia que não volta?
@@ -378,8 +375,8 @@ Trimestral
 Metas por área
 2–3 apostas grandes por área, com um dono cada. Fechadas com veredito: entregue, escorregou ou morreu.
 Semestral + Anual
-Ciclo + Offsite
-Jul + Dez: ciclo leve e comp. Dezembro: offsite de estratégia + celebração do ano.
+Paradas + Offsite
+Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.
 Contexto, não controle
 Como a decisão acontece
 Líderes dão contexto e clareza para o time decidir bem — não aprovam cada passo. Toda decisão grande tem
@@ -416,41 +413,13 @@ Autonomia sem perder alinhamento
 Contexto, não controle: tactical semanal, all-hands mensal, metas trimestrais com dono único, ciclo semestral. Um dono por decisão, discordância buscada antes, compromisso de todos depois. O ritmo é o que faz a autonomia escalar sem virar caos.
 Ver a cadência →
 Capítulo 04 · Performance, mérito & crescimento
-Jul + Dez
-· o ciclo leve + o ladder
-Quatro semanas, dois pilares, uma nota — e um ladder que diz o que "bom" significa em cada faixa.
-Porque o Loop alimenta o sistema o ano todo, o ciclo formal pode ser leve sem ser raso. Autoavaliação e avaliação do gestor usam o mesmo formulário, ancorado nos dois pilares; a IA pré-sintetiza com as evidências das 1:1s; a calibração — e toda decisão — é humana.
-Pilar 1 · Como operamos
-Mandou bem + pode melhorar
-Q1:
-1–3 exemplos concretos de onde você mandou bem neste pilar — velocidade, execução com qualidade, frugalidade, cliente em primeiro lugar. Uso de IA conta aqui (Regra Tobi: o que você automatizou neste ciclo?).
-Q2:
-1–3 exemplos de onde pode melhorar, com evidência — não autocrítica genérica.
-Pilar 2 · Como nos comportamos
-Mandou bem + pode melhorar
-Q3:
-1–3 exemplos de dono em ação — problema abraçado, verdade dita sem drama, fome de aprender, zero atalho em ética e segurança.
-Q4:
-1–3 exemplos de onde pode melhorar, com evidência. Progresso do PDI aparece naturalmente nas quatro respostas — não é pergunta separada.
-Nota + opcional
-1–5 contextualizada à faixa
-Q5:
-nota geral de 1 a 5, sempre lida contra o nível do ladder — um 3 de N1 é excelente; um 3 de N5 acende alerta.
-3 = atende expectativas altas
-, o padrão de que nos orgulhamos.
-Q6 (opcional):
-skip-level — "o que a liderança poderia fazer diferente para te ajudar?"
-SEMANA 1
-Auto + gestor
-Ambos preenchem o mesmo formulário, independentes, já pré-populado com evidências do Loop. Pacto de não-surpresa: tudo que entra no formulário já foi conversado na 1:1 pré-ciclo.
-SEMANA 2
-Síntese IA + calibração
-O agente cruza auto × gestor × evidências e aponta divergências. A sala de calibração (liderança + People) decide notas, promoções e mérito — dentro de envelope de budget definido
-antes
-, sem surpresa na sala.
-SEMANAS 3 E 4
-Devolutiva + comp + novo PDI
-1:1 pós-ciclo entrega tudo junto: feedback, decisão de comp e o novo PDI. Nada de "a promoção sai em outro processo". Efetivo no pagamento seguinte.
+O ano inteiro · o organismo + o ladder
+Avaliação sem Dia D: um organismo, não um processo.
+Não temos PDI, formulário obrigatório nem pesquisa de clima — temos memória e conversa. A avaliação acontece o ano inteiro, sozinha; a única coisa com data é a decisão. Custo para o time: zero ferramentas novas e zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica.
+Contínuo — a conversa que não se perde: 1:1s com o Granola na sala, no ritmo de cada dupla (semanal, quinzenal, como a relação pedir). Líder e pessoa alinham o que está sendo entregue, o que funciona e o que não funciona. O inegociável não é a agenda: é que a conversa vira memória. Assunto pessoal? Pausa o Granola — o que é da vida não vira dado.
+Trimestral — o retrato de duas páginas: o agente compila as conversas do trimestre num retrato por pessoa (entregas com data e fonte, evidências pelos dois pilares, próximo salto, delta vs. o anterior). Vai para o líder e para a pessoa ao mesmo tempo e aterrissa na 1:1: acompanhamento e ajuste de rota na conversa que já ia acontecer — não existe calibração trimestral. O líder anexa um parecer de um parágrafo; quem quiser soma uma autoavaliação facultativa (não fazer não conta contra: a voz da pessoa já está na memória). Retrato magro denuncia sozinho a conversa que não aconteceu. A página traz um retrato de exemplo (Ana, fictícia), com parecer do líder e autoavaliação.
+Semestral — a semana da decisão: duas vezes ao ano, People monta o pacote por pessoa (retratos, pareceres, autoavaliação se houver e a nota proposta pelo líder) e a liderança dedica uma semana de calibração — leitura assíncrona, sessões por área onde a nota é validada contra a evidência (evidência vence opinião; sem consenso, o gestor do gestor decide) e fechamento de mérito e promoções com CEO + CFO, contra o envelope, na mesma semana do fechamento financeiro. A avaliação já aconteceu — a semana só efetiva a decisão. Devolutiva na 1:1 seguinte, com o porquê; efetivo no pagamento seguinte. As notas (1–5) só nascem na parada — idioma comum da decisão, nunca formulário do dia a dia.
+Sob o capô (mecanismo real): Granola e Claude falam MCP nativo. Um agente lê as notas das 1:1s, passa por um portão de privacidade (só trabalho atravessa; saúde, família e desabafo são descartados estruturalmente) e grava a destilação num banco próprio — Supabase com permissão por linha: cada líder vê só os seus; cada pessoa, o próprio. A transcrição crua nunca sai do Granola e nem People a acessa — pertence à dupla. Do banco nascem os retratos, os pacotes da calibração e o Jotabot no Slack: o líder pergunta ("o que combinei com a Maria sobre o projeto X?") e recebe resposta com citações datadas, no mesmo escopo de permissão — o pessoal nunca entrou, então nunca sai. Custo de tokens: menos que um almoço por mês. O candidato constrói o v1, do jeito que construiu a própria página do case.
 O Ladder · 6 faixas × 5 áreas
 Mesma espinha em todas as áreas, com a linguagem de cada ofício.
 Ladder é direção, não checklist. Escolha a área:
@@ -486,8 +455,8 @@ Plano informal de 30 dias, documentado pelo gestor — chance real de correção
 Duas notas 2 seguidas → PIP.
 1
 FICOU DEVENDO EM TUDO
-PIP de 3 meses
-Inicia na própria 1:1 pós-ciclo, com critérios de saída claros. Sem renegociação caso a caso na sala de calibração.
+Conversa de correção
+Começa na 1:1 de hoje — prazo curto, critérios claros; se não virar, saída rápida e digna. Sem PIP de teatro, sem renegociação na sala.
 Promoção · os 4 portões
 Promove-se padrão, não pico
 Nota abre a conversa
@@ -510,7 +479,7 @@ Folha cresce com a empresa — nunca na frente dela. A régua cabe numa linha: m
 O envelope anual se divide em quatro caixinhas (percentuais da folha/ano: sugestão de mercado — Mercer, WorldatWork e Pave, ciclos 2025–26 — a validar com o CFO): Mérito 3,5–4%, por matriz nota × banda, nunca peanut butter (alta performance leva 1,6–2x a média); Promoções 1–1,5%, só com espaço de escopo; Fora de ciclo ~0,5%, retenção e correções de mercado; Novas vagas = o residual — teto, não meta: cada vaga passa pela Regra Tobi, e o que ela não liberar cascateia para o time ou volta ao negócio. Equity refresh corre em paralelo, fora do envelope de caixa. Se a empresa migrar para CLT, o dissídio entra como camada zero (lei, fora do envelope); hoje, com o time PJ, ele não se aplica.
 Dois controles: margem bruta por pessoa (subindo / estável / caindo) e runway (folgado / no limite). Subindo + folgado: acelera — envelope inteiro aberto. Subindo + no limite: o pulo do gato — a margem abriu, o runway segurou; além da trava, só por decisão explícita de CEO + CFO (é onde empresas morrem de ano bom). Estável: vagas seguram; time atual protegido, mérito e promoções primeiro. Caindo (modo de segurança — pausa, não paralisia): contratação espera a régua recuperar; mérito no piso, concentrado nos melhores; ajustes pontuais seguem possíveis com aprovação CEO + CFO (a caixinha fora de ciclo permanece ativa); enxugar o time nunca é reflexo de um trimestre.
 A página mostra a Barra do Envelope: um preenchimento amarelo que cresce da esquerda (margem abre) e nunca cruza o marcador escuro (runway segura) — quando a margem empurra e o runway trava, o marcador pulsa. Abaixo, as quatro caixinhas flutuam com níveis que sobem e descem conforme os controles. O ladder do case também é visual: as 6 faixas são degraus de uma escada que sobe.
-E os parâmetros finais? Nascem dos dados do Jota, não de benchmark — alinhamento com o CFO para calibrá-los, e a fórmula roda em modo sombra por um ciclo inteiro antes de ganhar o direito de governar.
+E os parâmetros finais? Nascem dos dados do Jota, não de benchmark — alinhamento com o CFO para calibrá-los, e a fórmula roda em modo sombra por um semestre inteiro antes de ganhar o direito de governar.
 Capítulo 05 · Saídas
 O último dia
 · offboarding & alumni
@@ -555,8 +524,7 @@ o cliente de verdade cuja empresa não pode morrer.
 NA AVALIAÇÃO · OS PILARES SÃO A RÉGUA
 Cultura decide nota, mérito e promoção
 As quatro perguntas do ciclo são os dois pilares em ação; o ladder descreve os pilares por faixa.
-Ritual:
-o ciclo de Jul + Dez.
+Ritual: as paradas de Jul + Dez.
 Exemplo:
 as evidências concretas que cada pessoa traz — 1 a 3 por pilar.
 NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO
@@ -602,7 +570,7 @@ identidade com orgulho
 (rituais próprios, linguagem própria, construir em público). O Jotter que viveu isso defende a missão sem ninguém pedir.
 Termômetro
 Medindo o que parece imensurável
-eNPS trimestral como termômetro — a tendência importa mais que o número absoluto, e ele não vira meta de ninguém. O teste duro é outro: attrition regretted abaixo de 5% ao ano — defensor de verdade fica.
+Não medimos opinião — medimos comportamento. Uma métrica: attrition regretted. Quem a gente lamenta perder, saiu? Se sim, por quê? É ali que mora tudo que uma pesquisa de clima tentaria dizer — e os sinais espontâneos (indicações acontecendo, alumni voltando) contam o resto sem ninguém perguntar nada.
 Tema do case · IA e o futuro de People
 O futuro próximo
 · como IA muda a construção de empresas
@@ -651,20 +619,20 @@ Agente Recrutador
 Sourcing do Pipeline dos 300, triagem contra a job description, agendamento e feedback em até 10 dias úteis a todo candidato.
 Agente de Onboarding
 Provisiona acessos e ferramentas, guia as metas de 90 dias, dispara os check-ins de 30/60/90.
-Agente de 1:1 & PDI
-Granola → extrai compromissos, bloqueios e evidências por pilar → mantém o PDI vivo com o delta mensal.
-Agente de Ciclo
-Pré-popula formulários com evidências do Loop, cruza auto × gestor e prepara a síntese da calibração.
+Agente de Memória (1:1)
+Granola → portão de privacidade → banco: compromissos, bloqueios e evidências por pilar. Só trabalho — o pessoal nunca entra.
+Jotabot (Slack)
+O líder pergunta ("o que combinei com a Maria?") e recebe resposta com citações datadas — cada um enxerga só o próprio escopo.
 Agente Helpdesk
 Responde a maioria das dúvidas de política, benefícios e processos na hora — e escala o resto para o humano certo.
-Agente Analytics
-Dashboards vivos: receita por pessoa, rampa, aceite de oferta, attrition regretted, NPS de candidato.
+Agente de Sinais
+Cuida da única métrica — attrition regretted — e dos porquês das saídas. Qualquer outro corte existe sob demanda, não em painel.
 FERRAMENTAS · STACK BRASILEIRO
 Compramos o burocrático, construímos o que é nosso
 Tako para folha, admissões e a burocracia CLT — pagamento sem fricção não é diferencial, é higiene. inHire ou Ashby como ATS com IA no recrutamento — triagem e o CRM do Pipeline dos 300 (avaliamos os dois). Granola + Claude para o que é proprietário: os agentes da frota, treinados no nosso contexto. Ferramenta de prateleira para o commodity; engenharia própria onde mora a vantagem.
-SCORECARD DO PEOPLE OS
-O que medimos
-Receita por pessoa (meta definida pelo C-level a partir dos parâmetros atuais) · aceite de oferta >85% · feedback a candidato ≤10 dias úteis · vaga em ~30 dias (± conforme complexidade) · rampa <90 dias · attrition regretted <5% a.a. · % de processos de People rodando com agente.
+O QUE MEDIMOS
+Uma métrica — o resto, sob demanda
+Attrition regretted: quem lamentamos perder saiu? Se sim, por quê? É a única métrica declarada de People — ali mora tudo que uma pesquisa de clima tentaria dizer. Feedback em ≤10 dias úteis e vaga em ~30 são promessas a candidato, não dashboard; receita e margem por pessoa são números do negócio, com o C-level. O resto existe no banco, sob demanda — não em painel.
 Tema do case · Escala
 Os próximos anos
 · decisões que compõem juros
@@ -721,7 +689,7 @@ Memo de cultura v1 + funil completo
 Memo de cultura publicado (missão, visão, os dois pilares) e enviado a todo candidato na primeira entrevista. Funil da barra rodando com Bar Raisers treinados e budget por vaga definido pelo ladder. Primeiro agente da frota — o recrutador — em produção.
 Dias 61–90 · O sistema gira
 Ladder v1 + ciclo piloto
-Ladder de 6 faixas publicado por área; 1:1s com Granola e PDI vivo em operação. Ciclo piloto leve com um time voluntário para calibrar as perguntas dos pilares. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
+Ladder de 6 faixas publicado por área; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da parada com um time voluntário, para calibrar a régua. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
 Índice auditável
 Todas as perguntas do case
 · resposta direta + onde ela vive na jornada
@@ -745,7 +713,7 @@ Percorrer o funil →
 Talento · 04
 Como evitar que a qualidade das contratações diminua ao longo do tempo?
 +
-Os freios estão embutidos no próprio funil: job description codificada no AI screening, régua pública que auto-seleciona, notas escritas antes do debrief, Bar Raiser com veto fora da cadeia do HM, budget da vaga fixado na abertura pelo ladder, fundadores em toda oferta até ~150 pessoas — e os freios contínuos: auditoria de safra semestral, taxa de aprovação monitorada e cadeira vazia > contratação mediana.
+Os freios estão embutidos no próprio funil: job description codificada no AI screening, régua pública que auto-seleciona, notas escritas antes do debrief, Bar Raiser com veto fora da cadeia do HM, budget da vaga fixado na abertura pelo ladder, fundadores em toda oferta até ~150 pessoas — e os freios contínuos: a cada 6 meses as últimas contratações revisitadas contra a barra, taxa de aprovação acompanhada e cadeira vazia > contratação mediana.
 Ver os freios em cada etapa →
 Talento · 05
 Como atrair talentos excepcionais de forma orgânica, antes da vaga existir?
@@ -770,7 +738,7 @@ Ver o sistema →
 Cultura · 09
 Como transformar pessoas em defensoras da missão, cultura e produto?
 +
-É o resultado da jornada funcionando: proximidade com o cliente (ninguém defende abstração), vitória compartilhada (equity + metas visíveis), voz que muda coisas (dissenso buscado, skip-level, fundadores acessíveis) e identidade com orgulho (rituais e linguagem próprios, construir em público). Termômetro: eNPS + "você defendeu o Jota espontaneamente este trimestre?"
+É o resultado da jornada funcionando: proximidade com o cliente (ninguém defende abstração), vitória compartilhada (equity + metas visíveis), voz que muda coisas (dissenso buscado, skip-level, fundadores acessíveis) e identidade com orgulho (rituais e linguagem próprios, construir em público). Termômetro: comportamento, não pesquisa — attrition regretted e sinais espontâneos (indicações, alumni voltando).
 Ver as quatro fontes →
 IA · 10
 Como a IA mudará a forma de construir empresas?
@@ -785,7 +753,7 @@ Ver os papéis →
 IA · 12
 Como construir uma função de People enxuta e alavancada por IA?
 +
-Um Head of People operando uma frota de agentes — recrutador, onboarding, 1:1 & PDI via Granola, ciclo, helpdesk, analytics. Um People & Talent Partner entra quando a dor de volume for real — não antes. Regra inegociável: o agente prepara, o humano decide. Um scorecard mede o sistema, de receita por pessoa a attrition regretted.
+Um Head of People operando uma frota de agentes — recrutador, onboarding, memória de 1:1 via Granola, retratos, Jotabot, sinais. Um People & Talent Partner entra quando a dor de volume for real — não antes. Regra inegociável: o agente prepara, o humano decide. Uma métrica declarada mede o sistema — attrition regretted; o resto existe sob demanda.
 Ver o blueprint →
 Escala · 13
 Quais decisões de pessoas e cultura mais aumentam a chance de uma empresa extraordinária?
