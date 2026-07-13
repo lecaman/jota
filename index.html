@@ -210,7 +210,7 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .logo-mark{width:38px;height:38px;background:var(--sol-alto);border-radius:12px;display:flex;align-items:center;justify-content:center}
 .logo-word{font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
 .logo-sub{font-size:.68rem;color:var(--grafite-claro);font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-left:1px solid var(--linha);padding-left:12px;line-height:1.3}
-.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto;min-width:0;flex:1 1 auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto;min-width:0;flex:1 1 auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;cursor:grab;user-select:none} .nav-links.dragging{cursor:grabbing;scroll-snap-type:none} .nav-links.dragging a{pointer-events:none}
 .nav-links::-webkit-scrollbar{display:none}
 .nav-links a{font-size:.82rem;font-weight:600;color:var(--grafite);text-decoration:none;padding:8px 12px;border-radius:99px;white-space:nowrap;transition:all .2s}
 .nav-links a:hover{background:var(--mel)}
@@ -1934,5 +1934,27 @@ function jcSend(){
   step();
 })();
 </script>
+  <script>
+(function(){
+  var nav=document.getElementById('navLinks'); if(!nav) return;
+  var down=false, moved=false, startX=0, startScroll=0;
+  nav.addEventListener('mousedown',function(e){
+    down=true; moved=false; nav.classList.add('dragging');
+    startX=e.pageX; startScroll=nav.scrollLeft;
+  });
+  window.addEventListener('mousemove',function(e){
+    if(!down) return;
+    var dx=e.pageX-startX;
+    if(Math.abs(dx)>4) moved=true;
+    nav.scrollLeft=startScroll-dx;
+  });
+  window.addEventListener('mouseup',function(){
+    if(!down) return;
+    down=false; nav.classList.remove('dragging');
+  });
+  nav.addEventListener('click',function(e){ if(moved){ e.preventDefault(); e.stopPropagation(); moved=false; } },true);
+})();
+</script>
+</body>
 </body>
 </html>
