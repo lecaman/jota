@@ -496,14 +496,14 @@ voz que muda coisas
 identidade com orgulho
 (rituais próprios, linguagem própria, construir em público). O Jotter que viveu isso defende a missão sem ninguém pedir.
 Termômetro
-Medindo o que parece imensurável
+A medida do imensurável: attrition regretted
 Não medimos opinião — medimos comportamento. Uma métrica: attrition regretted. Quem a gente lamenta perder, saiu? Se sim, por quê? É ali que mora tudo que uma pesquisa de clima tentaria dizer — e os sinais espontâneos (indicações acontecendo, alumni voltando) contam o resto sem ninguém perguntar nada.
 Tema do case · IA e o futuro de People
 O futuro próximo
 · como IA muda a construção de empresas
 O organograma do futuro tem duas colunas: pessoas e agentes.
 Como a Inteligência Artificial mudará a forma de construir empresas?
-Cinco mudanças estruturais — e todas já começaram.
+Três perguntas do case (como a IA muda a construção de empresas, o papel de People, e a função enxuta alavancada por IA) respondidas juntas, em três atos: o que muda, o papel, a prática.
 MUDANÇA 1
 A curva headcount × receita quebrou
 Cursor, Midjourney, Lovable, Gamma: dezenas de pessoas fazendo o que exigia milhares. O tamanho deixa de ser proxy de ambição.
@@ -566,7 +566,7 @@ Os próximos anos
 As decisões de gente que separam empresas boas de empresas extraordinárias.
 Pergunta do case · 13
 Quais são as decisões de pessoas e cultura que mais aumentariam as chances de o Jota construir uma empresa extraordinária?
-Seis decisões — todas baratas agora, todas caríssimas depois.
+Cinco decisões — todas baratas agora, todas caríssimas depois. As mesmas que a maioria só percebe tarde demais (perguntas 13 e 14 respondidas juntas).
 DECISÃO 1
 Barra inegociável nos primeiros 50
 Os primeiros 50 contratam os próximos 500. Guardiões da Barra + fundadores em toda oferta + cadeira vazia > contratação mediana.
@@ -574,8 +574,8 @@ DECISÃO 2
 Escrever a cultura antes dos 50
 Memo vivo, público, usado em contratação, ciclo e promoção. Empresa de 30 acha que não precisa; a de 300 paga o preço do telefone sem fio.
 DECISÃO 3
-Comp e equity explicados desde já
-Filosofia clara desde já: bandas pelo ladder com estratégia 80–100–120, referência em P75+ do mercado e equity como parte central da total compensation — com refresh antes de virar crise e educação de equity, porque o maior motivador do pacote é o menos entendido.
+Levelling, Comp e Equity desde já
+As 6 faixas do ladder desde cedo — antes da inflação de títulos — com bandas 80–100–120 referenciadas em P75+ e equity como parte central da total compensation. Higiene incluída: vesting, refresh e educação antes que o primeiro cliff vire crise.
 DECISÃO 4
 Desenhar a organização híbrida agora
 Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.
@@ -583,26 +583,6 @@ DECISÃO 5
 Cadência é cultura
 Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.
 Pergunta do case · 14
-O que você faria agora que a maioria das empresas só percebe tarde demais?
-Sete coisas — em ordem de arrependimento alheio.
-1
-Documentar cultura e pilares já
-Antes que cada gestor invente a própria versão.
-2
-Resolver contratações erradas em semanas, não trimestres
-O custo não é a pessoa — é a mensagem que a tolerância manda para os melhores.
-3
-Leveling simples antes da inflação de títulos
-As 6 faixas do ladder desde cedo: arrumar títulos depois custa um ciclo inteiro de confiança.
-4
-Higiene de equity
-Vesting, refresh e educação antes que o primeiro cliff vire crise silenciosa.
-5
-Dados de People desde o dia zero
-O que não se mede vira opinião na sala de calibração.
-6
-Org design para IA agora
-Cada processo desenhado hoje sem agente é uma pessoa contratada amanhã por hábito.
 Se eu assumir amanhã
 Meus primeiros 90 dias
 · do diagnóstico ao sistema girando
