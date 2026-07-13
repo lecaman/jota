@@ -1939,18 +1939,21 @@ function jcSend(){
   var nav=document.getElementById('navLinks'); if(!nav) return;
   var down=false, moved=false, startX=0, startScroll=0;
   nav.addEventListener('mousedown',function(e){
-    down=true; moved=false; nav.classList.add('dragging');
+    down=true; moved=false;
     startX=e.pageX; startScroll=nav.scrollLeft;
   });
   window.addEventListener('mousemove',function(e){
     if(!down) return;
     var dx=e.pageX-startX;
-    if(Math.abs(dx)>4) moved=true;
-    nav.scrollLeft=startScroll-dx;
+    if(Math.abs(dx)>4){
+      if(!moved){ moved=true; nav.classList.add('dragging'); }
+      nav.scrollLeft=startScroll-dx;
+    }
   });
   window.addEventListener('mouseup',function(){
     if(!down) return;
-    down=false; nav.classList.remove('dragging');
+    down=false;
+    nav.classList.remove('dragging');
   });
   nav.addEventListener('click',function(e){ if(moved){ e.preventDefault(); e.stopPropagation(); moved=false; } },true);
 })();
