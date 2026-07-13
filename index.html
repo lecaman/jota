@@ -702,14 +702,13 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <div class="grid2">
       <div class="card reveal">
         <span class="tag">A barra · definida com quem contrata</span>
-        <h3>Três réguas + o teste do fundador</h3>
+        <h3>Duas réguas + o teste final</h3>
         <ul>
           <li><strong>Excepcional em algo:</strong> obra comprovada, não logos de currículo — a pessoa fez o trabalho.</li>
           <li><strong>Dono de verdade:</strong> evidência de founder mode na trajetória — criou algo, decidiu sem permissão, assumiu consequência.</li>
           <li><strong>Teste final:</strong> "se essa pessoa abrisse uma empresa amanhã, eu pediria para entrar?" Se hesita, é não.</li>
         </ul>
         <p style="margin-top:14px">Cada vaga abre com uma <strong>job description enxuta</strong>: missão do papel, resultados esperados em 12 meses e os sinais acima. É contra ela que o funil inteiro avalia.</p>
-        <p style="margin-top:10px"><strong>Barra alta ≠ perfil único:</strong> medimos padrão, não semelhança — culture add vale mais que culture fit, e barra que vira máquina de clonagem é defeito, não qualidade.</p>
       </div>
       <div class="card reveal">
         <span class="tag">Onde encontramos · antes da vaga</span>
@@ -718,7 +717,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           <li><strong>Pipeline dos 300:</strong> mapa vivo dos melhores nomes do ecossistema, mantido aquecido pelo agente recrutador com conteúdo e conversas.</li>
           <li><strong>O filão dos ex-fundadores + parcerias com VCs:</strong> quem já empreendeu (mesmo que tenha quebrado) é dono por formação — a Ramp acumulou 70 ex-founders assim. Parcerias com fundos (talent networks de portfólio) dão acesso direto a esse filão no Brasil.</li>
           <li><strong>Indicação incentivada:</strong> os melhores conhecem os melhores — bônus real e processo prioritário para indicados.</li>
-          <li><strong>Draft universitário:</strong> hackathons com dados reais de PME, presença nas faculdades, programas de estágio e Business Analysts — slope altíssimo, promovido rápido.</li>
+          <li><strong>Draft universitário:</strong> hackathons com dados reais de PME, presença nas faculdades, programas de estágio e Business Analysts.</li>
         </ul>
       </div>
     </div>
@@ -807,7 +806,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </ul>
           </div>
           <div class="sp-guard">
-            <p>Rubrica de correção única por vaga: a nota compara candidatos com a mesma régua. Escopo enxuto e respeitoso com o tempo de quem está no processo — é entrevista, não freela.</p>
+            <p>Rubrica de correção única por vaga: a nota compara candidatos com a mesma régua.</p>
           </div>
         </div>
         <div class="step-nav"><button onclick="goStep(-1,true)">← Anterior</button><button onclick="goStep(1,true)">Avançar →</button></div>
@@ -896,9 +895,9 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <div class="flow reveal">
       <div class="step"><span class="n">NO RITMO DA DUPLA</span><h4>1:1 conduzida pelo liderado</h4><p>O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.</p></div>
-      <div class="step hi"><span class="n">AGENTE PEOPLE</span><h4>Extrai o sinal, descarta o ruído</h4><p>Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar. A dupla aprova o resumo antes de ele contar.</p></div>
+      <div class="step hi"><span class="n">AGENTE PEOPLE</span><h4>Extrai o sinal, descarta o ruído</h4><p>Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar.</p></div>
       <div class="step"><span class="n">CONTÍNUO</span><h4>Próximo salto</h4><p>Combinado na conversa, lembrado pela memória: o agente traz o delta a cada retrato — o que andou, o que travou. Ninguém "atualiza planilha".</p></div>
-      <div class="step"><span class="n">TRIMESTRAL</span><h4>Retrato de 2 páginas</h4><p>O agente compila as conversas num retrato por pessoa — <strong>entregue por DM no Slack</strong>, para o líder e para a pessoa, com um parecer de um parágrafo do líder. Ajuste de rota na própria 1:1; nada para preencher. <a class="lt-btn" href="#" onclick="openRetr(event)">Ver um retrato →</a></p></div>
+      <div class="step"><span class="n">TRI E SEMESTRAL</span><h4>Retrato de 2 páginas</h4><p>O agente compila as conversas num retrato por pessoa — <strong>entregue por DM no Slack</strong>, para o líder e para a pessoa. No semestre, pelas janelas do Jotabot: o líder sobe a nota e comentários se quiser; a pessoa, autoavaliação facultativa. Ajuste de rota na própria 1:1; nada para preencher. <a class="lt-btn" href="#" onclick="openRetr(event)">Ver um retrato →</a></p></div>
       <div class="step"><span class="n">JUL + DEZ</span><h4>A calibração</h4><p>Semana de calibração: mérito, promoção e comp decididos sobre a evidência acumulada. Devolutiva na 1:1 — o loop segue girando.</p></div>
     </div>
     <div class="memflow reveal" aria-hidden="true">
@@ -938,16 +937,6 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <p class="mleg">A API oficial do Granola alimenta o cofre · portão automático de privacidade — o pessoal nunca vira dado · row-level security no banco do People OS · Jotabot no Slack para consultas · o Claude opera, o humano decide</p>
     </div>
 
-    <div class="card reveal" style="margin-top:16px"><span class="tag">Sob o capô</span><h3>Como funciona por baixo</h3><p style="max-width:76ch">Os líderes não enviam nada. Uma <strong>chave de workspace da API do Granola</strong> lê as 1:1s do time inteiro; o Claude destila, guarda e escreve — tudo com ferramentas oficiais, nada reinventado. <strong>Sistema novo: zero. Código próprio: só o bot que escuta o Slack. Operador: o Claude.</strong></p><a class="lt-btn" href="#" id="opTgl" aria-expanded="false" onclick="toggleOp(event)">Abrir o passo a passo →</a>
-      <div class="op-deep" id="opDeep"><ol class="opflow">
-        <li><strong>Granola pela API oficial.</strong> Uma chave de workspace lê notas e transcrições das 1:1s do time inteiro — sem ninguém enviar nada, sem navegador, sem um humano no meio. Pré-condição de setup: as 1:1s vivem numa <strong>pasta do time com visibilidade restrita</strong> — ou, alternativa igualmente simples, cada líder conecta a própria chave uma vez. A chave vive num cofre de segredos; ninguém faz login com ela.</li>
-        <li><strong>Portão de privacidade.</strong> O Claude processa cada transcrição e extrai só trabalho — entregas, compromissos, evidências pelos dois pilares. O pessoal é descartado antes de persistir; a transcrição crua nunca é copiada. E o próprio Granola só nomeia o dono da nota: o retrato fala "a dupla discutiu X", não "o líder disse Y".</li>
-        <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (Postgres). O <em>row-level security</em> é imposto aqui, no banco do People OS: líder vê os seus, cada um vê o próprio, People não vê conversa. A barreira é nossa, não herdada — nós somos donos do cofre.</li>
-        <li><strong>Retrato por DM no Slack.</strong> O retrato <strong>é</strong> o relatório trimestral: duas tabelinhas — Como operamos · Como nos comportamos — mais próximo salto e parecer, para líder e pessoa. Nota do líder e autoavaliação entram pelo Jotabot e sobem ao cofre.</li>
-        <li><strong>People aciona; o Claude monta.</strong> Uma semana antes da calibração, People dá um comando e o Claude junta, por pessoa, os dois retratos + nota + autoavaliação no relatório de duas páginas, já com as notas — People revisa e distribui. Prepara o agente; decide o humano.</li>
-        <li><strong>Jotabot (Slack Bolt).</strong> Um app em Bolt for Python — o framework oficial da Slack — escuta o canal, consulta o cofre (nunca o Granola) e chama o Claude: <strong>responde</strong> com citações datadas e <strong>captura</strong> a nota do líder — com comentários ou complementos, se ele quiser — e a autoavaliação, tudo subindo ao cofre pela mesma trilha. Ele herda a permissão do banco: cada um só enxerga o próprio escopo. Todas as respostas sobre seus liderados num só lugar, sob demanda.</li>
-      </ol></div></div>
-
     <div class="wk-native reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
       <div class="wk" id="wk">
         <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>PERFORMANCE PACKAGE</span></button><button class="wk-dot" onclick="wkGo(1)"><span>NOTA PROPOSTA</span></button><button class="wk-dot" onclick="wkGo(2)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(3)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(4)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(5)"><span>DEVOLUTIVA</span></button></div>
@@ -963,40 +952,23 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       </div>
       <p class="sd-cap">Na hora, com citações datadas — e cada líder só enxerga o próprio escopo.</p></div>
 
-    
-
+    <div class="card reveal" style="margin-top:16px"><span class="tag">Sob o capô</span><h3>Como funciona por baixo</h3><p style="max-width:76ch">Os líderes não enviam nada. Uma <strong>chave de workspace da API do Granola</strong> lê as 1:1s do time inteiro; o Claude destila, guarda e escreve — tudo com ferramentas oficiais, nada reinventado. <strong>Sistema novo: zero. Código próprio: só o bot que escuta o Slack. Operador: o Claude.</strong></p><a class="lt-btn" href="#" id="opTgl" aria-expanded="false" onclick="toggleOp(event)">Abrir o passo a passo →</a>
+      <div class="op-deep" id="opDeep"><ol class="opflow">
+        <li><strong>Granola pela API oficial.</strong> Uma chave de workspace lê notas e transcrições das 1:1s do time inteiro — sem ninguém enviar nada, sem navegador, sem um humano no meio. Pré-condição de setup: as 1:1s vivem numa <strong>pasta do time com visibilidade restrita</strong> — ou, alternativa igualmente simples, cada líder conecta a própria chave uma vez. A chave vive num cofre de segredos; ninguém faz login com ela.</li>
+        <li><strong>Portão de privacidade.</strong> O Claude processa cada transcrição e extrai só trabalho — entregas, compromissos, evidências pelos dois pilares. O pessoal é descartado antes de persistir; a transcrição crua nunca é copiada.</li>
+        <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (Postgres). O <em>row-level security</em> é imposto aqui, no banco do People OS: líder vê os seus, cada um vê o próprio, People não vê conversa. A barreira é nossa, não herdada — nós somos donos do cofre.</li>
+        <li><strong>Retrato por DM no Slack.</strong> O retrato <strong>é</strong> o relatório trimestral: duas tabelinhas — Como operamos · Como nos comportamos — para líder e pessoa. No semestre, nota, comentários e autoavaliação entram pelo Jotabot e sobem ao cofre.</li>
+        <li><strong>People aciona; o Claude monta.</strong> Uma semana antes da calibração, People dá um comando e o Claude junta, por pessoa, os dois retratos + nota + autoavaliação no relatório de duas páginas, já com as notas — People revisa e distribui. Prepara o agente; decide o humano.</li>
+        <li><strong>Jotabot (Slack Bolt).</strong> Um app em Bolt for Python — o framework oficial da Slack — escuta o canal, consulta o cofre (nunca o Granola) e chama o Claude: <strong>responde</strong> com citações datadas e <strong>captura</strong> a nota do líder — com comentários ou complementos, se ele quiser — e a autoavaliação, tudo subindo ao cofre pela mesma trilha. Ele herda a permissão do banco: cada um só enxerga o próprio escopo. Todas as respostas sobre seus liderados num só lugar, sob demanda.</li>
+      </ol></div></div>
 
     <div class="grid2" style="grid-template-columns:1fr">
       
       <div class="card reveal">
         <span class="tag">Privacidade por desenho</span>
         <h3>Confiança é o que faz o sistema funcionar</h3>
-        <p>Consentimento explícito na gravação; transcrição só com a dupla — nem People a acessa; o que sobe para o sistema é o <strong>resumo estruturado aprovado pela dupla</strong>, nunca o áudio ou o texto bruto. O agente prepara, o humano decide — em avaliação, promoção e qualquer conversa difícil.</p>
+        <p>Consentimento explícito na gravação; transcrição só com a dupla — nem People a acessa; o que sobe para o sistema é o <strong>resumo estruturado aprovado pela dupla</strong>, nunca o áudio ou o texto bruto. O agente prepara, o humano decide — em avaliação, promoção e qualquer conversa difícil. E se líder ou liderado preferirem não gravar ou transcrever no Granola, têm a opção de subir comentários + nota (líder) e autoavaliação (liderado) nas janelas abertas pelo Jotabot no Slack — considerados normalmente na calibração.</p>
         <p style="margin-top:10px">E o feedback contínuo vive fora do sistema também: <strong>SBI no fluxo do trabalho, peer-to-peer, nunca anônimo</strong> — no drama, good karma na prática.</p>
-      </div>
-    </div>
-
-    <p class="subhead reveal">Autonomia com alinhamento · a cadência que sustenta o dono</p>
-    <p class="subhead-note reveal">Desenvolver donos exige dar autonomia de verdade — e autonomia sem alinhamento vira caos. A resposta não é controle: é <strong>contexto + ritmo</strong>. Cada pessoa decide dentro de guardrails claros porque o ciclo de reuniões garante que todo mundo sabe o que importa agora.</p>
-
-    <div class="ritmo reveal">
-      <div class="rit"><span class="r-f">Semanal</span><h4>Tactical de liderança</h4><p>Metas em verde/amarelo/vermelho. O que travou, o que mudou. Sinal, não relatório.</p></div>
-      <div class="rit"><span class="r-f">Mensal</span><h4>All-hands</h4><p>Abre com a história de um cliente real; números abertos, perguntas sem filtro. E um ritual de 5 min: o shout-out de valores.</p></div>
-      <div class="rit"><span class="r-f">Trimestral</span><h4>Metas por área</h4><p>2–3 apostas grandes por área, com um dono cada. Fechadas com veredito: entregue, escorregou ou morreu.</p></div>
-      <div class="rit"><span class="r-f">Semestral + Anual</span><h4>Calibrações + Offsite</h4><p>Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.</p></div>
-    </div>
-
-    <div class="grid2" style="grid-template-columns:1fr">
-      
-      <div class="card reveal">
-        <span class="tag">Desenvolvendo donos</span>
-        <h3>Escopo antes de título</h3>
-        <p><strong>Missões de dono:</strong> problemas inteiros com resultado visível no P&amp;L, não tarefas. <strong>Transparência radical:</strong> MRR, churn e runway abertos — dono precisa de contexto para decidir como dono. <strong>Equity educado:</strong> sessões periódicas explicando o que cada um possui. O título vem depois, confirmando o que o escopo já provou — é assim que o ladder promove.</p>
-      </div>
-      <div class="card reveal" style="grid-column:1/-1">
-        <span class="tag">Onde trabalhamos</span>
-        <h3>In-person first, com flexibilidade de adulto</h3>
-        <p>Nesta fase, densidade física é parte do produto: contexto passa por osmose, decisão acelera e cultura se aprende olhando — por isso o Jota é <strong>in-person first</strong>. E a flexibilidade existe para quando a vida pede, sem burocracia: tratamos gente grande como gente grande. <strong>Autonomia se mede pelo resultado, não pela cadeira ocupada.</strong></p>
       </div>
     </div>
 
@@ -1008,30 +980,33 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="drow"><span class="dnum">5</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">REDEFINE EXPECTATIVAS · RARO</span><h4>Promoção sugerida</h4></div><p class="dres">Se tenure ou escopo ainda não alcançaram, a promoção nesta calibração vira <strong>mérito banda alta</strong>.</p></div>
       <div class="drow"><span class="dnum">4</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">SUPERA EXPECTATIVAS ALTAS</span><h4>Mérito banda alta</h4></div><p class="dres">Mérito maior — <strong>promoção só se houver espaço</strong> de escopo na estrutura, nunca automática por tempo de faixa.</p></div>
       <div class="drow"><span class="dnum">3</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">ATENDE EXPECTATIVAS ALTAS</span><h4>Mérito padrão</h4></div><p class="dres">O baseline de que nos orgulhamos. Em ano apertado pode não haver mérito; promoção só com caso forte e evidenciado.</p></div>
-      <div class="drow low"><span class="dnum">2</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">FICOU DEVENDO EM PARTES</span><h4>Sem mérito + conversa dura</h4></div><p class="dres">Plano informal de 30 dias, documentado pelo gestor — chance real de correção. <strong>Duas notas 2 seguidas → PIP.</strong></p></div>
+      <div class="drow low"><span class="dnum">2</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">FICOU DEVENDO EM PARTES</span><h4>Sem mérito + conversa dura</h4></div><p class="dres">Plano informal de 30 dias, documentado pelo gestor — chance real de correção. <strong>Duas notas 2 seguidas → conversa de correção.</strong></p></div>
       <div class="drow low"><span class="dnum">1</span><div><span class="faixa mono" style="font-size:.62rem;letter-spacing:.1em;color:var(--grafite-claro)">FICOU DEVENDO EM TUDO</span><h4>Conversa de correção</h4></div><p class="dres">Começa na 1:1 de hoje — prazo curto, critérios claros; se não virar, saída rápida e digna. Sem PIP de teatro, sem renegociação na sala.</p></div>
 
     </div>
 
-    <div class="grid2">
-      <div class="card reveal">
-        <span class="tag">Promoção</span>
-        <h3>Promove-se padrão, não pico</h3>
-        <ul>
-          <li><strong>Nota abre a conversa</strong> — não a encerra. Duas calibrações fortes são o sinal real.</li>
-          <li><strong>Já opera na faixa seguinte</strong> — na prática, recorrente, contra o ladder da área.</li>
-          <li><strong>Envelope aprovado antes</strong> — People + fundadores definem o budget antes da calibração.</li>
-        </ul>
-      </div>
+    <p class="subhead reveal">O Ladder · 6 faixas × 5 áreas</p>
+    <p class="subhead-note reveal">Mesma espinha em todas as áreas, com a linguagem de cada ofício. <strong>Ladder é direção, não checklist.</strong> Escolha a área:</p>
+
+    <div class="ladder-tabs reveal" id="ladderTabs">
+      <button class="on" onclick="setLadder('tech',this)">Tech</button>
+      <button onclick="setLadder('produto',this)">Produto</button>
+      <button onclick="setLadder('comercial',this)">Comercial</button>
+      <button onclick="setLadder('operacoes',this)">Operações</button>
+      <button onclick="setLadder('corporativo',this)">Corporativo</button>
+    </div>
+    <div id="ladderBody" class="reveal"></div>
+
+    <div class="grid2" style="grid-template-columns:1fr">
+      
       <div class="card reveal">
         <span class="tag">Compensação · filosofia</span>
         <h3>Estratégia 80–100–120, sempre olhando P75+ do mercado</h3>
-        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O <strong>keeper test contínuo</strong> ("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. E mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
+        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. E mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
       </div>
     </div>
 
-    
-<div class="sim reveal" id="guardrails">
+    <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
       <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong> — sobe, contrata; cai, pausa até recuperar. E o sistema tem um motor e uma trava: <strong>margem subindo abre o envelope; o runway segura quanto dele se exerce</strong>. Hoje a régua é margem bruta; na maturidade, podemos migrar para um mix de EBITDA e receita.</p>
@@ -1071,17 +1046,56 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <p class="sim-note"><i style="font-style:normal;color:var(--ambar)">*</i> Percentuais da folha/ano: <strong>sugestão de mercado</strong> (Mercer, WorldatWork e Pave, ciclos 2025–26) — os finais nascem dos dados do Jota. <strong>Alinhamento com o CFO para calibrá-los</strong> — e a fórmula roda em modo sombra por um semestre inteiro antes de ganhar o direito de governar. Equity refresh corre em paralelo, fora do envelope de caixa. E se migrarmos para CLT, o dissídio entra como camada zero — lei, fora do envelope; hoje, com o time PJ, ele não se aplica.</p>
     </div>
 
-    <p class="subhead reveal">O Ladder · 6 faixas × 5 áreas</p>
-    <p class="subhead-note reveal">Mesma espinha em todas as áreas, com a linguagem de cada ofício. <strong>Ladder é direção, não checklist.</strong> Escolha a área:</p>
+    <p class="subhead reveal">Autonomia com alinhamento · a cadência que sustenta o dono</p>
+    <p class="subhead-note reveal">Desenvolver donos exige dar autonomia de verdade — e autonomia sem alinhamento vira caos. A resposta não é controle: é <strong>contexto + ritmo</strong>. Cada pessoa decide dentro de guardrails claros porque o ciclo de reuniões garante que todo mundo sabe o que importa agora.</p>
 
-    <div class="ladder-tabs reveal" id="ladderTabs">
-      <button class="on" onclick="setLadder('tech',this)">Tech</button>
-      <button onclick="setLadder('produto',this)">Produto</button>
-      <button onclick="setLadder('comercial',this)">Comercial</button>
-      <button onclick="setLadder('operacoes',this)">Operações</button>
-      <button onclick="setLadder('corporativo',this)">Corporativo</button>
+    <div class="ritmo reveal">
+      <div class="rit"><span class="r-f">Semanal</span><h4>Tactical de liderança</h4><p>Metas em verde/amarelo/vermelho. O que travou, o que mudou. Sinal, não relatório.</p></div>
+      <div class="rit"><span class="r-f">Mensal</span><h4>All-hands</h4><p>Abre com a história de um cliente real; números abertos, perguntas sem filtro. E um ritual de 5 min: o shout-out de valores.</p></div>
+      <div class="rit"><span class="r-f">Trimestral</span><h4>Metas por área</h4><p>2–3 apostas grandes por área, com um dono cada. Fechadas com veredito: entregue, escorregou ou morreu.</p></div>
+      <div class="rit"><span class="r-f">Semestral + Anual</span><h4>Calibrações + Offsite</h4><p>Jul + Dez: semana de calibração — mérito, promoções e comp. Dezembro: offsite de estratégia + celebração do ano.</p></div>
     </div>
-    <div id="ladderBody" class="reveal"></div>
+
+    <div class="grid2" style="grid-template-columns:1fr">
+      
+      <div class="card reveal">
+        <span class="tag">Desenvolvendo donos</span>
+        <h3>Escopo antes de título</h3>
+        <p><strong>Missões de dono:</strong> problemas inteiros com resultado visível no P&amp;L, não tarefas. <strong>Transparência radical:</strong> MRR, churn e runway abertos — dono precisa de contexto para decidir como dono. <strong>Equity educado:</strong> sessões periódicas explicando o que cada um possui. O título vem depois, confirmando o que o escopo já provou — é assim que o ladder promove.</p>
+      </div>
+      
+    </div>
+
+    <div class="grid2" style="grid-template-columns:1fr">
+      <div class="card reveal">
+        <span class="tag">Onde trabalhamos</span>
+        <h3>In-person first, com flexibilidade de adulto</h3>
+        <p>Nesta fase, densidade física é parte do produto: contexto passa por osmose, decisão acelera e cultura se aprende olhando — por isso o Jota é <strong>in-person first</strong>. E a flexibilidade existe para quando a vida pede, sem burocracia: tratamos gente grande como gente grande. <strong>Autonomia se mede pelo resultado, não pela cadeira ocupada.</strong></p>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+
+    
 
     <!-- ===== RÉGUA DE DECISÃO ===== -->
     
@@ -1159,8 +1173,8 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 <section class="alt" id="cultura">
   <div class="wrap">
     <span class="eyebrow reveal">O sistema por trás <span style="text-transform:none"></span></span>
-    <p class="momento reveal">Cultura <span>· não é uma seção do handbook — é o que a jornada faz todos os dias</span></p>
-    <h2 class="reveal">Cultura é o que você contrata, promove e demite. O resto é decoração.</h2>
+    <p class="momento reveal">Cultura <span>· não é uma seção do handbook — vive na jornada</span></p>
+    <h2 class="reveal">Cultura é o que acontece no dia a dia.</h2>
     <p class="lead reveal">O "download" dos aprendizados de culturas fortes tem uma fórmula simples: <strong>ritual + exemplo</strong>. Cada ponto da jornada carrega um ritual que repete o princípio e um exemplo real que o torna concreto. É assim que pertencimento, identidade e alinhamento deixam de ser palavras.</p>
 
     <div class="mecanismos" style="margin-top:44px">
@@ -1196,7 +1210,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 <section class="dark" id="ia">
   <div class="wrap">
     <span class="eyebrow reveal">Tema do case · IA e o futuro de People</span>
-    <p class="momento reveal" style="color:#fff">O futuro próximo <span>· como IA muda a construção de empresas</span></p>
+    <p class="momento reveal" style="color:#fff">O futuro próximo <span>· como a IA muda a construção de empresas — e o papel de People nisso</span></p>
     <h2 class="reveal" style="color:#fff">O organograma do futuro tem duas colunas: pessoas e agentes.</h2>
 
     <div class="pergunta reveal" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18)">
@@ -1315,7 +1329,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Dias 61–90 · O sistema gira</span>
         <h3>Ladder v1 + ciclo piloto</h3>
-        <p>Ladder de 6 faixas publicado por área; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da calibração com um time voluntário, para calibrar a régua. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
+        <p>Ladder de 6 faixas publicado por área, com as bandas 80–100–120 atreladas a cada faixa — compensation nasce junto do ladder; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da calibração com um time voluntário, para calibrar a régua. <strong>E uma sugestão para o passo seguinte:</strong> desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.</p>
       </div>
     </div>
   </div>
@@ -1330,7 +1344,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <p class="lead reveal">As perguntas não têm capítulo próprio — estão respondidas dentro da jornada, onde acontecem de verdade. Este índice existe para a banca conferir a cobertura em segundos: cada pergunta, a resposta essencial e o link para o lugar exato do sistema.</p>
 
     <div style="margin-top:44px">
-      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Talento · 01</span><h4>Como definiria a barra de talento do Jota?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Vive no sourcing: três réguas — excepcional em algo (obra, não currículo), slope acima de intercepto (agência + humildade), dono de verdade — fechadas pelo teste do fundador ("se essa pessoa abrisse uma empresa amanhã, eu pediria para entrar?"). Vive na job description enxuta de cada vaga e é aplicada em fases no funil. <a href="#atracao">Ver no sourcing →</a></p></div></div>
+      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Talento · 01</span><h4>Como definiria a barra de talento do Jota?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Vive no sourcing: duas réguas — excepcional em algo (obra, não currículo) e dono de verdade — fechadas pelo teste final ("se essa pessoa abrisse uma empresa amanhã, eu pediria para entrar?"). Vive na job description enxuta de cada vaga e é aplicada em fases no funil. <a href="#atracao">Ver no sourcing →</a></p></div></div>
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Talento · 02</span><h4>Como encontrar pessoas excepcionais?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Também no sourcing: Pipeline dos 300 mantido aquecido por agente, o filão dos ex-fundadores acessado por parcerias com VCs (talent networks de portfólio), indicações incentivadas e o draft universitário (hackathons com dados reais, estágio, BAs) — mais o ímã orgânico que faz a fila existir antes da vaga. <a href="#atracao">Ver no sourcing →</a></p></div></div>
 
@@ -1354,9 +1368,9 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 12</span><h4>Como construir uma função de People enxuta e alavancada por IA?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Um Head of People operando uma frota de agentes — recrutador, onboarding, memória de 1:1 via Granola, retratos, Jotabot, sinais. Um People &amp; Talent Partner entra quando a dor de volume for real — não antes. Regra inegociável: o agente prepara, o humano decide. Uma métrica declarada mede o sistema — attrition regretted; o resto existe sob demanda. <a href="#ia">Ver o blueprint →</a></p></div></div>
 
-      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Escala · 13</span><h4>Quais decisões de pessoas e cultura mais aumentam a chance de uma empresa extraordinária?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Seis decisões baratas agora e caríssimas depois: barra inegociável nos primeiros 50, cultura escrita antes dos 50, gestores escolhidos tarde e muito bem, comp e equity explicados desde já, organização híbrida desenhada agora (Regra Tobi) e cadência tratada como cultura. <a href="#escala">Ver as decisões →</a></p></div></div>
+      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Escala · 13–14</span><h4>Como a IA muda a construção de empresas — e o papel de People nisso</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Uma resposta só: a IA troca "quantos contratamos" por "quanto alavancamos" — organograma de duas colunas (pessoas e agentes), receita por pessoa como métrica-guia e cada função redesenhada antes de abrir vaga (Regra Tobi). E People muda junto: deixa de administrar processos para operar o sistema — curadoria da barra, dona da memória, da calibração e da ética dos agentes; um time de 2 pessoas + frota de agentes fazendo o que antes pedia dez. <a href="#ia">Ver no capítulo de IA →</a></p></div></div>
 
-      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Escala · 14</span><h4>O que fazer agora que a maioria só percebe tarde demais?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Sete coisas em ordem de arrependimento alheio: documentar cultura já, resolver contratações erradas em semanas, as 6 faixas do ladder antes da inflação de títulos, manager enablement no primeiro gestor, higiene de equity, dados de People desde o dia zero e org design para IA agora. <a href="#escala">Ver a lista →</a></p></div></div>
+      
     </div>
   </div>
 </section>
@@ -1654,7 +1668,7 @@ spy();
     <p><strong>O trimestre em uma linha:</strong> assumiu a conciliação ponta a ponta e derrubou o fechamento de 3 dias para 4 horas.</p>
     <div class="rt2"><div class="rtc"><span class="rth">COMO OPERAMOS</span><p>Pipeline de conciliação no ar — fechamento de 3 dias para 4h (1:1 de 14/ago)</p><p>P1 resolvido; post-mortem virou padrão do time (02/set)</p></div><div class="rtc"><span class="rth">COMO NOS COMPORTAMOS</span><p>Puxou a conversa com o cliente X sem ser pedida (09/set)</p><p>Mentorou o onboarding do Théo (23/set)</p></div></div>
     <p><strong>Próximo salto (combinado na 1:1):</strong> liderar o piloto de crédito no T4.</p>
-    <p><strong>Parecer do líder:</strong> "Pronta para escopo maior; o gap é delegação — o piloto de crédito é o teste que combinamos."</p>
+    <p><strong>Comentários do líder (opcional, no semestre):</strong> "Pronta para escopo maior; o gap é delegação — o piloto de crédito é o teste que combinamos."</p>
     <p class="lt-cap">Gerado pelo agente a partir da memória das 1:1s — cada afirmação com data e fonte. Ninguém preencheu nada. Chega por DM no Slack, para o líder e para a Ana ao mesmo tempo, e aterrissa na 1:1.</p>
   </div>
 </div>
