@@ -8,7 +8,7 @@ Jornada
 Atração
 Onboarding
 O Loop
-Mérito & Ladder
+Comp & Ladder
 Offboarding
 Founder Mode
 Cultura
@@ -126,7 +126,7 @@ O Loop
 1:1s com Granola — a conversa que vira memória; autonomia sustentada pela cadência.
 →
 O ANO INTEIRO
-Organismo, Mérito & Ladder
+Organismo, Comp & Ladder
 Sem Dia D: memória contínua, retratos trimestrais e duas calibrações por ano + ladder.
 →
 ÚLTIMO DIA
@@ -261,7 +261,7 @@ Debrief + Oferta
 Decide · consenso + fundadores
 O que acontece
 Budget definido na abertura da vaga:
-banda de salário-base + equity fixada pelo ladder de 6 faixas antes do primeiro candidato entrar no funil. A oferta sai rápido, dentro do envelope — sem novela de negociação no final.
+banda de salário-base + equity fixada pela ladder de 6 faixas antes do primeiro candidato entrar no funil. A oferta sai rápido, dentro do envelope — sem novela de negociação no final.
 Debrief estruturado com notas escritas antes da conversa — apoiado pelo dossiê que a IA monta a partir das transcrições do Granola, consolidando evidências por sinal (inteligência, execução, autonomia, cultura) contra a job description. Decisão por consenso; na falta dele, o HM decide, com o veto do Guardião preservado.
 Fundadores olham toda oferta até ~150 pessoas
 (como os 3 fundadores da Ramp fazem até hoje) — e o equity é explicado de verdade: ninguém age como dono do que não entende que possui.
@@ -399,7 +399,7 @@ Envelope aprovado antes
 — People + fundadores definem o budget antes da calibração.
 Compensação · filosofia
 Estratégia 80–100–120, sempre olhando P75+ do mercado
-Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele.
+Bandas simples por faixa da ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele.
 Equity é parte central da total compensation
 — com refresh antes de virar crise — e a referência de mercado é sempre P75: pagamos para segurar o Dream Team. O
 keeper test contínuo
@@ -453,7 +453,7 @@ Exemplo:
 o cliente de verdade cuja empresa não pode morrer.
 NO LOOP · OS PILARES SÃO A RÉGUA
 Cultura decide nota, mérito e promoção
-Os dois pilares viram comportamentos esperados, descritos no ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. Ritual: as calibrações de Jul + Dez. Exemplo: o retrato trimestral de cada pessoa, lido pelos dois pilares.
+Os dois pilares viram comportamentos esperados, descritos na ladder faixa a faixa — acompanhados nas 1:1s e corrigidos no caminho, nunca num evento. Ritual: as calibrações de Jul + Dez. Exemplo: o retrato trimestral de cada pessoa, lido pelos dois pilares.
 NOS RITUAIS · A CADÊNCIA REPETE O PRINCÍPIO
 All-hands abre com cliente
 Todo all-hands começa com a história de um dono de PME e fecha com um momento de 5 min: o shout-out de quem viveu um valor na prática.
@@ -575,7 +575,7 @@ Escrever a cultura antes dos 50
 Memo vivo, público, usado em contratação, ciclo e promoção. Empresa de 30 acha que não precisa; a de 300 paga o preço do telefone sem fio.
 DECISÃO 3
 Levelling, Comp e Equity desde já
-As 6 faixas do ladder desde cedo — antes da inflação de títulos — com bandas 80–100–120 referenciadas em P75+ e equity como parte central da total compensation. Higiene incluída: vesting, refresh e educação antes que o primeiro cliff vire crise.
+As 6 faixas da ladder desde cedo — antes da inflação de títulos — com bandas 80–100–120 referenciadas em P75+ e equity como parte central da total compensation. Higiene incluída: vesting, refresh e educação antes que o primeiro cliff vire crise.
 DECISÃO 4
 Desenhar a organização híbrida agora
 Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.
@@ -593,10 +593,10 @@ Diagnóstico + calibração da barra
 Conversas com fundadores, gestores e Jotters — e atender cliente na primeira semana, porque a regra vale para mim. Calibração da barra com fundadores e hiring managers, a partir das melhores contratações já feitas. Mapa dos processos de People que já podem virar agente.
 Dias 31–60 · Fundações no ar
 Memo de cultura v1 + funil completo
-Memo de cultura publicado (missão, visão, os dois pilares) e enviado a todo candidato na primeira entrevista. Funil da barra rodando com Bar Raisers treinados e budget por vaga definido pelo ladder. Primeiro agente da frota — o recrutador — em produção.
+Memo de cultura publicado (missão, visão, os dois pilares) e enviado a todo candidato na primeira entrevista. Funil da barra rodando com Bar Raisers treinados e budget por vaga definido pela ladder. Primeiro agente da frota — o recrutador — em produção.
 Dias 61–90 · O sistema gira
 Ladder v1 + ciclo piloto
-Ladder de 6 faixas publicado por área, com as bandas 80–100–120 atreladas a cada faixa — compensation nasce junto do ladder; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da calibração com um time voluntário, para calibrar a régua. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
+Ladder de 6 faixas publicado por área, com as bandas 80–100–120 atreladas a cada faixa — compensation nasce junto da ladder; pipeline Granola → banco no ar (MCP) e primeiros retratos gerados. Ensaio da calibração com um time voluntário, para calibrar a régua. E uma sugestão para o passo seguinte: desenhar com os fundadores o organograma-alvo da Série B e o cronograma de vagas dos próximos 12–18 meses, atrelado ao budget pelos guard-rails de crescimento.
 Índice auditável
 Todas as perguntas do case
 · resposta direta + onde ela vive na jornada
@@ -620,7 +620,7 @@ Percorrer o funil →
 Talento · 04
 Como evitar que a qualidade das contratações diminua ao longo do tempo?
 +
-Os freios estão embutidos no próprio funil: job description codificada no AI screening, régua pública que auto-seleciona, notas escritas antes do debrief, Bar Raiser com veto fora da cadeia do HM, budget da vaga fixado na abertura pelo ladder, fundadores em toda oferta até ~150 pessoas — e os freios contínuos: a cada 6 meses as últimas contratações revisitadas contra a barra, taxa de aprovação acompanhada e cadeira vazia > contratação mediana.
+Os freios estão embutidos no próprio funil: job description codificada no AI screening, régua pública que auto-seleciona, notas escritas antes do debrief, Bar Raiser com veto fora da cadeia do HM, budget da vaga fixado na abertura pela ladder, fundadores em toda oferta até ~150 pessoas — e os freios contínuos: a cada 6 meses as últimas contratações revisitadas contra a barra, taxa de aprovação acompanhada e cadeira vazia > contratação mediana.
 Ver os freios em cada etapa →
 Talento · 05
 Como atrair talentos excepcionais de forma orgânica, antes da vaga existir?
@@ -670,7 +670,7 @@ Ver as decisões →
 Escala · 14
 O que fazer agora que a maioria só percebe tarde demais?
 +
-Sete coisas em ordem de arrependimento alheio: documentar cultura já, resolver contratações erradas em semanas, as 6 faixas do ladder antes da inflação de títulos, manager enablement no primeiro gestor, higiene de equity, dados de People desde o dia zero e org design para IA agora.
+Sete coisas em ordem de arrependimento alheio: documentar cultura já, resolver contratações erradas em semanas, as 6 faixas da ladder antes da inflação de títulos, manager enablement no primeiro gestor, higiene de equity, dados de People desde o dia zero e org design para IA agora.
 Ver a lista →
 People no Jota não administra a jornada.
 Conversa com ela
