@@ -52,7 +52,7 @@ até US$ 100M ARR · Lovable
 Com ~45 pessoas. O SaaS tradicional bem gerido fatura ~US$ 200–300 mil por pessoa/ano.
 Regra operacional · inspirada no memo de Tobi Lütke (Shopify, 2025)
 A Regra Tobi:
-antes de pedir headcount, o time demonstra por que um agente de IA não resolve. Uso reflexivo de IA é expectativa básica — e entra na avaliação de desempenho. No Jota, uma empresa que
+antes de pedir headcount, o time demonstra por que um agente de IA não resolve. Uso reflexivo de IA é expectativa básica. No Jota, uma empresa que
 vende
 um agente de IA para donos de negócio, operar assim não é opção: é coerência de produto.
 Implicação 01
@@ -306,7 +306,7 @@ agendados no aceite da oferta.
 Conversa do dia 90 — continuar, ajustar ou corrigir a rota, dito com todas as letras.
 NO RITMO DA DUPLA
 1:1 conduzida pelo liderado
-O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.
+O liderado traz a pauta; o gestor conduz. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.
 AGENTE PEOPLE
 Extrai o sinal, descarta o ruído
 Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar.
@@ -401,7 +401,7 @@ Compensação · filosofia
 Estratégia 80–100–120, sempre olhando P75+ do mercado
 Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele.
 Equity é parte central da total compensation
-— com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. O
+— com refresh antes de virar crise — e a referência de mercado é sempre P75: pagamos para segurar o Dream Team. O
 keeper test contínuo
 ("se essa pessoa pedisse para sair, eu lutaria para ficar?") mantém mérito e promoção honestos. E mantemos a escolha que já existe hoje: cada pessoa define seu mix entre equity e dinheiro.
 Crescimento com guard-rails (mecanismo 100% sugerido)
@@ -650,7 +650,7 @@ Ver as quatro fontes →
 IA · 10
 Como a IA mudará a forma de construir empresas?
 +
-Cinco mudanças estruturais: a curva headcount × receita quebrou; todo mundo vira gestor de agentes; o gargalo migra da execução para o julgamento; empresas ficam menores, mais seniores e mais bem pagas por cabeça; e org design híbrido vira vantagem composta de quem desenha cedo.
+Cinco mudanças estruturais: a curva headcount × receita quebrou; todo mundo vira gestor de agentes; o foco migra da execução para o julgamento; empresas ficam menores, mais seniores e mais bem pagas por cabeça; e org design híbrido vira vantagem composta de quem desenha cedo.
 Ver as mudanças →
 IA · 11
 Qual deveria ser o papel da área de People nos próximos anos?
