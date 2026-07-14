@@ -592,7 +592,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <div class="bench reveal">
       <span class="b-src">Regra operacional · inspirada no memo de Tobi Lütke (Shopify, 2025)</span>
-      <p><strong>A Regra Tobi:</strong> antes de pedir headcount, o time demonstra por que um agente de IA não resolve. Uso reflexivo de IA é expectativa básica — e entra na avaliação de desempenho. No Jota, uma empresa que <em>vende</em> um agente de IA para donos de negócio, operar assim não é opção: é coerência de produto.</p>
+      <p><strong>A Regra Tobi:</strong> antes de pedir headcount, o time demonstra por que um agente de IA não resolve. Uso reflexivo de IA é expectativa básica. No Jota, uma empresa que <em>vende</em> um agente de IA para donos de negócio, operar assim não é opção: é coerência de produto.</p>
     </div>
 
     <div class="grid2">
@@ -896,7 +896,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
     <p class="lead reveal" style="font-size:.98rem;max-width:80ch">O coração do People OS: 1:1s capturadas pelo Granola no ritmo de cada dupla, um agente que extrai só a parte que importa, e uma memória que se alimenta sozinha. <strong>Não temos PDI, formulário obrigatório nem pesquisa de clima — a avaliação virou Loop:</strong> acontece o ano inteiro, sozinha, e a única coisa com data é a decisão. Custo para o time: zero ferramentas novas, zero reuniões novas — duas páginas por trimestre, duas semanas de liderança por ano, uma métrica. <strong>Regra nº 1: nada na calibração pode ser surpresa.</strong></p>
 
     <div class="flow reveal">
-      <div class="step"><span class="n">NO RITMO DA DUPLA</span><h4>1:1 conduzida pelo liderado</h4><p>O liderado traz a pauta; o gestor conduz, não domina. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.</p></div>
+      <div class="step"><span class="n">NO RITMO DA DUPLA</span><h4>1:1 conduzida pelo liderado</h4><p>O liderado traz a pauta; o gestor conduz. Granola grava e transcreve — a transcrição fica com a dupla — nem People a acessa.</p></div>
       <div class="step hi"><span class="n">AGENTE PEOPLE</span><h4>Extrai o sinal, descarta o ruído</h4><p>Do transcript, o agente puxa apenas: compromissos assumidos, bloqueios, evidências de crescimento por pilar.</p></div>
       <div class="step"><span class="n">CONTÍNUO</span><h4>Próximo salto</h4><p>Combinado na conversa, lembrado pela memória: o agente traz o delta a cada retrato — o que andou, o que travou. Ninguém "atualiza planilha".</p></div>
       <div class="step"><span class="n">TRI E SEMESTRAL</span><h4>Retrato de 2 páginas</h4><p>O agente compila as conversas num retrato por pessoa — <strong>entregue por DM no Slack</strong>, para o líder e para a pessoa. No semestre, pelas janelas do Jotabot: o líder sobe a nota e comentários se quiser; a pessoa, autoavaliação facultativa. Ajuste de rota na própria 1:1; nada para preencher. <a class="lt-btn" href="#" onclick="openRetr(event)">Ver um retrato →</a></p></div>
@@ -958,10 +958,10 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="op-deep" id="opDeep"><ol class="opflow">
         <li><strong>Granola pela API oficial.</strong> Uma chave de workspace lê notas e transcrições das 1:1s do time inteiro — sem ninguém enviar nada, sem navegador, sem um humano no meio. Pré-condição de setup: as 1:1s vivem numa <strong>pasta do time com visibilidade restrita</strong> — ou, alternativa igualmente simples, cada líder conecta a própria chave uma vez. A chave vive num cofre de segredos; ninguém faz login com ela.</li>
         <li><strong>Portão de privacidade.</strong> O Claude processa cada transcrição e extrai só trabalho — entregas, compromissos, evidências pelos dois pilares. O pessoal é descartado antes de persistir; a transcrição crua nunca é copiada.</li>
-        <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (Postgres). O <em>row-level security</em> é imposto aqui, no banco do People OS: líder vê os seus, cada um vê o próprio, People não vê conversa. A barreira é nossa, não herdada — nós somos donos do cofre.</li>
+        <li><strong>Cofre com permissão por linha.</strong> A destilação vira registros no Supabase (Postgres). O <em>row-level security</em> é imposto aqui, no banco do People OS: líder vê os seus, cada um vê o próprio, People não vê conversa.</li>
         <li><strong>Retrato por DM no Slack.</strong> O retrato <strong>é</strong> o relatório trimestral: duas tabelinhas — Como operamos · Como nos comportamos — para líder e pessoa. No semestre, nota, comentários e autoavaliação entram pelo Jotabot e sobem ao cofre.</li>
         <li><strong>People aciona; o Claude monta.</strong> Uma semana antes da calibração, People dá um comando e o Claude junta, por pessoa, os dois retratos + nota + autoavaliação no relatório de duas páginas, já com as notas — People revisa e distribui. Prepara o agente; decide o humano.</li>
-        <li><strong>Jotabot (Slack Bolt).</strong> Um app em Bolt for Python — o framework oficial da Slack — escuta o canal, consulta o cofre (nunca o Granola) e chama o Claude: <strong>responde</strong> com citações datadas e <strong>captura</strong> a nota do líder — com comentários ou complementos, se ele quiser — e a autoavaliação, tudo subindo ao cofre pela mesma trilha. Ele herda a permissão do banco: cada um só enxerga o próprio escopo. Todas as respostas sobre seus liderados num só lugar, sob demanda.</li>
+        <li><strong>Jotabot (Slack).</strong> Um bot oficial dentro do Slack — escuta o canal, consulta o cofre (nunca o Granola) e chama o Claude: <strong>responde</strong> com citações datadas e <strong>captura</strong> a nota do líder — com comentários ou complementos, se ele quiser — e a autoavaliação, tudo subindo ao cofre pela mesma trilha. Ele herda a permissão do banco: cada um só enxerga o próprio escopo. Todas as respostas sobre seus liderados num só lugar, sob demanda.</li>
       </ol></div></div>
 
     <div class="grid2" style="grid-template-columns:1fr">
@@ -969,7 +969,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Privacidade por desenho</span>
         <h3>Confiança é o que faz o sistema funcionar</h3>
-        <p>Consentimento explícito na gravação; transcrição só com a dupla — nem People a acessa; o que sobe para o sistema é o <strong>resumo estruturado aprovado pela dupla</strong>, nunca o áudio ou o texto bruto. O agente prepara, o humano decide — em avaliação, promoção e qualquer conversa difícil. E se líder ou liderado preferirem não gravar ou transcrever no Granola, têm a opção de subir comentários + nota (líder) e autoavaliação (liderado) nas janelas abertas pelo Jotabot no Slack — considerados normalmente na calibração.</p>
+        <p>Consentimento explícito na gravação; transcrição só com a dupla — nem People a acessa; o que sobe para o sistema é o <strong>resumo estruturado</strong>, nunca o áudio ou o texto bruto. O agente prepara, o humano decide — em avaliação, promoção e qualquer conversa difícil. E se líder ou liderado preferirem não gravar ou transcrever no Granola, têm a opção de subir comentários + nota (líder) e autoavaliação (liderado) nas janelas abertas pelo Jotabot no Slack — considerados normalmente na calibração.</p>
         <p style="margin-top:10px">E o feedback contínuo vive fora do sistema também: <strong>SBI no fluxo do trabalho, peer-to-peer, nunca anônimo</strong> — no drama, good karma na prática.</p>
       </div>
     </div>
@@ -1004,14 +1004,14 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <div class="card reveal">
         <span class="tag">Compensação · filosofia</span>
         <h3>Estratégia 80–100–120, sempre olhando P75+ do mercado</h3>
-        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75 ou acima: pagamos para segurar o Dream Team. E mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
+        <p>Bandas simples por faixa do ladder, com posicionamento 80–100–120: entra em ~80% do ponto médio da faixa, evolui para 100% ao consolidar o nível e chega a 120% quando já opera acima dele. <strong>Equity é parte central da total compensation</strong> — com refresh antes de virar crise — e a referência de mercado é sempre P75: pagamos para segurar o Dream Team. E mantemos a escolha que já existe hoje: cada pessoa define seu <strong>mix entre equity e dinheiro</strong>.</p>
       </div>
     </div>
 
     <div class="sim reveal" id="guardrails">
       <span class="tag">Crescimento com guard-rails · mecanismo 100% sugerido</span>
       <h3>Folha cresce com a empresa — nunca na frente dela.</h3>
-      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong> — sobe, contrata; cai, pausa até recuperar. E o sistema tem um motor e uma trava: <strong>margem subindo abre o envelope; o runway segura quanto dele se exerce</strong>. Hoje a régua é margem bruta; na maturidade, podemos migrar para um mix de EBITDA e receita.</p>
+      <p style="max-width:72ch"><strong>A régua cabe numa linha: margem bruta por pessoa sobe todo ano</strong> — sobe, contrata; cai, pausa até recuperar. A % do crescimento de margem bruta que vai para o budget de People é indicada pelo CFO — e aí distribuímos conforme o envelope abaixo. E o sistema tem um motor e uma trava: <strong>margem subindo abre o envelope; o runway segura quanto dele se exerce</strong>. Hoje a régua é margem bruta; na maturidade, podemos migrar para um mix de EBITDA e receita.</p>
       <p style="max-width:72ch;margin-top:10px">O envelope do ano se divide em quatro caixinhas — <strong>mérito, promoções, fora de ciclo e novas vagas</strong>. E o espírito importa: <strong>isto é um cinto de segurança, não burocracia</strong> — nenhum estado tranca a porta; os extremos apenas mudam a alçada da decisão (CEO + CFO), para crescermos saudável. Mexa nos dois controles e veja o sistema raciocinar:</p>
       <div class="env-ctl">
         <div class="seg-group"><span class="seg-lab">Margem bruta / pessoa</span>
@@ -1210,7 +1210,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
         <div class="mecanismos">
           <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">MUDANÇA 1</span><h4 style="color:#fff">A curva headcount × receita quebrou</h4><p style="color:rgba(255,255,255,.65)">Cursor, Midjourney, Lovable, Gamma: dezenas de pessoas fazendo o que exigia milhares. O tamanho deixa de ser proxy de ambição.</p></div>
           <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">MUDANÇA 2</span><h4 style="color:#fff">Todo mundo vira gestor — de agentes</h4><p style="color:rgba(255,255,255,.65)">Cada pessoa opera uma frota. As skills que definem senioridade migram: delegar, especificar, revisar, julgar. "Span of care" inclui sistemas.</p></div>
-          <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">MUDANÇA 3</span><h4 style="color:#fff">O gargalo migra para julgamento</h4><p style="color:rgba(255,255,255,.65)">Execução fica barata; contexto, confiança e decisão ficam caros. Empresas serão menores, mais seniores e mais bem pagas por cabeça.</p></div>
+          <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">MUDANÇA 3</span><h4 style="color:#fff">O foco migra para julgamento</h4><p style="color:rgba(255,255,255,.65)">Execução fica barata; contexto, confiança e decisão ficam caros. Empresas serão menores, mais seniores e mais bem pagas por cabeça.</p></div>
           <div class="mec" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)"><span class="n" style="color:var(--sol)">MUDANÇA 4 + 5</span><h4 style="color:#fff">Org design vira vantagem composta</h4><p style="color:rgba(255,255,255,.65)">Quem desenha a organização híbrida agora (Regra Tobi no headcount) compõe vantagem por anos. Quem não desenha, herda org gorda — e recontrata por hábito, não por necessidade.</p></div>
         </div>
       </div>
@@ -1260,12 +1260,12 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
       <p class="oneliner">Cinco decisões — todas baratas agora, todas caríssimas depois. As mesmas que a maioria só percebe tarde demais.</p>
       <div class="resposta">
         <div class="mecanismos">
-          <div class="mec"><span class="n">DECISÃO 1</span><h4>Quais decisões mais aumentam as chances de uma empresa extraordinária — e o que fazer antes de ser tarde?</h4><p>Os primeiros 50 contratam os próximos 500. Guardiões da Barra + fundadores em toda oferta + cadeira vazia &gt; contratação mediana.</p></div>
+          <div class="mec"><span class="n">DECISÃO 1</span><h4>Os primeiros 50 contratam os próximos 500</h4><p>Guardiões da Barra + fundadores em toda oferta + cadeira vazia &gt; contratação mediana.</p></div>
           <div class="mec"><span class="n">DECISÃO 2</span><h4>Escrever a cultura antes dos 50</h4><p>Memo vivo, público, usado em contratação, ciclo e promoção. Empresa de 30 acha que não precisa; a de 300 paga o preço do telefone sem fio.</p></div>
           
           <div class="mec"><span class="n">DECISÃO 3</span><h4>Levelling, Comp e Equity desde já</h4><p>As 6 faixas do ladder desde cedo — antes da inflação de títulos — com bandas 80–100–120 referenciadas em P75+ e equity como parte central da total compensation. Higiene incluída: vesting, refresh e educação antes que o primeiro cliff vire crise, porque o maior motivador do pacote é o menos entendido.</p></div>
           <div class="mec"><span class="n">DECISÃO 4</span><h4>Desenhar a organização híbrida agora</h4><p>Regra Tobi no planejamento de headcount desde a Series B: cada vaga nova justifica por que um agente não resolve. É a decisão que quase ninguém toma a tempo.</p></div>
-          <div class="mec"><span class="n">DECISÃO 5</span><h4>Cadência é cultura</h4><p>Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.</p></div>
+          <div class="mec" style="grid-column:1/-1"><span class="n">DECISÃO 5</span><h4>Cadência é cultura</h4><p>Metas trimestrais com dono, tactical semanal, ciclo leve semestral, all-hands que abre com cliente. Ritmo previsível é o que transforma valores em comportamento.</p></div>
         </div>
       </div>
     </div>
@@ -1330,7 +1330,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">Cultura · 09</span><h4>Como transformar pessoas em defensoras da missão, cultura e produto?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>É o resultado da jornada funcionando: proximidade com o cliente (ninguém defende abstração), vitória compartilhada (equity + metas visíveis), voz que muda coisas (dissenso buscado, skip-level, fundadores acessíveis) e identidade com orgulho (rituais e linguagem próprios, construir em público). Termômetro: comportamento, não pesquisa — attrition regretted e sinais espontâneos (indicações, alumni voltando). <a href="#cultura">Ver as quatro fontes →</a></p></div></div>
 
-      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 10</span><h4>Como a IA mudará a forma de construir empresas?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Cinco mudanças estruturais: a curva headcount × receita quebrou; todo mundo vira gestor de agentes; o gargalo migra da execução para o julgamento; empresas ficam menores, mais seniores e mais bem pagas por cabeça; e org design híbrido vira vantagem composta de quem desenha cedo. <a href="#ia">Ver as mudanças →</a></p></div></div>
+      <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 10</span><h4>Como a IA mudará a forma de construir empresas?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Cinco mudanças estruturais: a curva headcount × receita quebrou; todo mundo vira gestor de agentes; o foco migra da execução para o julgamento; empresas ficam menores, mais seniores e mais bem pagas por cabeça; e org design híbrido vira vantagem composta de quem desenha cedo. <a href="#ia">Ver as mudanças →</a></p></div></div>
 
       <div class="acc reveal"><div class="acc-h" onclick="toggleAcc(this)"><div><span class="at">IA · 11</span><h4>Qual deveria ser o papel da área de People nos próximos anos?</h4></div><span class="plus">+</span></div><div class="acc-b"><p>Engenharia de alavancagem humana, em quatro papéis: guardiã da densidade de talento, arquiteta de contexto (cultura, pilares, rituais), designer da organização híbrida (Regra Tobi no headcount) e curadora de julgamento e ética no uso de IA com dados de pessoas. <a href="#ia">Ver os papéis →</a></p></div></div>
 
@@ -1941,18 +1941,21 @@ function jcSend(){
   var nav=document.getElementById('navLinks'); if(!nav) return;
   var down=false, moved=false, startX=0, startScroll=0;
   nav.addEventListener('mousedown',function(e){
-    down=true; moved=false; nav.classList.add('dragging');
+    down=true; moved=false;
     startX=e.pageX; startScroll=nav.scrollLeft;
   });
   window.addEventListener('mousemove',function(e){
     if(!down) return;
     var dx=e.pageX-startX;
-    if(Math.abs(dx)>4) moved=true;
-    nav.scrollLeft=startScroll-dx;
+    if(Math.abs(dx)>4){
+      if(!moved){ moved=true; nav.classList.add('dragging'); }
+      nav.scrollLeft=startScroll-dx;
+    }
   });
   window.addEventListener('mouseup',function(){
     if(!down) return;
-    down=false; nav.classList.remove('dragging');
+    down=false;
+    nav.classList.remove('dragging');
   });
   nav.addEventListener('click',function(e){ if(moved){ e.preventDefault(); e.stopPropagation(); moved=false; } },true);
 })();
