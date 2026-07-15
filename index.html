@@ -159,7 +159,7 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-verdict h4{font-size:1.1rem;margin-bottom:5px}
 .cr-verdict p{font-size:.86rem;color:var(--grafite);margin:0}
 .cr-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
-.cr-cols .cr-c{border:1px solid var(--linha-suave);border-radius:14px;padding:15px 17px;background:var(--creme)}
+.cr-cols .cr-c{border:1px solid var(--linha-suave);border-radius:14px;padding:15px 17px;background:var(--creme);height:168px;overflow-y:auto}
 .cr-cols .cr-c h5{font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:700;letter-spacing:.1em;margin-bottom:9px;display:flex;align-items:center;gap:6px}
 .cr-cols .cr-c.pos h5{color:#1a8a4a}.cr-cols .cr-c.gap h5{color:var(--ambar)}
 .cr-cols .cr-c ul{margin:0;padding-left:16px}
@@ -175,7 +175,7 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-chat-h .cr-cm{width:26px;height:26px;border-radius:8px;background:var(--sol);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .cr-chat-h strong{font-size:.82rem;font-weight:800}
 .cr-chat-h span{font-size:.66rem;color:var(--grafite-claro);display:block}
-.cr-chat-body{padding:15px;display:flex;flex-direction:column;gap:10px;max-height:230px;overflow-y:auto}
+.cr-chat-body{padding:15px;display:flex;flex-direction:column;gap:10px;height:280px;overflow-y:auto}
 .cr-cmsg{font-size:.82rem;line-height:1.5;max-width:88%}
 .cr-cmsg.u{align-self:flex-end;background:var(--tinta);color:#fff;padding:9px 13px;border-radius:14px;border-bottom-right-radius:4px}
 .cr-cmsg.b{align-self:flex-start;color:var(--tinta)}
@@ -192,7 +192,7 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-chat-start p{font-size:.84rem;color:var(--grafite);margin:0;max-width:30ch}
 .cr-chat-btn{font-family:inherit;font-size:.86rem;font-weight:700;color:var(--tinta);background:var(--sol);border:none;border-radius:99px;padding:11px 22px;cursor:pointer;transition:transform .15s}
 .cr-chat-btn:hover{transform:scale(1.04)}
-.cr-chat-body{min-height:150px}
+
 .cr-cmsg.b p{margin:0 0 7px}.cr-cmsg.b p:last-child{margin-bottom:0}
 .cr-cmsg.b ul{margin:4px 0 7px 16px;padding:0}.cr-cmsg.b li{margin-bottom:4px}
 .cr-lgpd{margin-top:14px;font-size:.72rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:13px;line-height:1.6}
@@ -883,8 +883,8 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
             </div>
           </div>
           <div class="cr-cols">
-            <div class="cr-c pos"><h5>▲ PONTOS FORTES</h5><ul id="crPos"></ul></div>
-            <div class="cr-c gap"><h5>△ LACUNAS PARA A VAGA</h5><ul id="crGap"></ul></div>
+            <div class="cr-c pos"><h5>▲ O QUE PESOU A FAVOR</h5><ul id="crPos"></ul></div>
+            <div class="cr-c gap"><h5>△ O QUE AJUDARIA A FORTALECER</h5><ul id="crGap"></ul></div>
           </div>
           <div class="cr-human">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#FFE61A" stroke-width="2"/><path d="M4 21C4 17 7.5 15 12 15C16.5 15 20 17 20 21" stroke="#FFE61A" stroke-width="2" stroke-linecap="round"/></svg>
@@ -1799,14 +1799,14 @@ var crData = {
     vh: 'Perfil muito aderente à vaga',
     vp: 'Obra pública verificável e sinais claros de founder mode. Forte candidato — segue para revisão humana com prioridade.',
     pos: ['Construiu e vendeu um SaaS — dono de verdade, não só executor','Stack full-stack com entregas em produção demonstráveis','Usa IA no fluxo de trabalho e sabe explicar o que quebrou e consertou'],
-    gap: ['Nunca trabalhou em ambiente 100% presencial — vale alinhar na conversa','Pouca experiência com o rigor regulatório de fintech']
+    gap: ['Vale conversar sobre a adaptação ao 100% presencial, se for uma novidade','Pode ser interessante trazer exemplos do contato com o rigor regulatório de fintech']
   },
   parcial: {
     pct: 58, cls: 'mid', badge: 'FIT PARCIAL',
-    vh: 'Base sólida, mas faltam sinais-chave',
-    vp: 'Execução consistente, porém pouca evidência de founder mode e de obra própria. Pode avançar, mas não é match óbvio — a revisão humana decide.',
+    vh: 'Base sólida, com espaço para aprofundar alguns pontos',
+    vp: 'Execução consistente; a conversa pode explorar mais founder mode e obra própria. Pode avançar — a revisão humana decide.',
     pos: ['Trajetória técnica estável, entregas em times estruturados','Domínio do front-end alinhado ao que a vaga pede'],
-    gap: ['Currículo lista logos e cargos, mas mostra pouca obra própria','Sem evidência de ter criado ou decidido algo sem permissão','Não menciona uso de IA no trabalho — ponto central da vaga']
+    gap: ['Vale trazer exemplos de projetos próprios além dos cargos listados','Pode ser útil contar uma vez em que decidiu algo por conta própria','Comentar como usa IA no trabalho ajudaria — é um ponto central da vaga']
   }
 };
 var crCurrent = 'forte';
