@@ -1920,7 +1920,7 @@ function crChatDemo(){
     crQA.forEach(function(qa){ bubble('u',qa[0]); bubble('b',qa[1]); });
     return;
   }
-  var t=1100, i=0;
+  var t=800, i=0;
   function ask(){
     var qa=crQA[i%crQA.length];
     crDemoTimers.push(setTimeout(function(){
@@ -1937,11 +1937,11 @@ function crChatDemo(){
             body.innerHTML='';
             bubble('b','Oi! Pode perguntar o que quiser sobre <strong>esta vaga</strong>. Se eu não souber algo, digo com franqueza.');
             i=0; t=1100; ask();
-          }, 4200)); // pausa antes de recomeçar o loop, sozinho
+          }, 3000)); // pausa antes de recomeçar o loop, sozinho
         }
-      }, 1400));
+      }, 1000));
     }, t));
-    t = 3400;
+    t = 2400;
   }
   ask();
 }
@@ -2273,8 +2273,8 @@ function jcSend(){
     add(um(pair[0][0],pair[0][1],pair[0][2]));
     setTimeout(function(){
       var ty=tp(); add(ty);
-      setTimeout(function(){ if(ty.parentNode) ty.parentNode.removeChild(ty); add(bm(pair[1][0],pair[1][1])); setTimeout(step,3600); },1500);
-    },1300);
+      setTimeout(function(){ if(ty.parentNode) ty.parentNode.removeChild(ty); add(bm(pair[1][0],pair[1][1])); setTimeout(step,2600); },1100);
+    },1000);
   }
   if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ es.forEach(function(e){ run=e.isIntersecting; }); }).observe(document.getElementById('sdemo')); }
   step();
