@@ -1123,13 +1123,13 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <div class="wk-native reveal"><span class="tag">Semestral · a única coisa com data</span><h3>A semana da decisão</h3>
       <div class="wk" id="wk">
-        <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>PACOTE DE EVIDÊNCIA</span></button><button class="wk-dot" onclick="wkGo(1)"><span>JANELA DE PARES</span></button><button class="wk-dot" onclick="wkGo(2)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(3)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(4)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(5)"><span>DEVOLUTIVA</span></button></div>
+        <div class="wk-track"><div class="wk-bar" id="wkBar"></div><button class="wk-dot on" onclick="wkGo(0)"><span>JANELA DE PARES</span></button><button class="wk-dot" onclick="wkGo(1)"><span>AUTOAVALIAÇÃO</span></button><button class="wk-dot" onclick="wkGo(2)"><span>RELATÓRIO ≤2 PÁGS</span></button><button class="wk-dot" onclick="wkGo(3)"><span>CALIBRAÇÃO</span></button><button class="wk-dot" onclick="wkGo(4)"><span>DEVOLUTIVA</span></button></div>
         <p class="wk-txt" id="wkTxt"></p>
       </div>
       <p class="wk-foot">Quem tem <strong>menos de um trimestre de casa</strong> não entra — a conversa do dia 90 é o checkpoint. <strong>O Loop já contou a história — a calibração só efetiva a decisão.</strong></p>
     </div>
 
-    <div class="card reveal" style="margin-top:16px"><span class="tag">Contínuo · sob demanda</span><h3>Infos sob demanda pelo Slack</h3>
+    <div class="card reveal" style="margin-top:44px"><span class="tag">Contínuo · sob demanda</span><h3>Slack</h3>
       <div class="sdemo" id="sdemo">
         <div class="sd-bar"><span class="sd-hash">#</span><span class="sd-title">people-os</span><span class="sd-sub">Jotabot conectado</span></div>
         <div class="sd-body" id="sdBody"></div>
@@ -1768,7 +1768,6 @@ function openT5(e){ if(e) e.preventDefault(); document.getElementById('t5Ov').cl
 function closeT5(){ var o = document.getElementById('t5Ov'); if(o) o.classList.remove('open'); }
 function toggleOp(e){ if(e) e.preventDefault(); var d=document.getElementById('opDeep'),b=document.getElementById('opTgl'); var o=d.classList.toggle('open'); b.setAttribute('aria-expanded',o); b.textContent=o?'Fechar o passo a passo ↑':'Abrir o passo a passo →'; }
 var wkTexts=[
- 'Uma semana antes, o Claude consolida o semestre inteiro de cada pessoa — T5Ts, evidências das reuniões abertas e o que houver de pares — e entrega o pacote ao comitê e ao Davi pelo Slack.',
  'Janela optativa no Jotabot: você indica 3–5 pares com quem trabalhou de perto e eles respondem três perguntas sobre você — o que você entregou e o que precisa melhorar. Nomeado, nunca anônimo. Quem não responder: neutro, nunca negativo.',
  'Janela facultativa: quem quiser manda a autoavaliação — "meu semestre em 5 pontos" — ao Jotabot, que grava no cofre.',
  'People aciona um comando e o Claude fecha o relatório de até duas páginas por pessoa — evidência datada pelos dois pilares, sinais de pares e autoavaliação se houver. People revisa e distribui ao comitê.',
@@ -1797,14 +1796,14 @@ var crData = {
   forte: {
     pct: 92, cls: 'hi', badge: 'FORTE ADERÊNCIA',
     vh: 'Perfil muito aderente à vaga',
-    vp: 'Obra pública verificável e sinais claros de founder mode. Forte candidato.',
+    vp: 'Obra pública verificável e sinais claros de founder mode. Forte candidato — segue para revisão humana com prioridade.',
     pos: ['Construiu e vendeu um SaaS — dono de verdade, não só executor','Stack full-stack com entregas em produção demonstráveis','Usa IA no fluxo de trabalho e sabe explicar o que quebrou e consertou'],
     gap: ['Vale conversar sobre a adaptação ao 100% presencial, se for uma novidade','Pode ser interessante trazer exemplos do contato com o rigor regulatório de fintech']
   },
   parcial: {
     pct: 58, cls: 'mid', badge: 'FIT PARCIAL',
     vh: 'Base sólida, com espaço para aprofundar alguns pontos',
-    vp: 'Execução consistente; a conversa pode explorar mais founder mode e obra própria.',
+    vp: 'Execução consistente; a conversa pode explorar mais founder mode e obra própria. Pode avançar — a revisão humana decide.',
     pos: ['Trajetória técnica estável, entregas em times estruturados','Domínio do front-end alinhado ao que a vaga pede'],
     gap: ['Vale trazer exemplos de projetos próprios além dos cargos listados','Pode ser útil contar uma vez em que decidiu algo por conta própria','Comentar como usa IA no trabalho ajudaria — é um ponto central da vaga']
   }
