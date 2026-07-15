@@ -116,8 +116,8 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-job-h{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--linha-suave);padding-bottom:18px;margin-bottom:20px}
 .cr-job-h h3{font-size:1.3rem;margin:0}
 .cr-job-h .cr-meta{font-size:.82rem;color:var(--grafite-claro);margin-top:4px}
-.cr-jd{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-.cr-jd span{font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:600;letter-spacing:.04em;color:var(--grafite);background:var(--creme);border:1px solid var(--linha-suave);padding:4px 10px;border-radius:99px}
+.cr-jd{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.cr-jd span{font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.02em;color:var(--grafite);background:var(--creme);border:1px solid var(--linha-suave);padding:4px 9px;border-radius:99px;white-space:nowrap}
 .cr-stage{transition:opacity .35s}
 /* dropzone */
 .cr-drop{border:2px dashed rgba(23,21,15,.22);border-radius:18px;padding:34px 24px;text-align:center;cursor:pointer;transition:all .25s;background:var(--creme)}
@@ -187,6 +187,11 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-typing i{width:6px;height:6px;border-radius:50%;background:var(--grafite-claro);animation:sdb 1s ease-in-out infinite}
 .cr-typing i:nth-child(2){animation-delay:.15s}.cr-typing i:nth-child(3){animation-delay:.3s}
 .cr-chat-foot{font-size:.64rem;color:var(--grafite-claro);text-align:center;padding:11px 12px;margin:0;background:#fff;border-top:1px solid var(--linha-suave)}
+.cr-chat-start{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;height:100%;min-height:150px;text-align:center;padding:20px}
+.cr-chat-start p{font-size:.84rem;color:var(--grafite);margin:0;max-width:30ch}
+.cr-chat-btn{font-family:inherit;font-size:.86rem;font-weight:700;color:var(--tinta);background:var(--sol);border:none;border-radius:99px;padding:11px 22px;cursor:pointer;transition:transform .15s}
+.cr-chat-btn:hover{transform:scale(1.04)}
+.cr-chat-body{min-height:150px}
 .cr-cmsg.b p{margin:0 0 7px}.cr-cmsg.b p:last-child{margin-bottom:0}
 .cr-cmsg.b ul{margin:4px 0 7px 16px;padding:0}.cr-cmsg.b li{margin-bottom:4px}
 .cr-lgpd{margin-top:14px;font-size:.72rem;color:var(--grafite-claro);border-top:1px dashed var(--linha);padding-top:13px;line-height:1.6}
@@ -782,7 +787,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
   <div class="wrap">
     <span class="eyebrow reveal">Capítulo 01 · Talento</span>
     <p class="momento reveal">Antes do dia 1 <span>· atração &amp; seleção</span></p>
-    <h2 class="reveal">O time que você constrói é o que mais importa.</h2>
+    <h2 class="reveal">O time que você constrói é a empresa que você constrói.</h2>
     <p class="lead reveal">Duas engrenagens: o <strong>sourcing</strong>, que começa muito antes da vaga existir, e o <strong>funil da barra</strong> — cinco etapas onde a barra é construída ponto a ponto, cada uma medindo um sinal e protegendo a qualidade. Clique nas bolinhas para percorrer o processo.</p>
 
     <!-- ===== SOURCING ===== -->
@@ -819,7 +824,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <!-- ===== PÁGINA DE CARREIRAS COM IA (protótipo) ===== -->
     <p class="subhead reveal">Engrenagem 2 · A porta de entrada é um produto</p>
-    <p class="subhead-note reveal" style="max-width:none">Não precisamos ser uma caixa-preta que engole currículos. Podemos mostrar a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
+    <p class="subhead-note reveal">O AI CV Screening não precisa ser uma caixa-preta que engole currículos. Ele pode ser a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
 
     <div class="careers reveal" id="careers">
       <div class="cr-bar"><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-url">carreiras.jota.com.br/vaga/eng-fullstack</span><span class="cr-tag">PROTÓTIPO</span></div>
@@ -831,7 +836,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           </div>
         </div>
         <div class="cr-jd" style="margin-bottom:22px">
-          <span>Como operamos: velocity · qualidade sem atalho · frugalidade · foco no cliente · só o melhor basta</span><span>Como nos comportamos: fome de aprender · dono com accountability · nada é problema de outro · propósito comum · no drama</span>
+          <span>Velocity over everything</span><span>Obsession with quality execution</span><span>We don't sleep with bugs</span><span>Frugality in everything</span><span>Do what's the best for the customer</span><span>Only the best is enough</span><span>Always hungry and curious</span><span>Do not take shortcuts</span><span>Empower talents with accountability</span><span>Nothing is someone else's problem</span><span>Shared purpose, unified goals</span><span>No drama, good karma</span>
         </div>
 
         <!-- STAGE 1 · upload -->
@@ -887,7 +892,12 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           <!-- mini-chat da vaga -->
           <div class="cr-chat">
             <div class="cr-chat-h"><span class="cr-cm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5.4 8.8C6.1 7.6 7.6 7.2 8.9 7.9" stroke="#17150F" stroke-width="2.9" stroke-linecap="round"/><path d="M5.9 12.3C6.8 15.5 10.2 17.3 13.4 16.2C16.4 15.1 18 12 17.7 8.3" stroke="#17150F" stroke-width="2.9" stroke-linecap="round"/><path d="M15.5 8.9C16.3 7.8 17.6 7.4 18.9 7.9" stroke="#17150F" stroke-width="2.9" stroke-linecap="round"/></svg></span><div><strong>Dúvidas sobre a vaga</strong><span>O candidato conversa; o agente conhece a descrição da posição</span></div></div>
-            <div class="cr-chat-body" id="crChatBody"></div>
+            <div class="cr-chat-body" id="crChatBody">
+              <div class="cr-chat-start">
+                <p>Veja como seria a conversa de um candidato com o agente da vaga.</p>
+                <button class="cr-chat-btn" onclick="crChatDemo()">▶ Tire suas dúvidas</button>
+              </div>
+            </div>
             <p class="cr-chat-foot">Conversa ilustrativa · o agente responde só sobre esta vaga — e quando não sabe, diz que não sabe</p>
           </div>
 
@@ -1845,8 +1855,8 @@ function crResult(){
   document.getElementById('crVp').textContent = d.vp;
   document.getElementById('crPos').innerHTML = d.pos.map(function(x){return '<li>'+x+'</li>';}).join('');
   document.getElementById('crGap').innerHTML = d.gap.map(function(x){return '<li>'+x+'</li>';}).join('');
-  // (re)inicia a conversa ilustrativa do chat da vaga
-  crChatDemo();
+  // chat da vaga volta ao estado inicial (com botão "Tire suas dúvidas")
+  crChatReset();
   // animar ring
   var arc=document.getElementById('crArc'); var pctEl=document.getElementById('crPct');
   arc.style.strokeDashoffset='289'; pctEl.textContent='0%';
@@ -1879,6 +1889,12 @@ var crQA = [
 ];
 var crDemoTimers = [];
 function crClearDemo(){ crDemoTimers.forEach(clearTimeout); crDemoTimers=[]; }
+function crChatReset(){
+  var body=document.getElementById('crChatBody');
+  if(!body) return;
+  if(typeof crClearDemo==='function') crClearDemo();
+  body.innerHTML='<div class="cr-chat-start"><p>Veja como seria a conversa de um candidato com o agente da vaga.</p><button class="cr-chat-btn" onclick="crChatDemo()">▶ Tire suas dúvidas</button></div>';
+}
 function crChatDemo(){
   var body=document.getElementById('crChatBody');
   if(!body) return;
@@ -1908,7 +1924,13 @@ function crChatDemo(){
         bubble('b',qa[1]);
         i++;
         if(i<crQA.length){ ask(); }
-        else { crDemoTimers.push(setTimeout(function(){ crChatDemo(); }, 5200)); } // reinicia o loop
+        else {
+          crDemoTimers.push(setTimeout(function(){
+            var end=document.createElement('div'); end.className='cr-chat-start';
+            end.innerHTML='<button class="cr-chat-btn" onclick="crChatDemo()">↺ Rever a conversa</button>';
+            body.appendChild(end); body.scrollTop=body.scrollHeight;
+          }, 900));
+        }
       }, 1400));
     }, t));
     t = 3400;
