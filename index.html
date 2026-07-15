@@ -825,7 +825,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <!-- ===== PÁGINA DE CARREIRAS COM IA (protótipo) ===== -->
     <p class="subhead reveal">Engrenagem 2 · A porta de entrada é um produto</p>
-    <p class="subhead-note reveal" style="max-width:none">Não precisamos ser uma caixa-preta que engole currículos. Podemos mostrar a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
+    <p class="subhead-note reveal" style="max-width:none">O AI CV Screening não precisa ser uma caixa-preta que engole currículos. Ele pode ser a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
 
     <div class="careers reveal" id="careers">
       <div class="cr-bar"><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-url">carreiras.jota.com.br/vaga/eng-fullstack</span><span class="cr-tag">PROTÓTIPO</span></div>
@@ -1872,7 +1872,7 @@ function crResult(){
   }, 60);
 }
 function crReset(){
-  if(typeof crClearDemo==='function') crClearDemo();
+  if(typeof crChatReset==='function') crChatReset();
   document.getElementById('crConsent').checked=false; crConsentChg();
   crShow('crUp');
 }
@@ -1928,10 +1928,10 @@ function crChatDemo(){
         if(i<crQA.length){ ask(); }
         else {
           crDemoTimers.push(setTimeout(function(){
-            var end=document.createElement('div'); end.className='cr-chat-start';
-            end.innerHTML='<button class="cr-chat-btn" onclick="crChatDemo()">↺ Rever a conversa</button>';
-            body.appendChild(end); body.scrollTop=body.scrollHeight;
-          }, 900));
+            body.innerHTML='';
+            bubble('b','Oi! Pode perguntar o que quiser sobre <strong>esta vaga</strong>. Se eu não souber algo, digo com franqueza.');
+            i=0; t=1100; ask();
+          }, 4200)); // pausa antes de recomeçar o loop, sozinho
         }
       }, 1400));
     }, t));
