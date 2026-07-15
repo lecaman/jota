@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jota People OS — o case de Head of People para uma fintech AI-first: densidade de talento, memória contínua e IA como alavanca, da atração ao último dia.">
+<meta property="og:title" content="Jota · People OS">
+<meta property="og:description" content="O case de Head of People para uma fintech AI-first: densidade de talento, memória contínua e IA como alavanca — da atração ao último dia. Com assistente de IA embutido.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jota-xi.vercel.app">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23FFE61A'/%3E%3Cpath d='M5.4 8.8C6.1 7.6 7.6 7.2 8.9 7.9' stroke='%2317150F' stroke-width='2.9' stroke-linecap='round' fill='none'/%3E%3Cpath d='M5.9 12.3C6.8 15.5 10.2 17.3 13.4 16.2C16.4 15.1 18 12 17.7 8.3' stroke='%2317150F' stroke-width='2.9' stroke-linecap='round' fill='none'/%3E%3Cpath d='M15.5 8.9C16.3 7.8 17.6 7.4 18.9 7.9' stroke='%2317150F' stroke-width='2.9' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <title>Jota · People OS — O futuro do trabalho é contínuo.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2218,7 +2224,7 @@ function jcSend(){
             botDiv.className = 'jc-msg bot';
             botDiv.innerHTML = jcMarkdown('Não consegui gerar uma resposta agora. Tente de novo.');
           }
-          jcHistory.push({role:'assistant', content: full});
+          if(full.trim()){ jcHistory.push({role:'assistant', content: full}); }
           return;
         }
         full += decoder.decode(res.value, {stream:true});
@@ -2245,11 +2251,11 @@ function jcSend(){
 (function(){
   var body=document.getElementById('sdBody'); if(!body) return;
   var P=[
-    [['Davi','a1','como está a evolução da Maria neste semestre?'],
-     ['Maria: 3 entregas no semestre — destaque: conciliação caiu de 3 dias para 4h. Próximo movimento (do T5T de 09/set): liderar o piloto de crédito. Nenhum bloqueio aberto.',['T5T · 14/ago','Reunião de célula · 09/set']]],
+    [['Davi','a1','como está a evolução da Ana neste semestre?'],
+     ['Ana: 3 entregas no semestre — destaque: conciliação caiu de 3 dias para 4h. Próximo movimento (da reunião de célula de 09/set): liderar o piloto de crédito. Um bloqueio aberto: acesso ao sandbox do banco X.',['T5T · 14/ago','Reunião de célula · 09/set']]],
     [['Ana','a2','me manda meu relatório consolidado?'],
      ['Enviado por DM ✓ — 6 T5Ts + 9 reuniões no semestre, evidências pelos dois pilares com data e fonte. Duas novas desde o seu último pedido.',['DM · agora','Cofre · RLS']]],
-    [['Davi','a3','quais os padrões dos T5Ts desta quinzena?'],
+    [['Davi','a1','quais os padrões dos T5Ts desta quinzena?'],
      ['3 padrões em 18 T5Ts: acesso ao sandbox do banco X travando 3 pessoas · antecipação de recebíveis pedida por 4 clientes · fila de review atrasando entregas.',['18 T5Ts · quinzena']]]
   ];
   var i=0, run=true, mins=2;
