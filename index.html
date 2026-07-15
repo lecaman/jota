@@ -116,8 +116,9 @@ code{font-family:'IBM Plex Mono',monospace;font-size:.86em;background:rgba(23,21
 .cr-job-h{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--linha-suave);padding-bottom:18px;margin-bottom:20px}
 .cr-job-h h3{font-size:1.3rem;margin:0}
 .cr-job-h .cr-meta{font-size:.82rem;color:var(--grafite-claro);margin-top:4px}
-.cr-jd{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.cr-jd span{font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.02em;color:var(--grafite);background:var(--creme);border:1px solid var(--linha-suave);padding:4px 9px;border-radius:99px;white-space:nowrap}
+.cr-jd{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.cr-jd span{display:block;font-size:.76rem;line-height:1.55;color:var(--grafite);background:var(--creme);border:1px solid var(--linha-suave);border-radius:12px;padding:10px 14px}
+.cr-jd span strong{color:var(--tinta);font-weight:800;margin-right:4px}
 .cr-stage{transition:opacity .35s}
 /* dropzone */
 .cr-drop{border:2px dashed rgba(23,21,15,.22);border-radius:18px;padding:34px 24px;text-align:center;cursor:pointer;transition:all .25s;background:var(--creme)}
@@ -787,7 +788,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
   <div class="wrap">
     <span class="eyebrow reveal">Capítulo 01 · Talento</span>
     <p class="momento reveal">Antes do dia 1 <span>· atração &amp; seleção</span></p>
-    <h2 class="reveal">O time que você constrói é a empresa que você constrói.</h2>
+    <h2 class="reveal">O time que você constrói é o que mais importa.</h2>
     <p class="lead reveal">Duas engrenagens: o <strong>sourcing</strong>, que começa muito antes da vaga existir, e o <strong>funil da barra</strong> — cinco etapas onde a barra é construída ponto a ponto, cada uma medindo um sinal e protegendo a qualidade. Clique nas bolinhas para percorrer o processo.</p>
 
     <!-- ===== SOURCING ===== -->
@@ -824,7 +825,7 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
 
     <!-- ===== PÁGINA DE CARREIRAS COM IA (protótipo) ===== -->
     <p class="subhead reveal">Engrenagem 2 · A porta de entrada é um produto</p>
-    <p class="subhead-note reveal">O AI CV Screening não precisa ser uma caixa-preta que engole currículos. Ele pode ser a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
+    <p class="subhead-note reveal" style="max-width:none">O AI CV Screening não precisa ser uma caixa-preta que engole currículos. Ele pode ser a <strong>primeira prova de que o Jota é AI-native</strong>: uma página de carreiras onde o candidato sobe o currículo, recebe na hora um sinal de aderência à vaga e tira dúvidas com um agente que conhece a descrição da posição. Menos gente sem fit no funil, e quem não avança sai sabendo por quê. Experimente abaixo — é uma simulação.</p>
 
     <div class="careers reveal" id="careers">
       <div class="cr-bar"><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-dot"></span><span class="cr-url">carreiras.jota.com.br/vaga/eng-fullstack</span><span class="cr-tag">PROTÓTIPO</span></div>
@@ -836,7 +837,8 @@ footer .fin{margin-top:34px;font-size:.78rem;color:rgba(255,255,255,.4);display:
           </div>
         </div>
         <div class="cr-jd" style="margin-bottom:22px">
-          <span>Velocity over everything</span><span>Obsession with quality execution</span><span>We don't sleep with bugs</span><span>Frugality in everything</span><span>Do what's the best for the customer</span><span>Only the best is enough</span><span>Always hungry and curious</span><span>Do not take shortcuts</span><span>Empower talents with accountability</span><span>Nothing is someone else's problem</span><span>Shared purpose, unified goals</span><span>No drama, good karma</span>
+          <span><strong>Como operamos:</strong> Velocity over everything · Obsession with quality execution · We don't sleep with bugs · Frugality in everything · Do what's the best for the customer · Only the best is enough</span>
+          <span><strong>Como nos comportamos:</strong> Always hungry and curious · Do not take shortcuts · Empower talents with accountability · Nothing is someone else's problem · Shared purpose, unified goals · No drama, good karma</span>
         </div>
 
         <!-- STAGE 1 · upload -->
