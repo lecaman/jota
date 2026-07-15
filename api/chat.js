@@ -59,7 +59,24 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: "Nenhuma mensagem enviada." });
   }
 
-  const trimmed = messages.slice(-10);
+  // Sanitiza o histórico antes de enviar à API:
+  // 1) só user/assistant com conteúdo de texto não-vazio;
+  // 2) a primeira mensagem PRECISA ser "user" (exigência da API — senão 400).
+  const trimmed = messages
+    .filter(
+      (m) =>
+        m &&
+        (m.role === "user" || m.role === "assistant") &&
+        typeof m.content === "string" &&
+        m.content.trim() !== ""
+    )
+    .slice(-10);
+  while (trimmed.length > 0 && trimmed[0].role !== "user") {
+    trimmed.shift();
+  }
+  if (trimmed.length === 0) {
+    return res.status(400).json({ error: "Nenhuma mensagem válida enviada." });
+  }
   const last = trimmed[trimmed.length - 1];
   if (last && typeof last.content === "string") {
     last.content = [
